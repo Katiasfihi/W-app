@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Big Caslon';
+  src: local('Big Caslon'), url(./fonts/fonts/Big\ Caslon\ Medium.ttf) format('truetype');
+}
