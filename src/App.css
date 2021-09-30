@@ -7,36 +7,10 @@
   font-size: 2rem;
 }
 
-h1 {
-  font-weight: 500;
-  position: relative;
-  }
-  .nav-wrapper {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: right;
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
-    /* line-height: 1.6em; */
-  }
 
-  .nav-item {
-    margin-right: 2rem;
-    display: inline-block;
-
-  }
-
-  img {
-    /* height: 200px; */
-    width: 450px;
-    object-fit: cover;
-    margin: 5rem 0 0rem 20rem;
-  }
 
 /* Portrait and Landscape */
-@media only screen and (max-width: 600px)  { 
+@media only screen and (max-width: 700px)  { 
 
     body {
       background: #f7efee;
@@ -45,42 +19,4 @@ h1 {
       line-height: 1.4em;
     }
 
-  h1 {
-  font-weight: 500;
-  position: relative;
-  /* border: 2px solid red; */
-  font-size: 1.9rem;
-  /* font-weight: bold; */
-  text-align: center;
-
-  }
-
-  .nav-wrapper {
-    margin: 0 0 3rem 4rem;
-    padding: 2rem;
-    list-style-type: none;
-    text-align: center;
-    /* position: absolute; */
-    /* top: 3rem; */
-    /* right: 3rem; */
-  font-size: 1.45rem;
-  /* border: 2px solid blue; */
-
-    /* line-height: 1.6em; */
-  }
-
-  .nav-item {
-    /* margin-right: 2rem; */
-    /* display: inline-block; */
-  /* border: 2px solid blue; */
-  margin: -0.2rem;
-  /* font-size: 1.2rem; */
-  }
-
-  img {
-    /* height: 200px; */
-    width: 250px;
-    object-fit: cover;
-    margin: 10rem 0rem 0rem 3rem;
-  }
 }

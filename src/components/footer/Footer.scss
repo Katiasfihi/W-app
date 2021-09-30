@@ -1,0 +1,66 @@
+
+.footer-wrapper {
+    border: 2px solid green;
+    flex-basis: 40%;
+    text-align: center;
+  }
+//   .text-wrapper {
+//     border: 2px solid blue;
+//     float: right;
+//     padding: 3rem;
+//     margin: 18rem 20rem 0 0;
+//   }
+
+  button {
+    margin: 3rem 0 0 11rem;
+    padding: 1rem 4rem;
+    background-color: #db423d;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    letter-spacing: .08em;
+    line-height: 1.2em;
+  }
+
+@media only screen and (max-width: 700px)  { 
+
+.footer-wrapper {
+    border: 2px solid green;
+    flex-basis: 40%;
+    text-align: center;
+  }
+
+  .button-wrapper {
+
+  }
+
+  .button-wrapper {
+    border: 2px solid blue;
+    float: right;
+    margin: 2rem 0rem 0 0.9rem;
+    text-align: center;
+
+  }
+
+  button {
+    margin: 0 6.5rem;
+    padding: 1rem 4rem;
+    background-color: #db423d;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    letter-spacing: .08em;
+    line-height: 1.2em;
+  }
+
+  .beach-pic {
+    width: 376px;
+    object-fit: cover;
+    margin: 3rem 0 0 0;
+    height: 500px;  
+     padding: 0 0 0rem 0rem;
+}
+
+}
+
+
