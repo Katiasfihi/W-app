@@ -1,16 +1,16 @@
 import React from 'react'
-import './Information.scss'
+import './Schedule.scss'
 
 import logo from '../../photos/moutain.jpg'; 
 
 
 
-function Information() {
+function Schedule() {
   return (
 <div>
-    <div className='test' >
+    <div className='component-wrapper' >
         <div >
-        <h3 className='title-wrapper'>Information</h3>
+        <h3 className='title-wrapper'>Schedule</h3>
         </div>
 
         <div className='info-wrapper'>
@@ -25,4 +25,4 @@ function Information() {
 );
 }
 
-export default Information;
+export default Schedule;

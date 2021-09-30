@@ -10,7 +10,7 @@ function Footer() {
     </div>  
 
     <div className='button-wrapper'>
-            <button>RSVP</button>
+            <button className='btn2'>RSVP</button>
     </div>
 </div>
 );

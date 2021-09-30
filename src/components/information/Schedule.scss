@@ -7,13 +7,35 @@
   
     
 // }
+.info-wrapper {
+  border: 2px solid green;
+  flex-basis: 40%;
+  text-align: right;
+}
+
+.component-wrapper {
+  border: 2px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border: 2px solid black;
+  margin: 5rem 0 0rem 0;
+  padding: 10rem;
+}
+
+h2 {
+text-align: center;
+}
 
 .moutain-pic {
-      width: 1550px;
+      width: 1400px;
       object-fit: cover;
-      margin: 0 0 0 0;
+      margin: 0 0 0 5.5rem;
       height: 500px;
       padding: 0 7rem;
+      filter:   brightness(100%)
+
+
     
   }
   

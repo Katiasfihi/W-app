@@ -2,10 +2,16 @@
     /* height: 200px; */
     width: 450px;
     object-fit: cover;
-    margin: 9rem 5rem 0rem 20rem;
+    // margin: 9rem 5rem 0rem 20rem;
+    margin: 9rem 20rem 0rem 20rem;
+    // margin: 9rem 18rem 0rem 20rem;
     float: left;
+    // -webkit-filter: brightness(0.7) saturate(150%) contrast(190%) hue-rotate(30deg);
+    filter: brightness(100%) 
+}
 
-  }
+
+  
   .about-wrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -14,37 +20,48 @@
     margin:  10rem 0 0rem 0;
   border: 2px solid purple;
     /* contain: layout; */
-  
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   justify-content: space-between;
+  //   border: 2px solid black;
+  //   margin:  10rem 0 5rem 0;
+  // border: 2px solid purple;
+  //   /* contain: layout; */
   }
 
-  .text-wrapper {
+  .text-wrapper-about {
     border: 2px solid blue;
+    // float: right;
+    // // padding: 3rem;
+ 
+    // margin: 13rem 10rem 0 10rem;
+    // padding: 3rem;
     float: right;
     padding: 3rem;
     margin: 18rem 20rem 0 0;
   }
 
-  .title-wrapper {
-    border: 2px solid red;
-    text-align: left;
-    flex-basis: 60%;
+  // .title-wrapper {
+  //   border: 2px solid red;
+  //   text-align: left;
+  //   flex-basis: 60%;
 
-  }
-  .info-wrapper {
-    border: 2px solid green;
-    flex-basis: 40%;
-    text-align: right;
-  }
+  // }
+  // .info-wrapper {
+  //   border: 2px solid green;
+  //   flex-basis: 40%;
+  //   text-align: right;
+  // }
 
-  .test {
-    border: 2px solid black;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    border: 2px solid black;
-    margin: 5rem 0 0rem 0;
-    padding: 10rem;
-  }
+  // .test {
+  //   border: 2px solid black;
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   justify-content: space-between;
+  //   border: 2px solid black;
+  //   margin: 5rem 0 0rem 0;
+  //   padding: 10rem;
+  // }
 
   h2 {
   text-align: center;
@@ -54,8 +71,8 @@
     text-align: center;
   }
 
-  button {
-    margin: 3rem 0 0 11rem;
+  .btn {
+    // margin: 0;
     padding: 1rem 4rem;
     background-color: #db423d;
     color: #fff;
@@ -63,6 +80,7 @@
     font-weight: 500;
     letter-spacing: .08em;
     line-height: 1.2em;
+    margin: 4rem;
   }
 
 /* Portrait and Landscape */
@@ -82,9 +100,10 @@
       width: 250px;
       object-fit: cover;
       margin: 1rem 0rem 0rem 4rem;
+      // filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
     }
   
-    .text-wrapper {
+    .text-wrapper-about {
       border: 2px solid blue;
       float: right;
       margin: 2rem 0rem 0 0rem;
@@ -93,27 +112,27 @@
   
     }
   
-    .title-wrapper {
-      border: 2px solid red;
-      text-align: left;
-      flex-basis: 60%;
+    // .title-wrapper {
+    //   border: 2px solid red;
+    //   text-align: left;
+    //   flex-basis: 60%;
   
-    }
-    .info-wrapper {
-      border: 2px solid green;
-      flex-basis: 40%;
-      text-align: right;
-    }
+    // }
+    // .info-wrapper {
+    //   border: 2px solid green;
+    //   flex-basis: 40%;
+    //   text-align: right;
+    // }
   
-    .test {
-      display: flex;
-      justify-content: space-between;
-      border: 2px solid black;
-      margin: 2rem 0 10rem 0;
-      padding: 5rem;
-      /* contain: layout; */
-      flex-wrap: wrap;
-    }
+    // .test {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   border: 2px solid black;
+    //   margin: 2rem 0 10rem 0;
+    //   padding: 5rem;
+    //   /* contain: layout; */
+    //   flex-wrap: wrap;
+    // }
 
 
   button {

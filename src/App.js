@@ -3,8 +3,8 @@ import React from 'react';
 
 import Header from './components/header/Header';
 import About from './components/about/About';
-import Information from './components/information/Information';
-import Schedule from './components/schedule/Schedule';
+import Information from './components/schedule/Information';
+import Schedule from './components/information/Schedule';
 import Footer from './components/footer/Footer';
 
 import './App.css';
@@ -14,8 +14,8 @@ function App() {
     <div>
       <Header />
       <About />
-      <Information />
       <Schedule />
+      <Information />
       <Footer />
 
     </div>
