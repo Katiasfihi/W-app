@@ -9,12 +9,14 @@ function Schedule() {
   return (
 <div>
     <div className='component-wrapper' >
-        <div >
+        {/* <div > */}
         <h3 className='title-wrapper'>Schedule</h3>
-        </div>
+        {/* </div> */}
 
         <div className='info-wrapper'>
-        <text>Ipsum lorem</text>
+        <text>Ipsum lorem Ipsum <br>
+        </br>lorem Ip</text>
+
         </div>
     </div>
 

@@ -12,8 +12,31 @@
         margin: 0 0 0 0.8rem;
     }
 
-    .email-specs {
-        margin: 0 0 0 4rem;
+    // .email-specs {
+    //     margin: 0 0 0 4rem;
+    // }
+
+  }
+
+  @media only screen and (max-width: 700px)  { 
+  
+    .Login form {
+      margin: 120px auto;
+      max-width: 320px;
     }
 
+    .password-specs {
+        margin: 0 0 0 0.8rem;
+    }
+
+    .login-btn {
+      padding: 1rem 4rem;
+      background-color: #db423d;
+      color: #fff;
+      border: none;
+      font-weight: 500;
+      letter-spacing: .08em;
+      line-height: 1.2em;
+      margin: 5rem 5rem;
+    }
   }

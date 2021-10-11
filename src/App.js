@@ -1,23 +1,29 @@
 
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Header from './components/header/Header';
-import About from './components/about/About';
-import Information from './components/schedule/Information';
-import Schedule from './components/information/Schedule';
-import Footer from './components/footer/Footer';
+import Login from './components/login/Login'
+import Pages from './components/pages/Pages'
+import Rsvp from './components/rsvp/Rsvp';
 
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Header />
-      <About />
-      <Schedule />
-      <Information />
-      <Footer />
+      <Router>
 
+          <Switch>
+            <Route component={Login} path="/login"/> 
+          </Switch>
+          <Switch>
+            <Route component={Pages} path="/pages" /> 
+          </Switch>
+          <Switch>
+            <Route component={Rsvp} path="/rsvp" /> 
+          </Switch>
+
+      </Router>
     </div>
   );
 }

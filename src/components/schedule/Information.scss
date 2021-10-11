@@ -57,12 +57,7 @@
     
   }
 
-  .title-wrapper {
-    border: 2px solid red;
-    text-align: left;
-    flex-basis: 60%;
-
-  }
+ 
   // .info-wrapper {
   //   border: 2px solid green;
   //   flex-basis: 40%;
@@ -110,16 +105,33 @@
 
 /* Portrait and Landscape */
 @media only screen and (max-width: 700px)  { 
-  .schedule-wrapper {
+  .schedule-wrapper1 {
     display: flex;
     justify-content: space-between;
     border: 2px solid black;
-    margin:  10rem 0 0rem 0;
-  
+    margin: 10rem 0 0rem -25rem;
     /* contain: layout; */
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   
   }
+
+  .schedule-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: 10rem 0 0rem -25rem;
+    /* contain: layout; */
+    flex-wrap: wrap-reverse;
+  
+  }
+
+  h2 {
+  
+      text-align: center;
+      font-weight: 100;
+      font-size: unset;
+  }
+
     .img2 {
       /* height: 200px; */
       width: 250px;
@@ -138,33 +150,56 @@
     }
   
     .img3 {
-        width: 250px;
-        object-fit: cover;
-        margin: 1rem 0rem 0rem 4rem;
-      filter:   brightness(100%)
-
+      //   width: 250px;
+      //   object-fit: cover;
+      //   margin: 1rem 0rem 0rem 4rem;
+      // filter:   brightness(100%)
+      width: 344px;
+      object-fit: cover;
+      margin: -113rem -6rem 1rem 1rem;
+      /* height: 200px; */
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 195rem;
+      left: 0;
+      right: 0;
+      bottom: 100rem;
+      height: unset;
+      filter: brightness(100%);
     
       }
 
-    .text-wrappers {
+    .text-wrappers1 {
       border: 2px solid blue;
       float: right;
-      margin: 2rem 0rem 0 0.9rem;
+      margin: 2rem 0rem 1px 24.9rem;
       text-align: center;
+      padding: 0rem 9rem 12rem -3rem;
+  
+    }
+
+    .text-wrappers2 {
+      border: 2px solid blue;
+      float: right;
+      margin: 2rem 0rem 0 24.9rem;
+      text-align: center;
+      padding: 0rem 9rem 12rem -3rem;
+
   
     }
   
-    .title-wrapper {
-      border: 2px solid red;
-      text-align: left;
-      flex-basis: 60%;
+    // .title-wrapper {
+    //   border: 2px solid red;
+    //   text-align: left;
+    //   flex-basis: 60%;
   
-    }
-    .info-wrapper {
-      border: 2px solid green;
-      flex-basis: 40%;
-      text-align: right;
-    }
+    // }
+    // .info-wrapper {
+    //   border: 2px solid green;
+    //   flex-basis: 40%;
+    //   text-align: right;
+    // }
   
     .test {
       display: flex;
@@ -177,18 +212,18 @@
     }
 
 
-  button {
-    margin: 3rem 0 0 1rem;
-    padding: 1rem 4rem;
-    background-color: #db423d;
-    color: #fff;
-    border: none;
-    font-weight: 500;
-    letter-spacing: .08em;
-    line-height: 1.2em;
-  }
+  // button {
+  //   margin: 3rem 0 0 1rem;
+  //   padding: 1rem 4rem;
+  //   background-color: #db423d;
+  //   color: #fff;
+  //   border: none;
+  //   font-weight: 500;
+  //   letter-spacing: .08em;
+  //   line-height: 1.2em;
+  // }
 
-  .beach-pic {
+  .brighton-pic {
     
         width: 376px;
         object-fit: cover;

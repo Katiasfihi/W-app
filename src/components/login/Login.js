@@ -1,16 +1,20 @@
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
 
+import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { useHistory } from 'react-router-dom';
+
 import "./Login.scss";
+
 
 function Login() {
   const [password, setPassword] = useState("");
 
-  function validateForm() {
-  const password = 'hello';
+  const history = useHistory();
 
-    return password;
+  function validateForm() {
+    setPassword('02072022')
+    history.push('/pages')
   }
 
   function handleSubmit(event) {
@@ -29,8 +33,8 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
+        </Form.Group>      
+        <Button className='login-btn' block size="lg" type="submit" disabled={!password} onClick={()=> validateForm()}>
           Login
         </Button>
       </Form>
