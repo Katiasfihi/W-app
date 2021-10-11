@@ -1,0 +1,45 @@
+
+@media only screen and (max-width: 700px)  { 
+
+.rsvp-form {
+
+   font-size: 1.45rem;
+   margin: 120px auto;
+   max-width: 337px;
+
+}
+
+::placeholder {
+    font-style: italic;
+    color: #b4b3b3;
+}
+
+.name-specs {
+    margin: 25px 0 0 5.7rem;
+    padding: 0.5rem 1rem;
+}
+
+.surname-specs {
+    margin: 25px 0 0 4rem;
+    padding: 0.5rem 1rem;
+}
+
+.email-specs {
+    margin: 25px 0 0 0.9rem;
+    padding: 0.5rem 0.9rem;
+
+}
+
+.message-specs {
+    margin: 25px 0 0 4.2rem;
+    padding: 0.5rem 2rem 10rem 0;
+}
+
+.rsvp-span {
+    margin: 56px auto;
+    text-align: center;
+    font-size: 1.45rem;
+    font-style: italic;
+}
+
+}
