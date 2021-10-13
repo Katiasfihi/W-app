@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -15,29 +15,26 @@ function Rsvp() {
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
+  // const [popup, setPopup] = useState("");
 
-
-  const history = useHistory();
-
-//   function validateForm() {
-//     setInput('02072022')
-//     history.push('/pages')
-//   }
 
   function handleSubmit(event) {
     event.preventDefault();
   }
+  const history = useHistory();
 
     const sendEmail = (e) => {
-    emailjs.sendForm(
-    "service_u5nlqmi",
-    "template_m1qfl9g",
-    "#form-id",
-    "user_7Sik7Z8G3mzKbYSyVPBjE"
-  ).then(() => {
-    console.log('it works')
-  })
-    
+        emailjs.sendForm(
+        "service_u5nlqmi",
+        "template_m1qfl9g",
+        "#form-id",
+        "user_7Sik7Z8G3mzKbYSyVPBjE"
+      ).then(() => {
+        console.log('it works')
+        // setPopup("Thank you for your message." )
+      history.push('/thankyou')
+
+      })
     };
 
   return (
@@ -79,6 +76,7 @@ function Rsvp() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </Form.Group>  
+      {/* <h2 className="pop-message">{popup}</h2> */}
         <Form.Group size="lg" className="mess-form">
           <Form.Label>Message</Form.Label>
           <textarea className='message-specs'

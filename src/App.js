@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from './components/login/Login'
 import Pages from './components/pages/Pages'
 import Rsvp from './components/rsvp/Rsvp';
+import Thankyou from './components/thank-you/Thankyou';
 
 import './App.css';
 
@@ -23,6 +24,9 @@ function App() {
           </Switch>
           <Switch>
             <Route component={Rsvp} path="/rsvp" /> 
+          </Switch>
+          <Switch>
+            <Route component={Thankyou} path="/thankyou" /> 
           </Switch>
 
       </Router>
