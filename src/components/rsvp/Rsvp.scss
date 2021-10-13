@@ -1,45 +1,160 @@
 
+.rsvp-form {
+    font-size: 1.45rem;
+    margin: 80px auto;
+    max-width: 337px;
+    padding: 0 7rem 7rem 3rem;
+ 
+ }
+ 
+ ::placeholder {
+     font-style: italic;
+     color: #b4b3b3;
+     font-family: Big Caslon;
+    letter-spacing: .02em;
+    font-size: 1rem;
+
+ }
+ 
+ .name-specs {
+    margin: 0px 0 0px 6.8rem;
+    padding: 1rem 2rem;
+    border: none;
+ }
+ 
+ .surname-specs {
+     margin: 25px 0 0 5rem;
+     padding: 1rem 2rem;
+     border: none;
+
+ }
+ 
+ .email-specs {
+     margin: 25px 0 0 1.8rem;
+     padding: 1rem 2rem;
+    border: none;
+
+ }
+ 
+ .message-specs {
+    margin: -37px 3px 2px 165.594px;
+    padding: 1rem 4rem 14rem;
+    border: none;
+
+ }
+ 
+ .rsvp-span {
+    margin: 160px 0 99px 0;
+     text-align: center;
+     font-size: 1.45rem;
+     font-style: italic;
+ }
+
+ .form-gr-rsvp {
+
+    margin: 2rem -35px 23px -12px;
+ }
+
+ .rsvp-btn {
+    padding: 1rem 4rem;
+    background-color: #db423d;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    letter-spacing: .08em;
+    line-height: 1.2em;
+    margin: 5rem 5rem;
+    font-family: Big Caslon;
+  }
+
+  .mess-form {
+    margin: 3rem 0 0 -13px;
+
+}
+
+textarea[type="text"] {
+    font-size:1.3rem;
+    font-style: italic;
+    color: #3d2c2c;
+    font-family: Big Caslon;
+    letter-spacing: .02em;
+}
+
+
 @media only screen and (max-width: 700px)  { 
 
-.rsvp-form {
+    .rsvp-form {
+    font-size: 1.45rem;
+    margin: 120px auto;
+    max-width: 337px;
+    padding: 0;
+    }
 
-   font-size: 1.45rem;
-   margin: 120px auto;
-   max-width: 337px;
-
-}
-
-::placeholder {
+    ::placeholder {
     font-style: italic;
     color: #b4b3b3;
-}
+    font-family: Big Caslon;
+    letter-spacing: .02em;
+    }
 
-.name-specs {
-    margin: 25px 0 0 5.7rem;
-    padding: 0.5rem 1rem;
-}
+    .name-specs {
+        margin: 14px 0 0 0rem;
+        padding: 19px 6.75rem;
+    }
 
-.surname-specs {
-    margin: 25px 0 0 4rem;
-    padding: 0.5rem 1rem;
-}
+    .surname-specs {
+        margin: 14px 0 0 0rem;
+        padding: 19px 6.75rem;
+    }
 
-.email-specs {
-    margin: 25px 0 0 0.9rem;
-    padding: 0.5rem 0.9rem;
+    .email-specs {
+        margin: 14px 0 0 0rem;
+        padding: 19px 6.75rem;
+    }
 
-}
+    .message-specs {
+        margin: 13px 0 0 0rem;
+        padding: 0.5rem 9.7rem 11rem 0px;
+        border: none;
+    }
 
-.message-specs {
-    margin: 25px 0 0 4.2rem;
-    padding: 0.5rem 2rem 10rem 0;
-}
+    .rsvp-span {
+        margin: 56px 1rem -64px 1rem;
+        text-align: center;
+        font-size: 1.45rem;
+        font-style: italic;
+    }
 
-.rsvp-span {
-    margin: 56px auto;
-    text-align: center;
-    font-size: 1.45rem;
-    font-style: italic;
-}
+    .form-gr-rsvp{
+    // margin: 0rem -7px 23px 5px;
+    display: table-caption;
+     }
 
+    //  .mess-form {
+    //      margin: 2rem 0 0 3px;
+    //  }
+
+    //  textarea[type="text"] {
+    //     font-size:18px;
+    //     font-style: italic;
+    //     color: #3d2c2c;
+    //     font-family: Big Caslon;
+    //     letter-spacing: .02em;
+    // }
+
+    body {
+        background: #f7efee;
+        font-family: Big Caslon;
+        /* letter-spacing: .02em; */
+        line-height: 1.4em;
+        overflow-y: scroll; /* has to be scroll, not auto */
+  /* -webkit-overflow-scrolling: touch; */
+  /* margin: 0; */
+        overflow-x: hidden !important;
+  
+      }
+  
+      html {
+        overflow-x: hidden;
+      }
 }

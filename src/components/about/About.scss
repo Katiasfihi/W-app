@@ -81,9 +81,11 @@
     letter-spacing: .08em;
     line-height: 1.2em;
     margin: 4rem;
+    font-family: Big Caslon;
+
   }
 
-/* Portrait and Landscape */
+  /* Portrait and Landscape */
 @media only screen and (max-width: 700px)  { 
   .about-wrapper {
     display: flex;
@@ -135,7 +137,7 @@
     // }
 
 
-  button {
+    .btn-rsvp {
     margin: 3rem 0 0 1rem;
     padding: 1rem 4rem;
     background-color: #db423d;
@@ -145,6 +147,73 @@
     letter-spacing: .08em;
     line-height: 1.2em;
     cursor: pointer;
+    font-family: Big Caslon;
+  }
+
+  }
+/* Portrait and Landscape */
+@media only screen and (max-width: 1000px)  { 
+  .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin:  12rem 0 0rem 0;
+  
+    /* contain: layout; */
+    flex-wrap: wrap;
+  
+  }
+    .img1 {
+      /* height: 200px; */
+      width: 250px;
+      object-fit: cover;
+      margin: 1rem 0rem 0rem 4rem;
+      // filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    }
+  
+    .text-wrapper-about {
+      border: 2px solid blue;
+      float: right;
+      margin: 2rem 0rem 0 0rem;
+      text-align: center;
+      padding: 0;
+  
+    }
+  
+    // .title-wrapper {
+    //   border: 2px solid red;
+    //   text-align: left;
+    //   flex-basis: 60%;
+  
+    // }
+    // .info-wrapper {
+    //   border: 2px solid green;
+    //   flex-basis: 40%;
+    //   text-align: right;
+    // }
+  
+    // .test {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   border: 2px solid black;
+    //   margin: 2rem 0 10rem 0;
+    //   padding: 5rem;
+    //   /* contain: layout; */
+    //   flex-wrap: wrap;
+    // }
+
+
+    .btn-rsvp {
+    margin: 3rem 0 0 1rem;
+    padding: 1rem 4rem;
+    background-color: #db423d;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    letter-spacing: .08em;
+    line-height: 1.2em;
+    cursor: pointer;
+    font-family: Big Caslon;
   }
 
   }
