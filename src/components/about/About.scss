@@ -18,7 +18,7 @@
     justify-content: space-between;
     border: 2px solid black;
     margin:  10rem 0 0rem 0;
-  border: 2px solid purple;
+    border: 2px solid purple;
     /* contain: layout; */
   //   display: flex;
   //   flex-flow: row nowrap;
@@ -153,16 +153,14 @@
   }
 /* Portrait and Landscape */
 @media only screen and (max-width: 1000px)  { 
-  .about-wrapper {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid black;
-    margin:  12rem 0 0rem 0;
-  
-    /* contain: layout; */
-    flex-wrap: wrap;
-  
-  }
+    .about-wrapper {
+      display: flex;
+      justify-content: space-between;
+      border: 2px solid black;
+      margin:  12rem 0 0rem 0;
+      flex-wrap: wrap; 
+    }
+
     .img1 {
       /* height: 200px; */
       width: 250px;
@@ -176,8 +174,7 @@
       float: right;
       margin: 2rem 0rem 0 0rem;
       text-align: center;
-      padding: 0;
-  
+      padding: 0; 
     }
   
     // .title-wrapper {
@@ -204,16 +201,16 @@
 
 
     .btn-rsvp {
-    margin: 3rem 0 0 1rem;
-    padding: 1rem 4rem;
-    background-color: #db423d;
-    color: #fff;
-    border: none;
-    font-weight: 500;
-    letter-spacing: .08em;
-    line-height: 1.2em;
-    cursor: pointer;
-    font-family: Big Caslon;
-  }
+      margin: 3rem 0 0 1rem;
+      padding: 1rem 4rem;
+      background-color: #db423d;
+      color: #fff;
+      border: none;
+      font-weight: 500;
+      letter-spacing: .08em;
+      line-height: 1.2em;
+      cursor: pointer;
+      font-family: Big Caslon;
+    }
 
-  }
+}

@@ -7,7 +7,9 @@ import { useHistory } from 'react-router-dom';
 import "./Login.scss";
 
 
-function Login() {
+
+
+function Login( {getTranslate} ) {
   const [password, setPassword] = useState("");
 
   const history = useHistory();
@@ -35,7 +37,7 @@ function Login() {
           />
         </Form.Group>      
         <Button className='login-btn' block size="lg" type="submit" disabled={!password} onClick={()=> validateForm()}>
-          Login
+        {/* {this.props.getTranslate} */}
         </Button>
       </Form>
     </div>
