@@ -3,20 +3,19 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useHistory } from 'react-router-dom';
-
 import "./Login.scss";
 
 
 
-
-function Login( {getTranslate} ) {
+function Login( {t} ) {
   const [password, setPassword] = useState("");
 
   const history = useHistory();
 
   function validateForm() {
-    setPassword('02072022')
-    history.push('/pages')
+    if (password === '02072022') {
+      history.push('/pages')
+    }
   }
 
   function handleSubmit(event) {
@@ -34,10 +33,12 @@ function Login( {getTranslate} ) {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            onSubmit={(e) => setPassword('02072022')}
+
           />
         </Form.Group>      
         <Button className='login-btn' block size="lg" type="submit" disabled={!password} onClick={()=> validateForm()}>
-        {/* {this.props.getTranslate} */}
+        password
         </Button>
       </Form>
     </div>
