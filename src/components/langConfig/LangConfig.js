@@ -6,28 +6,23 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        Hi: "Hi",
-        Actions: "Actions"
+        Password: "Password",
+        Login: "Login"
       }
     },
-    tm: {
+    fr: {
       translation: {
-        Hi: "வணக்கம்",
-        Actions: "செயல்கள்"
+        Password: "Mot de passe",
+        Login: "Entrez"
       }
     },
-    sp: {
+    ro: {
       translation: {
-        Hi: "Hola",
-        Actions: "Comportamiento"
+        Password: "Parola",
+        Login: "Autentificare"
+
       }
     },
-    tl: {
-      translation: {
-        Hi: "హాయ్",
-        Actions: "చర్యలు"
-      }
-    }
   },
   keySeparator: false,
   interpolation: { escapeValue: false }

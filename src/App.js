@@ -46,28 +46,25 @@ export default class App extends React.Component {
           <option className="optionsMenu" value="en">
             English
           </option>
-          <option className="optionsMenu" value="tm">
-            Tamil(தமிழ்)
+          <option className="optionsMenu" value="fr">
+            Francais
           </option>
-          <option className="optionsMenu" value="tl">
-            Telugu(తెలుగు)
-          </option>
-          <option className="optionsMenu" value="sp">
-            Spanish(española)
+          <option className="optionsMenu" value="ro">
+            Română
           </option>
         </select>
-        <p className="textToChange">{t("Hi")}</p>
-        <p className="textToChange">{t("Actions")}</p>
+        {/* <p className="textToChange">{t("Hi")}</p>
+        <p className="textToChange">{t("Actions")}</p> */}
         <Router>
           <Switch>
 
-          {/* <Translation>{t =>  <Route component={Login} t={t} path="/login"/>}</Translation> */}
+          {/* <Translation>{t =>  <Login t={t} path="/login"/>}</Translation> */}
 
             <Route component={Login} t={t} path="/login"/> 
             
           </Switch>
           <Switch>
-          {/* <Translation>{t =>  <Pages Route component={Pages} t={t} path="/pages" />}</Translation> */}
+          {/* <Translation>{t =>  <Pages  component={Pages} t={t} path="/pages" />}</Translation> */}
 
             <Route component={Pages} path="/pages" /> 
 
