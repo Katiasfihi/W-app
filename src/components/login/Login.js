@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import { Translation } from "react-i18next";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useHistory } from 'react-router-dom';
-
 import "./Login.scss";
+import { Translation, useTranslation } from "react-i18next";
+
 
 
 function Login( {t} ) {
@@ -34,6 +34,8 @@ function Login( {t} ) {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            onSubmit={(e) => setPassword('02072022')}
+
           />
         </Form.Group>      
         <Button className='login-btn' block size="lg" type="submit" disabled={!password} onClick={()=> validateForm()}>

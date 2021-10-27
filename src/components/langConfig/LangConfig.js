@@ -20,6 +20,7 @@ i18n.use(initReactI18next).init({
       translation: {
         Password: "Parola",
         Login: "Autentificare"
+
       }
     },
   },
