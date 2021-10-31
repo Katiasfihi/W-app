@@ -1,12 +1,8 @@
 .img1 {
-    /* height: 200px; */
     width: 450px;
     object-fit: cover;
-    // margin: 9rem 5rem 0rem 20rem;
-    margin: 9rem 20rem 0rem 20rem;
-    // margin: 9rem 18rem 0rem 20rem;
+    margin: 9rem 20rem 0rem 13rem;
     float: left;
-    // -webkit-filter: brightness(0.7) saturate(150%) contrast(190%) hue-rotate(30deg);
     filter: brightness(100%) 
 }
 
@@ -19,56 +15,39 @@
     border: 2px solid black;
     margin:  10rem 0 0rem 0;
     border: 2px solid purple;
-    /* contain: layout; */
-  //   display: flex;
-  //   flex-flow: row nowrap;
-  //   justify-content: space-between;
-  //   border: 2px solid black;
-  //   margin:  10rem 0 5rem 0;
-  // border: 2px solid purple;
-  //   /* contain: layout; */
+
+
+  }
+
+  .nav-wrapper {
+    padding: 0rem 0rem 0 3rem; 
+    text-align: center;
+    font-size: 1.45rem;
+    cursor: pointer;
+    line-height: 3rem;
+    font-style: italic;
+    margin: 6rem 5rem 2rem 1rem;
+    display: grid;
   }
 
   .text-wrapper-about {
     border: 2px solid blue;
-    // float: right;
-    // // padding: 3rem;
- 
-    // margin: 13rem 10rem 0 10rem;
-    // padding: 3rem;
     float: right;
     padding: 3rem;
-    margin: 18rem 20rem 0 0;
+    margin: 18rem 16rem 0 0;
   }
 
-  // .title-wrapper {
-  //   border: 2px solid red;
-  //   text-align: left;
-  //   flex-basis: 60%;
-
-  // }
-  // .info-wrapper {
-  //   border: 2px solid green;
-  //   flex-basis: 40%;
-  //   text-align: right;
-  // }
-
-  // .test {
-  //   border: 2px solid black;
-  //   display: flex;
-  //   flex-flow: row nowrap;
-  //   justify-content: space-between;
-  //   border: 2px solid black;
-  //   margin: 5rem 0 0rem 0;
-  //   padding: 10rem;
-  // }
-
-  h2 {
+  .introduction {
   text-align: center;
+  font-size: 24px;
+  letter-spacing: .02em;
+  line-height: 1.4em;
+  font-family: Big Caslon;
   }
 
   h3 {
     text-align: center;
+    font-style: italic;
   }
 
   .btn-rsvp {
@@ -80,7 +59,7 @@
     font-weight: 500;
     letter-spacing: .08em;
     line-height: 1.2em;
-    margin: 4rem;
+    margin: 4rem 5rem 0 9.5rem;
     font-family: Big Caslon;
 
   }
@@ -91,18 +70,14 @@
     display: flex;
     justify-content: space-between;
     border: 2px solid black;
-    margin:  12rem 0 0rem 0;
-  
-    /* contain: layout; */
+    margin: 8rem 1rem 0rem 1rem;
     flex-wrap: wrap;
   
   }
     .img1 {
-      /* height: 200px; */
       width: 250px;
       object-fit: cover;
-      margin: 1rem 0rem 0rem 4rem;
-      // filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+      margin: 15rem 0rem 0rem 3rem;
     }
   
     .text-wrapper-about {
@@ -113,7 +88,16 @@
       padding: 0;
   
     }
-  
+.nav-wrapper{
+  padding: 0rem 0rem 0 3rem;
+  text-align: center;
+  font-size: 1.45rem;
+  cursor: pointer;
+  line-height: 3rem;
+  font-style: italic;
+  margin: 8rem 5rem 2rem 1rem;
+  display: grid;
+}  
     // .title-wrapper {
     //   border: 2px solid red;
     //   text-align: left;
@@ -151,66 +135,4 @@
   }
 
   }
-/* Portrait and Landscape */
-@media only screen and (max-width: 1000px)  { 
-    .about-wrapper {
-      display: flex;
-      justify-content: space-between;
-      border: 2px solid black;
-      margin:  12rem 0 0rem 0;
-      flex-wrap: wrap; 
-    }
 
-    .img1 {
-      /* height: 200px; */
-      width: 250px;
-      object-fit: cover;
-      margin: 1rem 0rem 0rem 4rem;
-      // filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
-    }
-  
-    .text-wrapper-about {
-      border: 2px solid blue;
-      float: right;
-      margin: 2rem 0rem 0 0rem;
-      text-align: center;
-      padding: 0; 
-    }
-  
-    // .title-wrapper {
-    //   border: 2px solid red;
-    //   text-align: left;
-    //   flex-basis: 60%;
-  
-    // }
-    // .info-wrapper {
-    //   border: 2px solid green;
-    //   flex-basis: 40%;
-    //   text-align: right;
-    // }
-  
-    // .test {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   border: 2px solid black;
-    //   margin: 2rem 0 10rem 0;
-    //   padding: 5rem;
-    //   /* contain: layout; */
-    //   flex-wrap: wrap;
-    // }
-
-
-    .btn-rsvp {
-      margin: 3rem 0 0 1rem;
-      padding: 1rem 4rem;
-      background-color: #db423d;
-      color: #fff;
-      border: none;
-      font-weight: 500;
-      letter-spacing: .08em;
-      line-height: 1.2em;
-      cursor: pointer;
-      font-family: Big Caslon;
-    }
-
-}

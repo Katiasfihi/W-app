@@ -1,8 +1,11 @@
 
 import React from 'react'
 import './About.scss'
-import logo from '../../photos/pink.jpg'; 
+import logo from '../../photos/20210918_154315BB.jpg'; 
 import { useHistory } from 'react-router-dom';
+
+import { Translation } from "react-i18next";
+
 
 
 function About() {
@@ -13,16 +16,19 @@ function About() {
     history.push('/rsvp')
   }
   return (
-     <div className='about-wrapper' >
 
-          <img src={logo} alt="Logo" className='img1' />
+    <Translation>{t=>
+      <div className='about-wrapper' >
 
-          <div className='text-wrapper-about'>
-            <h2>Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </h2>
-            <h3>Ipsum lorem</h3>
-            <button className='btn-rsvp' onClick={()=>  validateRsvp()}>RSVP</button>
-          </div>
-    </div>
+            <img src={logo} alt="Logo" className='img1' />
+
+            <div className='text-wrapper-about'>
+              <div className="introduction">{t('About')}</div>
+              <h3>{t('Date')}</h3>
+              <button className='btn-rsvp' onClick={()=>  validateRsvp()}>RSVP</button>
+            </div>
+      </div>
+   }</Translation>
   );
 }
 

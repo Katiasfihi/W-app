@@ -18,8 +18,45 @@ import i18n from "i18next";
 
 export default class App extends React.Component {
   state = {
-    lang: "en"
+    lang: "en",
+    colorChange: false,
+    translateGone: false
   };
+  // const [colorChange, setColorchange] = useState(false);
+
+   changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       this.setState({colorChange : true});
+     }
+     else{
+      this.setState({colorChange : false});
+     }
+  };
+
+  removeTranslation = () =>{
+    if(window.scrollY >= 80){
+      this.setState({translateGone : true});
+    }
+    else{
+     this.setState({translateGone : false});
+    }
+ };
+
+  componentDidMount() {
+      this.changeNavbarColor()
+      this.removeTranslation()
+  window.addEventListener('scroll', this.changeNavbarColor);  
+  window.addEventListener('scroll', this.removeTranslation);  
+
+  }
+  // useEffect(() => {
+  // changeNavbarColor()
+  // window.addEventListener('scroll', changeNavbarColor);  
+  
+  // });
+  
+ 
+ 
   langChange = e => {
     this.setState({ [e.target.name]: e.target.value }, () => {
       localStorage.setItem("lang", this.state.lang);
@@ -27,6 +64,7 @@ export default class App extends React.Component {
       i18n.changeLanguage(lang);
     });
   };
+
   render() {
     const { t } = this.props;
 
@@ -37,8 +75,11 @@ export default class App extends React.Component {
 
     return (
       <div>
+
+        {/* <h1  className={`kc-login ${this.state.colorChange ? 'colorchange' : 'kc-login'}`}>Katia & Carol</h1> */}
         <select
-          className="selectBox"
+
+          className={`selectBox ${this.state.translateGone ? 'noselectBox' : 'selectBox'}`}
           onChange={this.langChange}
           name="lang"
           value={lang}

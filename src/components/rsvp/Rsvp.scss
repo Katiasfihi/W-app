@@ -126,21 +126,9 @@ textarea[type="text"] {
     }
 
     .form-gr-rsvp{
-    // margin: 0rem -7px 23px 5px;
     display: table-caption;
      }
 
-    //  .mess-form {
-    //      margin: 2rem 0 0 3px;
-    //  }
-
-    //  textarea[type="text"] {
-    //     font-size:18px;
-    //     font-style: italic;
-    //     color: #3d2c2c;
-    //     font-family: Big Caslon;
-    //     letter-spacing: .02em;
-    // }
 
     body {
         background: #f7efee;
@@ -148,8 +136,6 @@ textarea[type="text"] {
         /* letter-spacing: .02em; */
         line-height: 1.4em;
         overflow-y: scroll; /* has to be scroll, not auto */
-  /* -webkit-overflow-scrolling: touch; */
-  /* margin: 0; */
         overflow-x: hidden !important;
   
       }
@@ -157,6 +143,18 @@ textarea[type="text"] {
       html {
         overflow-x: hidden;
       }
+      .kc-rsvp {
+        font-weight: 500;
+        position: relative;
 
+        text-align: center;
+        font-family: Hopipolla;
+        font-size: 5rem;
+        -webkit-transform: rotate(
+    0deg);
+        margin: 8rem 0 0 0;
+        visibility: hidden;
+ 
+      }
     
 }

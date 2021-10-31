@@ -40,7 +40,7 @@ function Rsvp() {
   return (
     
   <div className="rsvp">
-      <h1>Katia & Carol</h1>
+      {/* <h1 className="kc-rsvp">Katia & Carol</h1> */}
       <div className="rsvp-span">We look forward to celebrate our big day with you. <br></br> Please confirm your attendance.</div>
       <Form className="rsvp-form" id='form-id' onSubmit={handleSubmit}>
         <Form.Group size="lg" className="form-gr-rsvp">

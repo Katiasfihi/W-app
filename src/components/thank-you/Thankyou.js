@@ -11,7 +11,7 @@ function Thankyou() {
   return (
     
     <div className="Login">
-      <h1>Katia & Carol</h1>
+      <h1 className="kc-thank">Katia & Carol</h1>
         <h2 className="pop-message">{mess}</h2>
     </div>
   );
