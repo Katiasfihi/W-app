@@ -15,22 +15,22 @@ function Information() {
   return (
     <Translation>{t=>
 
-<div>
-    <div className='schedule-wrapper1' >
+<div id="information">
+    <div className='schedule-wrapper1'>
 
         <img src={logo1} alt="Logo" className='img-fun' />
 
         <div className='text-wrappers1'>
-            <h2>Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </h2>
-            <h3>Ipsum lorem</h3>
+            <h2>{t('text_information1')}</h2>
+            <h3>{t('text_information2')}</h3>
 
         </div>
     </div>
 
 <div className='schedule-wrapper2' >
     <div className='text-wrappers2'>
-        <h2>Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </h2>
-        <h3>Ipsum lorem</h3>
+        <h2>{t('text_information3')}</h2>
+        <h3>{t('text_information4')}</h3>
 
     </div>
     <img src={logo3} alt="Logo" className='img3' />

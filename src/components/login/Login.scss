@@ -41,7 +41,7 @@
       padding: 1.5rem;
       display: inline-grid;
 
-      margin: 82px 0 0 3rem;
+      margin: 1rem 0 0 3rem;
       width: 60%;
     }
 
@@ -56,6 +56,7 @@
     }
     .password-specs {
       margin: 14px 0px 0px 0;
+      padding: 2px 4px 4px 4px;
     }
 
     .login-btn {
@@ -66,7 +67,7 @@
       font-weight: 500;
       letter-spacing: .08em;
       line-height: 1.2em;
-      margin: 4rem 4rem 3rem 5.5rem;
+      margin: 1rem 4rem 3rem 5.5rem;
       font-family: Big Caslon;
       padding: 1rem;
       width: 50%;
@@ -76,10 +77,12 @@
     font-weight: 500;
     text-align: center;
     font-size: 5rem;
-    margin: 4rem 0 58px 2px;
+    margin: 3rem 0 58px 2px;
     font-family: Hopipolla;
     padding: -1rem 3rem -2rem 1rem;
     border: 2px solid red;
+    padding: 2rem;
+
     }
 
 

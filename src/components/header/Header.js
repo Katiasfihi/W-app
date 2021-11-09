@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import './Header.scss'
 import { Translation } from "react-i18next";
 
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -25,7 +26,12 @@ function Header() {
   window.addEventListener('scroll', changeNavbarColor);  
   
   })
-  
+
+  const history = useHistory();
+
+  function validateRsvp() {
+    history.push('/rsvp')
+  }
  
   
   return (
@@ -34,12 +40,14 @@ function Header() {
         <div>
 
           {/* <header classname="kc-header"  className={colorChange ? 'colorchange' : 'color'}  >  */}
-          <h1 className="katia">Katia & Carol</h1>
+           {/* <h1  className={`katia ${colorChange ? 'colorchange' : 'katia'}`}>Katia & Carol</h1> */}
+          <h1  className="katia">Katia & Carol</h1>
+           
           <ul className='nav-wrapper'>    
               <li className='nav-item'><a href="#schedule">{t('Schedule')}</a></li> 
 
-              <li className='nav-item'><a href="#info">{t('Information')}</a></li>
-              <li className='nav-item'><a href="#rsvp">{t('RSVP')}</a></li>
+              <li className='nav-item'><a href="#information">{t('Information')}</a></li>
+              <li className='nav-item'><a href="#rsvp" onClick={()=>  validateRsvp()}>{t('RSVP')}</a></li>
           </ul>
         </div>
     }</Translation>

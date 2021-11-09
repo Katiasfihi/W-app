@@ -6,7 +6,9 @@
   line-height: 1.4em;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* Portrait and Landscape */
 @media only screen and (max-width: 700px)  { 
@@ -28,13 +30,13 @@
     .selectBox{
       border: 1px solid #f7efee;
       border-radius: 7px;
-      float: right;
-      margin: 6rem 0rem 0 17rem;
+      /* float: right; */
+      margin: 2rem 0rem 0 17rem;
       font-family: Big Caslon;
       letter-spacing: .02em;
       padding: 0.5rem;
       font-size: 1rem;
-      position: fixed;
+      /* position: fixed; */
       background: white;
 
     }

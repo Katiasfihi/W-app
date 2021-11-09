@@ -88,7 +88,7 @@ export default class App extends React.Component {
             English
           </option>
           <option className="optionsMenu" value="fr">
-            Francais
+            Français
           </option>
           <option className="optionsMenu" value="ro">
             Română

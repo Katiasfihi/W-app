@@ -19,16 +19,16 @@
 
   }
 
-  .nav-wrapper {
-    padding: 0rem 0rem 0 3rem; 
-    text-align: center;
-    font-size: 1.45rem;
-    cursor: pointer;
-    line-height: 3rem;
-    font-style: italic;
-    margin: 6rem 5rem 2rem 1rem;
-    display: grid;
-  }
+  // .nav-wrapper {
+  //   padding: 0rem 0rem 0 3rem; 
+  //   text-align: center;
+  //   font-size: 1.45rem;
+  //   cursor: pointer;
+  //   line-height: 3rem;
+  //   font-style: italic;
+  //   margin: 6rem 5rem 2rem 1rem;
+  //   display: grid;
+  // }
 
   .text-wrapper-about {
     border: 2px solid blue;
@@ -77,7 +77,7 @@
     .img1 {
       width: 250px;
       object-fit: cover;
-      margin: 15rem 0rem 0rem 3rem;
+      margin: 4rem 0rem 0rem 3rem;
     }
   
     .text-wrapper-about {
@@ -88,16 +88,16 @@
       padding: 0;
   
     }
-.nav-wrapper{
-  padding: 0rem 0rem 0 3rem;
-  text-align: center;
-  font-size: 1.45rem;
-  cursor: pointer;
-  line-height: 3rem;
-  font-style: italic;
-  margin: 8rem 5rem 2rem 1rem;
-  display: grid;
-}  
+// .nav-wrapper{
+//   padding: 0rem 0rem 0 3rem;
+//   text-align: center;
+//   font-size: 1.45rem;
+//   cursor: pointer;
+//   line-height: 3rem;
+//   font-style: italic;
+//   margin: 10rem 1rem 2rem 1rem;
+//   display: grid;
+// }  
     // .title-wrapper {
     //   border: 2px solid red;
     //   text-align: left;
@@ -133,6 +133,20 @@
     cursor: pointer;
     font-family: Big Caslon;
   }
+
+  .introduction {
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: .02em;
+    line-height: 1.4em;
+    font-family: Big Caslon;
+}
+
+.date {
+  border: 2px solid red;
+  font-style: normal;
+  font-weight: 500;
+}
 
   }
 

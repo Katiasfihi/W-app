@@ -24,7 +24,7 @@ function About() {
 
             <div className='text-wrapper-about'>
               <div className="introduction">{t('About')}</div>
-              <h3>{t('Date')}</h3>
+              <h3 className="date">{t('Date')}</h3>
               <button className='btn-rsvp' onClick={()=>  validateRsvp()}>RSVP</button>
             </div>
       </div>
