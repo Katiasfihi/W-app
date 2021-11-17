@@ -11,16 +11,13 @@ function Footer() {
     history.push('/rsvp')
   }
   return (
-<div>
-    <div className='footer-wrapper'>
-        <text>Ipsum lorem</text>
-    </div>  
-
-    <div className='button-wrapper'>
-            <button className='btn2'onClick={()=>  validateRsvp()}>RSVP</button>
+    <div className="footer">
+      <text className="footer__wrapper">Ipsum lorem</text>
+      <button className="footer__btn" onClick={() => validateRsvp()}>
+        RSVP
+      </button>
     </div>
-</div>
-);
+  );
 }
 
 export default Footer;

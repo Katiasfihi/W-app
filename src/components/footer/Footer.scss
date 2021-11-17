@@ -1,20 +1,16 @@
+.footer {
+display: flex;
+justify-content: center;
+flex-direction: column;
 
-.footer-wrapper {
-    border: 2px solid green;
-    flex-basis: 40%;
-    text-align: center;
-    margin: 10rem 0 3rem 0;
+  &__wrapper {
+  border: 2px solid green;
+  flex-basis: 40%;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
   }
-//   .text-wrapper {
-//     border: 2px solid blue;
-//     float: right;
-//     padding: 3rem;
-//     margin: 18rem 20rem 0 0;
-//   }
 
-  .btn2 {
-    margin: auto;
-    display: block;
+  &__btn {
     padding: 1rem 4rem;
     background-color: #db423d;
     color: #fff;
@@ -22,46 +18,111 @@
     font-weight: 500;
     letter-spacing: .08em;
     line-height: 1.2em;
-    text-align: center;
+    cursor: pointer;
     font-family: Big Caslon;
+    margin-bottom: 5rem;
   }
-
-@media only screen and (max-width: 700px)  { 
-
-.footer-wrapper {
-    border: 2px solid green;
-    flex-basis: 40%;
-    text-align: center;
-  }
-
-  .button-wrapper {
-    border: 2px solid blue;
-    float: right;
-    margin: 2rem 0rem 5rem 0.9rem;
-    text-align: center;
-
-  }
-
-  .btn2 {
-    margin: 0 6.5rem;
-    padding: 1rem 4rem;
-    background-color: #db423d;
-    color: #fff;
-    border: none;
-    font-weight: 500;
-    letter-spacing: .08em;
-    line-height: 1.2em;
-    font-family: Big Caslon;
-  }
-
-//   .beach-pic {
-//     width: 376px;
-//     object-fit: cover;
-//     margin: 3rem 0 0 0;
-//     height: 500px;  
-//      padding: 0 0 0rem 0rem;
-// }
+    
+  
 
 }
+
+
+
+
+
+// .footer-wrapper {
+//   border: 2px solid green;
+//   flex-basis: 40%;
+//   text-align: center;
+//   margin: 2rem 0 2rem 0;
+// }
+
+// .button-wrapper {
+//   border: 2px solid blue;
+//   float: right;
+//   margin: 2rem 0rem 5rem 0.9rem;
+//   text-align: center;
+
+// }
+
+.button2 {
+  padding: 1rem 4rem;
+  background-color: #db423d;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  letter-spacing: .08em;
+  line-height: 1.2em;
+  cursor: pointer;
+  font-family: Big Caslon;
+  margin-bottom: 5rem;
+}
+
+
+// .footer-wrapper {
+//     border: 2px solid green;
+//     flex-basis: 40%;
+//     text-align: center;
+//     margin: 10rem 0 3rem 0;
+//   }
+// //   .text-wrapper {
+// //     border: 2px solid blue;
+// //     float: right;
+// //     padding: 3rem;
+// //     margin: 18rem 20rem 0 0;
+// //   }
+
+//   .btn2 {
+//     margin: auto;
+//     display: block;
+//     padding: 1rem 4rem;
+//     background-color: #db423d;
+//     color: #fff;
+//     border: none;
+//     font-weight: 500;
+//     letter-spacing: .08em;
+//     line-height: 1.2em;
+//     text-align: center;
+//     font-family: Big Caslon;
+//   }
+
+// @media only screen and (max-width: 700px)  { 
+
+// .footer-wrapper {
+//     border: 2px solid green;
+//     flex-basis: 40%;
+//     text-align: center;
+//   }
+
+//   .button-wrapper {
+//     border: 2px solid blue;
+//     float: right;
+//     margin: 2rem 0rem 5rem 0.9rem;
+//     text-align: center;
+
+//   }
+
+//   .btn2 {
+//     margin: 0 6.5rem;
+//     padding: 1rem 4rem;
+//     background-color: #db423d;
+//     color: #fff;
+//     border: none;
+//     font-weight: 500;
+//     letter-spacing: .08em;
+//     line-height: 1.2em;
+//     font-family: Big Caslon;
+//   }
+
+// //   .beach-pic {
+// //     width: 376px;
+// //     object-fit: cover;
+// //     margin: 3rem 0 0 0;
+// //     height: 500px;  
+// //      padding: 0 0 0rem 0rem;
+// // }
+
+// }
 
 

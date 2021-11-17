@@ -10,7 +10,7 @@ import Thankyou from './components/thank-you/Thankyou';
 import { Translation, useTranslation } from "react-i18next";
 import ChangeLang from "./components/changeLang/ChangLang";
 
-import './App.css';
+import './App.scss';
 
 
 import i18n from "i18next";
@@ -74,28 +74,26 @@ export default class App extends React.Component {
     console.log('lang', this.langChange)
 
     return (
-      <div>
+      <>
 
-        {/* <h1  className={`kc-login ${this.state.colorChange ? 'colorchange' : 'kc-login'}`}>Katia & Carol</h1> */}
-        <select
-
-          className={`selectBox ${this.state.translateGone ? 'noselectBox' : 'selectBox'}`}
-          onChange={this.langChange}
-          name="lang"
-          value={lang}
-        >
-          <option className="optionsMenu" value="en">
-            English
-          </option>
-          <option className="optionsMenu" value="fr">
-            Français
-          </option>
-          <option className="optionsMenu" value="ro">
-            Română
-          </option>
-        </select>
-        {/* <p className="textToChange">{t("Hi")}</p>
-        <p className="textToChange">{t("Actions")}</p> */}
+        <div className='translation-wrapper'>
+          <select
+            className={`selectBox ${this.state.translateGone ? 'noselectBox' : 'selectBox'}`}
+            onChange={this.langChange}
+            name="lang"
+            value={lang}
+          >
+            <option className="optionsMenu" value="en">
+              English
+            </option>
+            <option className="optionsMenu" value="fr">
+              Français
+            </option>
+            <option className="optionsMenu" value="ro">
+              Română
+            </option>
+          </select>
+        </div>
         <Router>
           <Switch>
 
@@ -117,7 +115,7 @@ export default class App extends React.Component {
             <Route component={Thankyou} path="/thankyou" /> 
           </Switch>
       </Router>
-      </div>
+      </>
     );
   }
 }

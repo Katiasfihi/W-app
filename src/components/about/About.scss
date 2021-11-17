@@ -1,152 +1,170 @@
-.img1 {
-    width: 450px;
-    object-fit: cover;
-    margin: 9rem 20rem 0rem 13rem;
-    float: left;
-    filter: brightness(100%) 
-}
 
 
-  
-  .about-wrapper {
+  .about {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    border: 2px solid black;
-    margin:  10rem 0 0rem 0;
-    border: 2px solid purple;
-
-
-  }
-
-  // .nav-wrapper {
-  //   padding: 0rem 0rem 0 3rem; 
-  //   text-align: center;
-  //   font-size: 1.45rem;
-  //   cursor: pointer;
-  //   line-height: 3rem;
-  //   font-style: italic;
-  //   margin: 6rem 5rem 2rem 1rem;
-  //   display: grid;
-  // }
-
-  .text-wrapper-about {
-    border: 2px solid blue;
-    float: right;
-    padding: 3rem;
-    margin: 18rem 16rem 0 0;
-  }
-
-  .introduction {
-  text-align: center;
-  font-size: 24px;
-  letter-spacing: .02em;
-  line-height: 1.4em;
-  font-family: Big Caslon;
-  }
-
-  h3 {
-    text-align: center;
-    font-style: italic;
-  }
-
-  .btn-rsvp {
-    // margin: 0;
-    padding: 1rem 4rem;
-    background-color: #db423d;
-    color: #fff;
-    border: none;
-    font-weight: 500;
-    letter-spacing: .08em;
-    line-height: 1.2em;
-    margin: 4rem 5rem 0 9.5rem;
-    font-family: Big Caslon;
-
-  }
-
-  /* Portrait and Landscape */
-@media only screen and (max-width: 700px)  { 
-  .about-wrapper {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid black;
-    margin: 8rem 1rem 0rem 1rem;
+    justify-content: center;
     flex-wrap: wrap;
-  
-  }
-    .img1 {
+
+    &__img {
       width: 250px;
       object-fit: cover;
-      margin: 4rem 0rem 0rem 3rem;
     }
   
-    .text-wrapper-about {
-      border: 2px solid blue;
+    &__text-wrapper-about {
       float: right;
       margin: 2rem 0rem 0 0rem;
       text-align: center;
       padding: 0;
   
     }
-// .nav-wrapper{
-//   padding: 0rem 0rem 0 3rem;
-//   text-align: center;
-//   font-size: 1.45rem;
-//   cursor: pointer;
-//   line-height: 3rem;
-//   font-style: italic;
-//   margin: 10rem 1rem 2rem 1rem;
-//   display: grid;
-// }  
-    // .title-wrapper {
-    //   border: 2px solid red;
-    //   text-align: left;
-    //   flex-basis: 60%;
-  
-    // }
-    // .info-wrapper {
-    //   border: 2px solid green;
-    //   flex-basis: 40%;
-    //   text-align: right;
-    // }
-  
-    // .test {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   border: 2px solid black;
-    //   margin: 2rem 0 10rem 0;
-    //   padding: 5rem;
-    //   /* contain: layout; */
-    //   flex-wrap: wrap;
-    // }
 
+    &__introduction {
+      text-align: center;
+      font-size: 21px;
+      letter-spacing: .02em;
+      line-height: 1.4em;
+      font-family: Big Caslon;
+      padding: 2rem;
+    }
+
+    &__date {
+      font-style: normal;
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 3rem;
+    }
 
     .btn-rsvp {
-    margin: 3rem 0 0 1rem;
-    padding: 1rem 4rem;
-    background-color: #db423d;
-    color: #fff;
-    border: none;
-    font-weight: 500;
-    letter-spacing: .08em;
-    line-height: 1.2em;
-    cursor: pointer;
-    font-family: Big Caslon;
+      padding: 1rem 4rem;
+      background-color: #db423d;
+      color: #fff;
+      border: none;
+      font-weight: 500;
+      letter-spacing: .08em;
+      line-height: 1.2em;
+      cursor: pointer;
+      font-family: Big Caslon;
+      margin-bottom: 5rem;
+    }      
   }
+  // .img1 {
+  //   width: 250px;
+  //   object-fit: cover;
+  // }
+  
+  // .text-wrapper-about {
+  //   float: right;
+  //   margin: 2rem 0rem 0 0rem;
+  //   text-align: center;
+  //   padding: 0;
 
-  .introduction {
-    text-align: center;
-    font-size: 21px;
-    letter-spacing: .02em;
-    line-height: 1.4em;
-    font-family: Big Caslon;
-}
+  // }
 
-.date {
-  border: 2px solid red;
-  font-style: normal;
-  font-weight: 500;
-}
+//   .btn-rsvp {
+//     padding: 1rem 4rem;
+//     background-color: #db423d;
+//     color: #fff;
+//     border: none;
+//     font-weight: 500;
+//     letter-spacing: .08em;
+//     line-height: 1.2em;
+//     cursor: pointer;
+//     font-family: Big Caslon;
+// }
 
-  }
+// .introduction {
+//   text-align: center;
+//   font-size: 21px;
+//   letter-spacing: .02em;
+//   line-height: 1.4em;
+//   font-family: Big Caslon;
+//   padding: 2rem;
+// }
 
+// .date {
+//   font-style: normal;
+//   font-weight: 500;
+//   font-style: italic;
+// }
+
+// .about-wrapper {
+//   display: flex;
+//   justify-content: space-between;
+  // border: 2px solid black;
+//   margin: 8rem 1rem 0rem 1rem;
+//   flex-wrap: wrap;
+
+// }
+//   .img1 {
+//     width: 250px;
+//     object-fit: cover;
+//     margin: 4rem 0rem 0rem 3rem;
+//   }
+
+//   .text-wrapper-about {
+    // border: 2px solid blue;
+//     float: right;
+//     margin: 2rem 0rem 0 0rem;
+//     text-align: center;
+//     padding: 0;
+
+//   }
+// // .nav-wrapper{
+// //   padding: 0rem 0rem 0 3rem;
+// //   text-align: center;
+// //   font-size: 1.45rem;
+// //   cursor: pointer;
+// //   line-height: 3rem;
+// //   font-style: italic;
+// //   margin: 10rem 1rem 2rem 1rem;
+// //   display: grid;
+// // }  
+//   // .title-wrapper {
+  //   border: 2px solid red;
+//   //   text-align: left;
+//   //   flex-basis: 60%;
+
+//   // }
+//   // .info-wrapper {
+  //   border: 2px solid green;
+//   //   flex-basis: 40%;
+//   //   text-align: right;
+//   // }
+
+//   // .test {
+//   //   display: flex;
+//   //   justify-content: space-between;
+  //   border: 2px solid black;
+//   //   margin: 2rem 0 10rem 0;
+//   //   padding: 5rem;
+//   //   /* contain: layout; */
+//   //   flex-wrap: wrap;
+//   // }
+
+
+//   .btn-rsvp {
+//   margin: 3rem 0 0 1rem;
+//   padding: 1rem 4rem;
+//   background-color: #db423d;
+//   color: #fff;
+  // border: none;
+//   font-weight: 500;
+//   letter-spacing: .08em;
+//   line-height: 1.2em;
+//   cursor: pointer;
+//   font-family: Big Caslon;
+// }
+
+// .introduction {
+//   text-align: center;
+//   font-size: 21px;
+//   letter-spacing: .02em;
+//   line-height: 1.4em;
+//   font-family: Big Caslon;
+// }
+
+// .date {
+// border: 2px solid red;
+// font-style: normal;
+// font-weight: 500;
+// }

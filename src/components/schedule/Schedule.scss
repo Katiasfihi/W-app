@@ -1,228 +1,87 @@
-  /* Portrait and Landscape */
-  @media only screen and (max-width: 700px)  { 
-    .moutain-pic {
-      width: 348px;
+.schedule {
+
+  &__moutain-pic-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__moutain-pic {
+    width: 95%;
     object-fit: cover;
-    margin: 92px 0px 0px 14px;
     height: 500px;
-    padding: 0rem;
-  
-    }
+  }
 
-  
-
-    .component-wrapper {
-    //   border: 2px solid black;
-    //   display: inline-block;
-    //   justify-content: space-between;
-    //   border: 2px solid black;
-    //   margin: 37rem 0px 0rem -450px;
-    //   padding: 0rem;
-    margin: 40rem 1rem 0 1rem;
-
-  
-    }
-
-      .title-wrapper {
-        border: 2px solid red;
-        // margin: 7rem -5rem 5rem -6.5rem;
-        font-weight: 500;
-        letter-spacing: .05em;
-        text-align: left;
-    margin: 3rem 0 3rem 0;
-     font-family: Big Caslon;
+  &__title-wrapper {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin: 4rem 0 0rem 0;
+    font-family: Big Caslon;
     font-style: italic;
     font-size: 14px;
+    padding: 2rem;
 
   }
-  .info-wrapper {
-    border: 2px solid green;
-    margin: 2rem 0 4rem 0;
+  &__info-wrapper {
     text-align: left;
     font-family: Big Caslon;
     line-height: 1.4em;
     font-size: 20px;
-
+    padding: 0rem 2rem 4rem;
   }
 
-  // text {
-  //   font-weight: 500;
-  //   letter-spacing: .02em;
-  // }
-  // .location {
-  //   border: 2px solid blue;
-  //   font-family: Big Caslon;
-  //   letter-spacing: .02em;
-  //   display: flex;
-  //   justify-content: space-evenly;
-  //   margin: 7rem 0px 7rem 0;
-  //   text-align: center;
-  // }
-
-  .location {
-    border: 2px solid purple;
-  
+  &__location {
     text-align: center;
     font-family: Big Caslon;
     font-weight: 500;
     font-size: 1.1rem;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     line-height: 1.4em;
   }
 
-  .villefranche {
-    border: 2px solid red;
+  &__villefranche {
     margin: 0 0 4rem 0;
-    // position: relative;
-
   }
-  .venue {
+  &__venue {
     font-size: 1.3rem;
 
     margin: 0 0 1rem 0;
     font-weight: bold;
   }
-    .cap {
-      border: 2px solid black;
-      margin: 0 0 4rem 0;
-      // position: relative;
-  
-    }
-  
-    .nice {
-      border: 2px solid green;
-      margin: 0 0 4rem 0;
-  // position: relative;
-    }
-  
-    // .address{
-    //   border: 2px solid green;
-    //   margin: 7rem 0px 7rem 13px;
-    //   font-size: 1.2rem;
-    //   font-style: italic;
-    //   position: absolute;
-  
-  
-    // }
-  
-    .bloc-wrapper {
-      border: 2px solid blue;
-      // margin: 0 0 0rem 31rem;
-      // padding: 0 0 16rem 0;
-    }
+  &__cap {
+    margin: 0 0 4rem 0;
+  }
 
- 
+  &__nice {
+    margin: 0 0 4rem 0;
+  }
+
 }
 
+// .info-wrapper {
+//   border: 2px solid green;
 
-
-
-
-// .resto-pic {
-//       /* height: 200px; */
-//       width: 450px;
-//       object-fit: cover;
-//       margin: 9rem 5rem 0rem 20rem;
-
-  
-    
 // }
-.info-wrapper {
-  border: 2px solid green;
-  // flex-basis: 40%;
-  // text-align: left;
-  // font-size: 24px;
-  // letter-spacing: .02em;
-  // line-height: 1.4em;
 
-}
+// .component-wrapper {
+//   border: 2px solid black;
 
-.component-wrapper {
-  border: 2px solid black;
-  // display: flex;
-  // flex-flow: row nowrap;
-  // justify-content: space-between;
-  // border: 2px solid black;
-  // margin: 5rem 0 0rem 0;
-  // padding: 10rem;
-}
+// }
 
+//   .villefranche {
+//     border: 2px solid red;
 
-// .moutain-pic {
-//       width: 1400px;
-//       object-fit: cover;
-//       margin: 0 0 0 5.5rem;
-//       height: 500px;
-//       padding: 0 7rem;
-//       filter:   brightness(100%)
-
-
-    
 //   }
-  
-  .title-wrapper {
-    // font-family: Big Caslon;
-    // letter-spacing: .02em;
-    // font-size: 1.2rem;
-    // font-weight: 100;
-    // font-style: italic;
-    // margin: 0 0px 0 71px
-  }
 
-  // .location {
-  //   border: 2px solid blue;
-  //   font-family: Big Caslon;
-  //   letter-spacing: .02em;
-  //   display: flex;
-  //   justify-content: space-evenly;
-  //   margin: 7rem 0px 7rem 0;
-  //   text-align: center;
-  // }
+//   .cap {
+//     border: 2px solid black;
 
-  .villefranche {
-    border: 2px solid red;
-    // position: relative;
+//   }
 
-  }
-.city {
-  // font-size: 1.3rem;
-  // font-style: italic;
-  // font-weight: bold;
-  // width: 194px;
-}
-  .cap {
-    border: 2px solid black;
-    // position: relative;
+//   .nice {
+//     border: 2px solid green;
+//   }
 
-  }
-
-  .nice {
-    border: 2px solid green;
-// position: relative;
-  }
-
-  // .address{
-  //   border: 2px solid green;
-  //   margin: 7rem 0px 7rem 13px;
-  //   font-size: 1.2rem;
-  //   font-style: italic;
-  //   position: absolute;
-
-
-  // }
-
-  .bloc-wrapper {
-    border: 2px solid blue;
-    // margin: 0 0 0rem 31rem;
-    // padding: 0 0 16rem 0;
-  }
-
-    // h2 {
-  //   font-family: Big Caslon;
-  //   letter-spacing: .02em;
-  //   font-size: 3rem;
-  //   font-weight: 100;
-  // text-align: center;
-
-  // }
-
+//   .bloc-wrapper {
+//     border: 2px solid blue;
+//   }
