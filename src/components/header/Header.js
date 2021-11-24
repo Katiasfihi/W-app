@@ -16,14 +16,14 @@ import logos from "../../photos/icons8-down-arrow-50.png";
 function Header() {
 
   // const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () =>{
-     if(window.scrollY >= 80){
-      //  setColorchange(true);
-     }
-     else{
-      //  setColorchange(false);
-     }
-  };
+  // const changeNavbarColor = () =>{
+  //    if(window.scrollY >= 80){
+  //     //  setColorchange(true);
+  //    }
+  //    else{
+  //     //  setColorchange(false);
+  //    }
+  // };
 
   // useEffect(() => {
   // changeNavbarColor()
@@ -31,11 +31,11 @@ function Header() {
   
   // })
 
-  const history = useHistory();
+  // const history = useHistory();
 
-  function validateRsvp() {
-    history.push('/rsvp')
-  }
+  // function validateRsvp() {
+  //   history.push('/rsvp')
+  // }
  
   
   return (
