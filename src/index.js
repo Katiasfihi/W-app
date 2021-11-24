@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import i18n from './components/langConfig/LangConfig'
+// import i18n from './components/langConfig/LangConfig'
 import { Translation } from "react-i18next";
-import ChangeLang from "./components/changeLang/ChangLang";
+// import ChangeLang from "./components/changeLang/ChangLang";
 
 
 

@@ -6,9 +6,10 @@
   }
 
   &__moutain-pic {
-    width: 95%;
+    width: 100%;
     object-fit: cover;
     height: 500px;
+    // margin-top: 2rem;
   }
 
   &__title-wrapper {
@@ -26,8 +27,8 @@
     text-align: left;
     font-family: Big Caslon;
     line-height: 1.4em;
-    font-size: 20px;
-    padding: 0rem 2rem 4rem;
+    font-size: 22px;
+    padding: 2rem 2rem 4rem;
   }
 
   &__location {

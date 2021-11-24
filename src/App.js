@@ -7,8 +7,8 @@ import Pages from './components/pages/Pages'
 import Rsvp from './components/rsvp/Rsvp';
 import Thankyou from './components/thank-you/Thankyou';
 
-import { Translation, useTranslation } from "react-i18next";
-import ChangeLang from "./components/changeLang/ChangLang";
+// import { Translation, useTranslation } from "react-i18next";
+// import ChangeLang from "./components/changeLang/ChangLang";
 
 import './App.scss';
 

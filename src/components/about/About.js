@@ -14,11 +14,15 @@ function About() {
   return (
     <Translation>
       {(t) => (
-        <div className="about">
+        <div id="about" className="about">
+          <div className="about__title">About</div>
+          <div className="about__introduction">{t("About")}</div>
+          <div className="wrapper">
           <img src={logo} alt="Logo" className="about__img" />
+          </div>
           <div className="about__text-wrapper-about">
-            <div className="about__introduction">{t("About")}</div>
-            <h3 className="about__date">{t("Date")}</h3>
+            <div className="about__introduction2">{t("About2")}</div>
+            {/* <h3 className="about__date">{t("Date")}</h3> */}
             <button className="btn-rsvp" onClick={() => validateRsvp()}>
               RSVP
             </button>

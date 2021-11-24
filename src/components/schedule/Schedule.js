@@ -2,6 +2,7 @@ import React from "react";
 import "./Schedule.scss";
 
 import logo from "../../photos/20210530_174347MBB.jpg";
+import logo1 from "../../photos/image2BB.jpg";
 
 import { Translation } from "react-i18next";
 
@@ -11,7 +12,7 @@ const Schedule = () => {
       {(t) => (
         <div className="schedule">
           <div className="schedule__moutain-pic-wrapper">
-            <img src={logo} alt="Logo" className="schedule__moutain-pic"></img>
+            <img src={logo1} alt="Logo" className="schedule__moutain-pic"></img>
           </div>
 
           <h3 className="schedule__title-wrapper" id="schedule">
@@ -21,6 +22,9 @@ const Schedule = () => {
             <div className="schedule__info-wrapper">
               <text className="schedule__text-schedule">
                 {t("text_schedule")}
+                <br></br>
+                <br></br>
+                {t("text_schedule1")}
                 <br></br>
                 <br></br>
                 {t("text_schedule2")}

@@ -2,7 +2,7 @@
   font-weight: 500;
   text-align: center;
   font-size: 5rem;
-  margin: 3rem 0 0 5px;
+  margin: 3rem 0 0px 5px;
   font-family: Hopipolla;
   padding: 2rem;
   z-index: 999;
@@ -47,7 +47,45 @@
   }
 }
 
+.married {
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: .04em;
+  line-height: 1.4em;
+  font-family: Big Caslon;
+  padding: 2rem;
+  font-style: italic;
+  margin-bottom: 16rem;
+}
 
+.menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+
+.menu {
+  width: 11%;
+}
+
+.scroll {
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: .04em;
+  line-height: 1.4em;
+  font-family: Big Caslon;
+  padding: 2rem;
+}
+
+.arrow-container {
+display: flex;
+justify-content: center;
+}
+
+.arrow {
+margin-bottom: 7rem;
+}
     // // .nav-item  a:hover {
     // //   font-size: 2.1rem;
     // // }
