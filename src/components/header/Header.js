@@ -4,7 +4,7 @@ import React from 'react'
 import './Header.scss'
 import { Translation } from "react-i18next";
 
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import logo from "../../photos/icons8-menu-50.png";
 import logos from "../../photos/icons8-down-arrow-50.png";
 
