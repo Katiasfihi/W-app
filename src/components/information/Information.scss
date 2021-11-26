@@ -4,10 +4,21 @@
     flex-direction: column;
 
     &__section {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        // display: flex;
+        // justify-content: center;
+        // flex-wrap: wrap;
     }
+
+    &__title {
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        margin: 4rem 0 0rem 0;
+        font-family: Big Caslon;
+        font-style: italic;
+        font-size: 14px;
+        padding: 2rem;
+        }
+    
 
     &__section-img {
         width: 95%;
@@ -16,6 +27,8 @@
     }
 
     &__section-text-wrapper{
+        border: 2px solid red;
+        
         p {
             text-align: center;
             font-size: 21px;
@@ -23,10 +36,24 @@
             line-height: 1.4em;
             font-family: Big Caslon;
             padding: 2rem;
+            border: 2px solid blue;
         }
     }
-}
+   
 
+    
+}
+.cities {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin: 3rem 0 3rem 0;
+    }
+
+.selected {
+    border-bottom: 2px solid #db423d;
+    padding-bottom: 10px;
+}
 
 // .schedule-wrapper1 {
 // //   display: flex;

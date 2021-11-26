@@ -7,7 +7,7 @@ import { Translation } from "react-i18next";
 // import { useHistory } from 'react-router-dom';
 import logo from "../../photos/icons8-menu-50.png";
 import logos from "../../photos/icons8-down-arrow-50.png";
-
+import TypewriterComponent from 'typewriter-effect';
 
 // import logo1 from "../../photos/20210918_154315BB.jpg";
 
@@ -39,21 +39,35 @@ function Header() {
  
   
   return (
-    <Translation>{t=>
-
+    <Translation>
+      {(t) => (
         <div>
           <div className="menu-wrapper">
-            <img src={logo} alt="Logo" className="menu"/>
+            <img src={logo} alt="Logo" className="menu" />
           </div>
-          <h1  className="katia">Katia & Carol</h1>
-          <div className="married">are getting married.</div>
+          <h1 className="katia">Katia & Carol</h1>
+          <div className="married">
+            <TypewriterComponent
+              onInit={(typeWriter) => {
+                typeWriter
+                  .typeString("are getting married.")
+                  // .pause(2000)
+                  // .deleteAll()
+                  // .typeString('we cannnot wait !!!')
+                  .start();
+              }}
+            />
+          </div>
           <div>
-          {/* <img src={logo1} alt="Logo" className="about__img" /> */}
+            {/* <img src={logo1} alt="Logo" className="about__img" /> */}
           </div>
 
           <div className="scroll">SCROLL FOR MORE</div>
-          <div className="arrow-container"> <a href="#about">
-           <img src={logos} alt="Logo" className="arrow"/></a>
+          <div className="arrow-container">
+            {" "}
+            <a href="#about">
+              <img src={logos} alt="Logo" className="arrow" />
+            </a>
           </div>
 
           {/* <ul className='nav-wrapper'>    
@@ -62,8 +76,8 @@ function Header() {
               <li className='nav-item'><a href="#rsvp" onClick={()=>  validateRsvp()}>{t('RSVP')}</a></li>
           </ul> */}
         </div>
-    }</Translation>
-
+      )}
+    </Translation>
   );
 }
 

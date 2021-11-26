@@ -21,3 +21,9 @@ code {
   font-family: 'Hopipolla';
   src: local('Hopipolla'), url(./fonts/fonts/Hopipolla.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Typewriter';
+  src: local('Hopipolla'), url(./fonts/fonts/Typewriter-Thin.ttf) format('truetype');
+}
+

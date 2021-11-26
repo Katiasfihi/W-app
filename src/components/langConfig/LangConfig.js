@@ -16,15 +16,37 @@ i18n.use(initReactI18next).init({
         About2: "The event will take place the 2nd and 3rd of July 2022 in Cote d’Azur, South of France.",
         Date: "2nd of July 2022",
         text_schedule: "Two days, three venues!",
-        text_schedule1: "We wanted to enjoy your company as much as possible, so we tried to extend the party as much as possible. The programme includes a wedding ceremony in Villefranche’s 16th century Citadel, our wedding dinner and party at Atrego, and finally a wedding brunch the day after on the rooftop of AC Marriott at Farago on the roof.",
+        text_schedule1: "We would like to enjoy your company until the last minute, so we are extending the party as much as possible. The programme includes a wedding ceremony in Villefranche’s 16th century Citadel, a wedding dinner and party at Atrego, and finally a wedding brunch the day after on the rooftop of AC Marriott at Farago on the roof.",
         text_schedule2: "Feel free to click on the venues to be redirected to their website.",
         meeting1: "Meeting at 4 o'clock",
         meeting2: "Meeting at 7 o'clock",
         meeting3: "Meeting at 12:30pm the day after",
-        text_information1: "Villefranche-sur-Mer is a French commune, bordering Nice, located in the Alpes-Maritimes department in the Provence-Alpes-Côte d'Azur region. Its inhabitants are called the Villefranchois, as in most of the towns bearing the name of Villefranche, and read Vilafranquié in Nice.",
-        text_information2: "Villefranche-sur-Mer is a French commune, bordering Nice, located in the Alpes-Maritimes department in the Provence-Alpes-Côte d'Azur region. Its inhabitants are called the Villefranchois, as in most of the towns bearing the name of Villefranche, and read Vilafranquié in Nice.",
+        Destination:"The Destination",
+        Destination0:"Also known as the French Riviera, the Côte d'Azur translates to Coast of Blue taking its name from the deep azure-blue color of the Mediterranean Sea.",
+        Destination1:"After spending two summers and more than 7 weeks creating memories in this wonderful destination, getting married there was natural. ",
+        Destination2:"Basking under a cabana in Cannes, setting sail from the port of Villefranche, partying in Saint Tropez or going on a walk on the boulevards of Nice are memories spent together that we will not forget.",
+        Destination3:"We’re excited to spend a weekend with you in a place that is so special to us.",
+
+
+
+        text_information1: "The French Riviera is stunning, and fills with incredible places to stay in. All the venues are next to each other, so staying in Nice, Villefranche or Cap d’ail would not make a difference. However, we recommend you to either stay in Nice or Villefranche as they are both close to everything, very diverse, energetic and beautiful.",
+        text_information_nice: "Nice is an incredible and vibrant city with plenty of things to do and also close to everything. Cons… (yes there is one), the beach has rocks and not sand. ",
+        text_information_nice0: "https://www.lonelyplanet.com/france/nice",
+        text_information_nice1:"The nicest areas in Nice are: Le Quartier Mont Boron, le Quartier Libération, le Quartier Cimiez, le Quartier de Valrose, le quartier du Port, le Vieux-Nice, le Quartier Gairaut, le quartier Jean-Médecin.",
+        text_information_nice2:"You can check accommodation on Airbnb :",
+        text_information_nice3: "bit.ly/nice_airbnb",
+        text_information_villefranche:"Villefranche sur mer is a stunning village overlooking the St Jean Cap Ferrat peninsula. We stayed there 5 weeks last year and we loved it :", 
+        text_information_villefranche0:"https://www.lonelyplanet.com/france/villefranche-sur-mer", 
+        text_information_villefranche1:"You can check accommodation on Airbnb :",
+        text_information_villefranche2:"bit.ly/villefranche_airbnb", 
+        text_information_hotel:"Beige, the agency helping us organising our event, got us two deals. Both hotels are very close to Atrego (especially Marriott) and Jardins de la Citadelle :", 
+        text_information_hotel0:"Ibis Beaulieu sur Mer - 3 Bd Maréchal Joffre – 06310 Beaulieu-sur-Mer – France", 
+        text_information_hotel1:"From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€ (tax not included)", 
+        text_information_hotel2:"Riviera Marriott Hôtel Cap d’Ail - Le Port - 06 320 Cap d’Ail", 
+        text_information_hotel3:"From the 1st of July until the 3rd, 2 nights for 2 people for the price of 608€ (tax not included)", 
+         
         text_information3: "Villefranche-sur-Mer is a French commune, bordering Nice, located in the Alpes-Maritimes department in the Provence-Alpes-Côte d'Azur region. Its inhabitants are called the Villefranchois, as in most of the towns bearing the name of Villefranche, and read Vilafranquié in Nice.",
-        text_information4: "Villefranche-sur-Mer is a French commune, bordering Nice, located in the Alpes-Maritimes department in the Provence-Alpes-Côte d'Azur region. Its inhabitants are called the Villefranchois, as in most of the towns bearing the name of Villefranche, and read Vilafranquié in Nice."
+        text_information4: "Villefranche-sur-Mer is a French commune, bordering Nice, located in the Alpes-Maritimes department in the Provence-Alpes-Côte d'Azur region. Its inhabitants are called the Villefranchois, as in most of the towns bearing the name of Villefranche, and read Vilafranquié in Nice.",
 
       }
     },
