@@ -7,6 +7,8 @@ import Information from '../information/Information';
 import Destination from '../destination/Destination'
 import Schedule from '../schedule/Schedule';
 import Footer from '../footer/Footer';
+import GettingThere from '../gettingThere/GettingThere';
+import Parking from '../parking/Parking';
 
 
 
@@ -18,6 +20,8 @@ function Pages() {
         <Schedule/> 
         <Destination/> 
         <Information/> 
+        <GettingThere/>
+        <Parking/>
         <Footer/> 
     </div>
   );

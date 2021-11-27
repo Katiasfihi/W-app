@@ -50,6 +50,7 @@ function Header() {
             <TypewriterComponent
               onInit={(typeWriter) => {
                 typeWriter
+                  .pause(2000)
                   .typeString("are getting married.")
                   // .pause(2000)
                   // .deleteAll()

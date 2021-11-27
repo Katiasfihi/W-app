@@ -21,9 +21,9 @@
     
 
     &__section-img {
-        width: 95%;
-        object-fit: cover;
-        height: 500px;
+        width: 100%;
+      object-fit: cover;
+      height: 500px;
     }
 
     &__section-text-wrapper{
@@ -31,7 +31,7 @@
         
         p {
             text-align: center;
-            font-size: 21px;
+            font-size: 22px;
             letter-spacing: .02em;
             line-height: 1.4em;
             font-family: Big Caslon;
@@ -46,7 +46,7 @@
 .cities {
     display: flex;
     justify-content: space-evenly;
-    font-size: 18px;
+    font-size: 17px;
     margin: 3rem 0 3rem 0;
     }
 

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    background-color: #f9ded8;
+    background-color: #f5e2df;
 
     &__title {
         font-weight: 500;
@@ -23,10 +23,11 @@
     }
 
     &__img {
-      object-fit: cover;
       width: 100%;
+      object-fit: cover;
       height: 80%;
-    }
+  }
+    
   
     &__text-wrapper-about {
       float: right;

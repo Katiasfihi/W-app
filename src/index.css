@@ -24,6 +24,16 @@ code {
 
 @font-face {
   font-family: 'Typewriter';
-  src: local('Hopipolla'), url(./fonts/fonts/Typewriter-Thin.ttf) format('truetype');
+  src: local('Typewriter'), url(./fonts/fonts/Typewriter-Thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Typewriter-bold';
+  src: local('Typewriter-bold'), url(./fonts/fonts/Tybold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TravelingTypewriter';
+  src: local('Typewriter-bold'), url(./fonts/fonts/TravelingTypewriter.ttf) format('truetype');
 }
 

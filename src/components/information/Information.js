@@ -50,19 +50,23 @@ function Information() {
               {city === "nice" && (
                 <>
                   <p>{t("text_information_nice")}</p>
-                  <p>{t("text_information_nice0")}</p>
+                  <p><a href="https://www.lonelyplanet.com/france/nice">{t("text_information_nice0")}</a></p>
                   <p>{t("text_information_nice1")}</p>
+
                   <p>{t("text_information_nice2")}</p>
-                  <p>{t("text_information_nice3")}</p>
+                  <p><a href="bit.ly/nice_airbnb">{t("text_information_nice3")}</a></p>
+
+
                 </>
               )}
 
               {city === "Villefranche" && (
                 <>
                   <p>{t("text_information_villefranche")}</p>
-                  <p>{t("text_information_villefranche0")}</p>
+                  <p><a href="https://www.lonelyplanet.com/france/villefranche-sur-mer">{t("text_information_villefranche0")}</a></p>
                   <p>{t("text_information_villefranche1")}</p>
-                  <p>{t("text_information_villefranche2")}</p>
+                  <p><a href="bit.ly/villefranche_airbnb">{t("text_information_villefranche2")}</a></p>
+
                 </>
               )}
 
@@ -73,22 +77,13 @@ function Information() {
                   <p>{t("text_information_hotel1")}</p>
                   <p>{t("text_information_hotel2")}</p>
                   <p>{t("text_information_hotel3")}</p>
-
                 </>
               )}
             </div>
           </div>
 
           <div className="info__section">
-            <img src={logo3} alt="Logo" className="info__section-img" />
-            <div className="info__section-text-wrapper">
-              <p>{t("text_information3")}</p>
-              <p>{t("text_information4")}</p>
-            </div>
-          </div>
-
-          <div className="info__section">
-            <img src={logo2} alt="Logo" className="info__section-img"></img>
+            <img src={logo3} alt="Logo" className="info__section-img"></img>
           </div>
         </div>
       )}

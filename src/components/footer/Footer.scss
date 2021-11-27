@@ -1,16 +1,32 @@
 .footer {
-display: flex;
-justify-content: center;
-flex-direction: column;
 
-  &__wrapper {
-  border: 2px solid green;
+margin: 1rem 3rem 1rem 3rem;
+
+  &__wrapper-last {
   flex-basis: 40%;
   text-align: center;
   margin: 2rem 0 2rem 0;
+  font-style: italic;
+  font-size: 13px;
+
   }
 
-  &__btn {
+  &__wrapper-quote {
+    flex-basis: 40%;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    font-size: 23px;
+    letter-spacing: .02em;
+    line-height: 1.4rem;
+    font-family: Big Caslon;
+    }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wrap-btn {
     padding: 1rem 4rem;
     background-color: #db423d;
     color: #fff;
@@ -20,7 +36,7 @@ flex-direction: column;
     line-height: 1.2em;
     cursor: pointer;
     font-family: Big Caslon;
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
   }
     
   

@@ -15,8 +15,10 @@ function About() {
     <Translation>
       {(t) => (
         <div id="about" className="about">
-          <div className="about__title">About</div>
-          <div className="about__introduction">{t("About")}</div>
+          <div className="about__title">{t("About")}</div>
+          <div className="about__introduction">{t("About0")}</div>
+          <div className="about__introduction">{t("About1")}</div>
+
           <div className="wrapper">
           <img src={logo} alt="Logo" className="about__img" />
           </div>

@@ -24,6 +24,9 @@ const Schedule = () => {
                 {t("text_schedule")}
                 <br></br>
                 <br></br>
+                {t("text_schedule0")}
+                <br></br>
+                <br></br>
                 {t("text_schedule1")}
                 <br></br>
                 <br></br>
