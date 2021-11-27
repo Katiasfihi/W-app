@@ -36,7 +36,7 @@ const Schedule = () => {
 
             <div className="schedule__location">
               <div className="schedule__villefranche">
-                <div className="schedule__venue">Jardins de la Citadelle</div>
+                <div className="schedule__venue"><a href="https://www.nicetourisme.com/nice/165-citadelle-de-villefranche-sur-mer">Jardins de la Citadelle</a></div>
                 <div className="schedule__address">
                   {t("meeting1")}
                   <br></br>
@@ -45,7 +45,7 @@ const Schedule = () => {
               </div>
 
               <div className="schedule__cap">
-                <div className="schedule__venue">Atrego</div>
+                <div className="schedule__venue"><a href="https://www.restaurantatrego.com/">Atrego</a></div>
                 <div className="schedule__address">
                   {t("meeting2")} <br></br>
                   <br></br>Port de Cap d'Ail, <br></br>06320 Cap-d'Ail,
@@ -53,7 +53,7 @@ const Schedule = () => {
                 </div>
               </div>
               <div className="schedule__nice">
-                <div className="schedule__venue">Farago on the roof</div>
+                <div className="schedule__venue"><a href="https://www.faragoontheroof.com/en/">Farago on the roof</a></div>
                 <div className="schedule__address">
                   {t("meeting3")}
                   <br></br>

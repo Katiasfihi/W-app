@@ -1,6 +1,6 @@
 .info {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
 
     &__section {
@@ -30,13 +30,14 @@
         border: 2px solid red;
         
         p {
-            text-align: center;
+            // text-align: center;
             font-size: 22px;
             letter-spacing: .02em;
             line-height: 1.4em;
             font-family: Big Caslon;
             padding: 2rem;
             border: 2px solid blue;
+            margin-bottom: -1rem;
         }
     }
    

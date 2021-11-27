@@ -28,9 +28,6 @@ i18n.use(initReactI18next).init({
         Destination1:"After spending two summers and more than 7 weeks creating memories in this wonderful destination, getting married there was natural. ",
         Destination2:"Basking under a cabana in Cannes, setting sail from the port of Villefranche, partying in Saint Tropez or going on a walk on the boulevards of Nice are memories spent together that we will not forget.",
         Destination3:"We’re excited to spend a weekend with you in a place that is so special to us.",
-
-
-
         text_information1: "The French Riviera is stunning, and fills with incredible places to stay in. All the venues are next to each other, so staying in Nice, Villefranche or Cap d’ail would not make a difference. However, we recommend you to either stay in Nice or Villefranche as they are both close to everything, very diverse, energetic and beautiful.",
         text_information_nice: "Nice is an incredible and vibrant city with plenty of things to do and also close to everything. Cons… (yes there is one), the beach has rocks and not sand. ",
         text_information_nice0: "If you want to know more about Nice",
@@ -45,8 +42,7 @@ i18n.use(initReactI18next).init({
         text_information_hotel0:"Ibis Beaulieu sur Mer - 3 Bd Maréchal Joffre – 06310 Beaulieu-sur-Mer – France", 
         text_information_hotel1:"From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€ (tax not included)", 
         text_information_hotel2:"Riviera Marriott Hôtel Cap d’Ail - Le Port - 06 320 Cap d’Ail", 
-        text_information_hotel3:"From the 1st of July until the 3rd, 2 nights for 2 people for the price of 608€ (tax not included)", 
-         
+        text_information_hotel3:"From the 1st of July until the 3rd, 2 nights for 2 people for the price of 608€ (tax not included)",         
         text_information3: "Villefranche-sur-Mer is a French commune, bordering Nice, located in the Alpes-Maritimes department in the Provence-Alpes-Côte d'Azur region. Its inhabitants are called the Villefranchois, as in most of the towns bearing the name of Villefranche, and read Vilafranquié in Nice.",
         text_information4: "Villefranche-sur-Mer is a French commune, bordering Nice, located in the Alpes-Maritimes department in the Provence-Alpes-Côte d'Azur region. Its inhabitants are called the Villefranchois, as in most of the towns bearing the name of Villefranche, and read Vilafranquié in Nice.",
         gettingThere: "Getting there",
@@ -58,12 +54,8 @@ i18n.use(initReactI18next).init({
         parking0: "For the ceremony at Jardins de la Citadelle, you can park the car at Parking Wilson. It’s really close (5minutes), but the parking is down the hill, so a helpful tip here, would be to leave your beautiful partner at the entrance of the fortress before parking the car.",
         parking1: "Valet parking will wait for you and look after your car at Atrego for free. No need to find a parking spot.",
         parking2: "Regarding the wedding brunch at Farago on the roof, you can park at Parking Beach Regency (300m). It’s also quite easy to parc on rue de France.",
-
         footer: "May this celebration of love and friendship: our marriage, be full of laughter, our every day in paradise.",
         footer1: "Proudly powered by Katia (and Carol)",
-
-
-
       }
     },
     fr: {
@@ -73,7 +65,8 @@ i18n.use(initReactI18next).init({
         Schedule: "Agenda",
         Information: "Information",
         Rsvp: "Rsvp",
-        About: "Nous nous sommes rencontrés il y a 9 ans à Londres pour la première fois. Dave était dans un supermarché, dans l'allée des surgelés, essayant de comprendre ce qu'est la crème glacée végétalienne et une fille s'approche et dit ",
+        About: "À propos",
+        About0: "Nous nous sommes rencontrés il y a 9 ans à Londres pour la première fois. Dave était dans un supermarché, dans l'allée des surgelés, essayant de comprendre ce qu'est la crème glacée végétalienne et une fille s'approche et dit ",
         Date: "2 Juillet 2022",
         text_schedule: "Nous nous sommes rencontrés il y a 9 ans à Londres pour la première fois. Dave était dans un supermarché, dans l'allée des surgelés, essayant de comprendre ce qu'est la crème glacée végétalienne et une fille s'approche et dit : « Hé, savez-vous où trouver de la crème glacée végétalienne ?'. En tant que couple, nous sommes ensemble depuis 8 ans maintenant et nous nous marions l'année prochaine.",
         text_schedule2: "Déco élaborée par Philippe Starck et vue unique sur la mer pour un restaurant provençal au cadre design.",
