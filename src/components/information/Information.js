@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Information.scss";
 
 import logo1 from "../../photos/image2BB.jpg";
-import logo2 from "../../photos/20210531_175424BBB.jpg";
+// import logo2 from "../../photos/20210531_175424BBB.jpg";
 import logo3 from "../../photos/city.jpg";
 
 import { Translation } from "react-i18next";
