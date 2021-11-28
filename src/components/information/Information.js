@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Information.scss";
 
-import logo1 from "../../photos/image2BB.jpg";
+import logo1 from "../../photos/miamibr.jpg";
 // import logo2 from "../../photos/20210531_175424BBB.jpg";
-import logo3 from "../../photos/city.jpg";
+import logo3 from "../../photos/berlin2br.jpg";
 
 import { Translation } from "react-i18next";
 

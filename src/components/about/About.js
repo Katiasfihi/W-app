@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import logo from "../../photos/20210918_154315BB.jpg";
+import logo from "../../photos/parisbr.jpg";
 import { useHistory } from "react-router-dom";
 
 import { Translation } from "react-i18next";

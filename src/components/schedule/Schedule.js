@@ -2,7 +2,7 @@ import React from "react";
 import "./Schedule.scss";
 
 // import logo from "../../photos/20210530_174347MBB.jpg";
-import logo1 from "../../photos/image2BB.jpg";
+import logo1 from "../../photos/latimers2br.jpg";
 
 import { Translation } from "react-i18next";
 

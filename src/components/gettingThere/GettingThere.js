@@ -1,6 +1,6 @@
 import "./GettingThere.scss";
 
-import logo1 from "../../photos/image2BB.jpg";
+import logo1 from "../../photos/hippy2br.jpg";
 // import logo2 from "../../photos/20210531_175424BBB.jpg";
 // import logo3 from "../../photos/city.jpg";
 
