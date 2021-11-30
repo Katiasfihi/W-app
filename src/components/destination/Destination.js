@@ -9,15 +9,17 @@ function Destination() {
   return (
     <Translation>
       {(t) => (
-        <div id="destination" className="destination">
-            <div className="wrapper">
-              <img src={logo} alt="Logo" className="destination__img" />
-            </div>
-            <div className="destination__title">{t("Destination")}</div>
-            <div className="destination__introduction">{t("Destination0")}</div>
-            <div className="destination__introduction">{t("Destination1")}</div>
-            <div className="destination__introduction">{t("Destination2")}</div>
-            <div className="destination__introduction">{t("Destination3")}</div>
+        <div className="destination">
+          <div className="wrapper">
+            <img src={logo} alt="Logo" className="destination__img" />
+          </div>
+          <div className="destination__title" id="destination">
+            {t("Destination")}
+          </div>
+          <div className="destination__introduction">{t("Destination0")}</div>
+          <div className="destination__introduction">{t("Destination1")}</div>
+          <div className="destination__introduction">{t("Destination2")}</div>
+          <div className="destination__introduction">{t("Destination3")}</div>
         </div>
       )}
     </Translation>

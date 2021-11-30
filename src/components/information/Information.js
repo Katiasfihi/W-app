@@ -16,10 +16,12 @@ function Information() {
   return (
     <Translation>
       {(t) => (
-        <div id="information" className="info">
+        <div className="info">
           <div className="info__section">
             <img src={logo1} alt="Logo" className="info__section-img" />
-            <div className="info__title">Lodging</div>
+            <div className="info__title" id="accommodation">
+              Accommodation
+            </div>
 
             <div className="info__section-text-wrapper">
               <p>{t("text_information1")}</p>
@@ -50,23 +52,36 @@ function Information() {
               {city === "nice" && (
                 <>
                   <p>{t("text_information_nice")}</p>
-                  <p><a href="https://www.lonelyplanet.com/france/nice">{t("text_information_nice0")}</a></p>
+                  <p>
+                    <a href="https://www.lonelyplanet.com/france/nice">
+                      {t("text_information_nice0")}
+                    </a>
+                  </p>
                   <p>{t("text_information_nice1")}</p>
 
                   <p>{t("text_information_nice2")}</p>
-                  <p><a href="bit.ly/nice_airbnb">{t("text_information_nice3")}</a></p>
-
-
+                  <p>
+                    <a href="bit.ly/nice_airbnb">
+                      {t("text_information_nice3")}
+                    </a>
+                  </p>
                 </>
               )}
 
               {city === "Villefranche" && (
                 <>
                   <p>{t("text_information_villefranche")}</p>
-                  <p><a href="https://www.lonelyplanet.com/france/villefranche-sur-mer">{t("text_information_villefranche0")}</a></p>
+                  <p>
+                    <a href="https://www.lonelyplanet.com/france/villefranche-sur-mer">
+                      {t("text_information_villefranche0")}
+                    </a>
+                  </p>
                   <p>{t("text_information_villefranche1")}</p>
-                  <p><a href="bit.ly/villefranche_airbnb">{t("text_information_villefranche2")}</a></p>
-
+                  <p>
+                    <a href="bit.ly/villefranche_airbnb">
+                      {t("text_information_villefranche2")}
+                    </a>
+                  </p>
                 </>
               )}
 

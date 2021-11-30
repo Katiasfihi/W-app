@@ -1,20 +1,16 @@
-
-import React from 'react'
+import React from "react";
 // import { useState, useEffect } from 'react';
-import './Header.scss'
+import "./Header.scss";
 import { Translation } from "react-i18next";
 
 // import { useHistory } from 'react-router-dom';
-import logo from "../../photos/icons8-menu-50.png";
+// import logo from "../../photos/icons8-menu-50.png";
 import logos from "../../photos/icons8-down-arrow-50.png";
-import TypewriterComponent from 'typewriter-effect';
+import TypewriterComponent from "typewriter-effect";
 
 // import logo1 from "../../photos/20210918_154315BB.jpg";
 
-
-
 function Header() {
-
   // const [colorChange, setColorchange] = useState(false);
   // const changeNavbarColor = () =>{
   //    if(window.scrollY >= 80){
@@ -27,8 +23,8 @@ function Header() {
 
   // useEffect(() => {
   // changeNavbarColor()
-  // window.addEventListener('scroll', changeNavbarColor);  
-  
+  // window.addEventListener('scroll', changeNavbarColor);
+
   // })
 
   // const history = useHistory();
@@ -36,14 +32,13 @@ function Header() {
   // function validateRsvp() {
   //   history.push('/rsvp')
   // }
- 
-  
+
   return (
     <Translation>
       {(t) => (
         <div>
           <div className="menu-wrapper">
-            <img src={logo} alt="Logo" className="menu" />
+            {/* <img src={logo} alt="Logo" className="menu" /> */}
           </div>
           <h1 className="katia">Katia & Carol</h1>
           <div className="married">

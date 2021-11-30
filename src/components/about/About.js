@@ -14,13 +14,15 @@ function About() {
   return (
     <Translation>
       {(t) => (
-        <div id="about" className="about">
-          <div className="about__title">{t("About")}</div>
+        <div className="about">
+          <div className="about__title" id="about">
+            {t("About")}
+          </div>
           <div className="about__introduction">{t("About0")}</div>
           <div className="about__introduction">{t("About1")}</div>
 
           <div className="wrapper">
-          <img src={logo} alt="Logo" className="about__img" />
+            <img src={logo} alt="Logo" className="about__img" />
           </div>
           <div className="about__text-wrapper-about">
             <div className="about__introduction2">{t("About2")}</div>
