@@ -116,24 +116,62 @@ export default class App extends React.Component {
         </div>
         {isOpen && (
           <div className="mobile-navigation">
-            <a href="#about" onClick={this.handleBurger}>
-              About
-            </a>
-            <a href="#schedule" onClick={this.handleBurger}>
-              Schedule
-            </a>
-            <a href="#destination" onClick={this.handleBurger}>
-              Destination
-            </a>
-            <a href="#accommodation" onClick={this.handleBurger}>
-              Accommodation
-            </a>
-            <a href="#getting-there" onClick={this.handleBurger}>
-              Getting there
-            </a>
-            <a href="#parking-section" onClick={this.handleBurger}>
-              Parking
-            </a>
+            <ul className="mobile-navigation__list">
+              <li className="mobile-navigation__list-item">
+                <a
+                  href="#about"
+                  onClick={this.handleBurger}
+                  className="mobile-navigation__link"
+                >
+                  About
+                </a>
+              </li>
+              <li className="mobile-navigation__list-item">
+                <a
+                  href="#schedule"
+                  onClick={this.handleBurger}
+                  className="mobile-navigation__link"
+                >
+                  Schedule
+                </a>
+              </li>
+              <li className="mobile-navigation__list-item">
+                <a
+                  href="#destination"
+                  onClick={this.handleBurger}
+                  className="mobile-navigation__link"
+                >
+                  Destination
+                </a>
+              </li>
+              <li className="mobile-navigation__list-item">
+                <a
+                  href="#accommodation"
+                  onClick={this.handleBurger}
+                  className="mobile-navigation__link"
+                >
+                  Accommodation
+                </a>
+              </li>
+              <li className="mobile-navigation__list-item">
+                <a
+                  href="#getting-there"
+                  onClick={this.handleBurger}
+                  className="mobile-navigation__link"
+                >
+                  Getting there
+                </a>
+              </li>
+              <li className="mobile-navigation__list-item">
+                <a
+                  href="#parking-section"
+                  onClick={this.handleBurger}
+                  className="mobile-navigation__link"
+                >
+                  Parking
+                </a>
+              </li>
+            </ul>
           </div>
         )}
         <Router>
