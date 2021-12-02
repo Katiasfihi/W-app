@@ -18,39 +18,8 @@ import i18n from "i18next";
 export default class App extends React.Component {
   state = {
     lang: "en",
-    colorChange: false,
-    translateGone: false,
     isOpen: false,
   };
-  // const [colorChange, setColorchange] = useState(false);
-
-  // changeNavbarColor = () => {
-  //   if (window.scrollY >= 80) {
-  //     this.setState({ colorChange: true });
-  //   } else {
-  //     this.setState({ colorChange: false });
-  //   }
-  // };
-
-  // removeTranslation = () => {
-  //   if (window.scrollY >= 80) {
-  //     this.setState({ translateGone: true });
-  //   } else {
-  //     this.setState({ translateGone: false });
-  //   }
-  // };
-
-  // componentDidMount() {
-  //   this.changeNavbarColor();
-  //   this.removeTranslation();
-  //   window.addEventListener("scroll", this.changeNavbarColor);
-  //   window.addEventListener("scroll", this.removeTranslation);
-  // }
-  // useEffect(() => {
-  // changeNavbarColor()
-  // window.addEventListener('scroll', changeNavbarColor);
-
-  // });
 
   langChange = (e) => {
     this.setState({ [e.target.name]: e.target.value }, () => {
@@ -58,10 +27,6 @@ export default class App extends React.Component {
       const lang = localStorage.getItem("lang");
       i18n.changeLanguage(lang);
     });
-  };
-
-  handleLogoClick = () => {
-    console.log("handleLogoClick clicked");
   };
 
   noScroll() {
@@ -79,11 +44,7 @@ export default class App extends React.Component {
 
   render() {
     const { t } = this.props;
-    const { lang, colorChange, translateGone, isOpen } = this.state;
-
-    console.log("isOpen ", this.state.isOpen);
-    // const { lang } = this.state;
-    console.log("lang", this.langChange);
+    const { lang, isOpen } = this.state;
 
     return (
       <>

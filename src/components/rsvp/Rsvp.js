@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 import "../rsvp/Rsvp.scss";
 
@@ -38,7 +38,9 @@ function Rsvp() {
 
   return (
     <div className="rsvp">
-      <h1 className="katia">Katia & Carol</h1>
+      <Link to="/pages">
+        <h1 className="katia">Katia & Carol</h1>
+      </Link>
       <div className="rsvp-span">
         We look forward to celebrate our big day with you. <br></br> Please
         confirm your attendance.
