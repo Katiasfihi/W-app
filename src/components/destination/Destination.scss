@@ -1,84 +1,80 @@
+.destination {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  background-color: #f5e2df;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 6rem;
 
+  &__title {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-align: left;
+    font-family: Big Caslon;
+    font-style: italic;
+    font-size: 14px;
+    padding: 4rem 2rem 2rem 2rem;
+  }
 
-  .destination {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    // background-color: #f9ded8;
-    background-color: #f5e2df;
+  .wrapper {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-
-    &__title {
-        font-weight: 500;
-        letter-spacing: 0.05em;
-        text-align: left;
-        font-family: Big Caslon;
-        font-style: italic;
-        font-size: 14px;
-        padding: 2rem;
-    }
-    
-    .wrapper {
-      display: flex;
-      justify-content: center;
-    }
-
-    &__img {
-        width: 100%;
-        object-fit: cover;
-        height: 500px;
-        margin: 0 0 3rem 0;
-    }
-  
-    &__text-wrapper-about {
-      float: right;
-      margin: 2rem 0rem 0 0rem;
-      text-align: center;
-      padding: 0;
-  
-    }
-
-    &__introduction {
-      text-align: left;
-      font-size: 22px;
-      letter-spacing: .02em;
-      line-height: 1.4em;
-      font-family: Big Caslon;
-      padding: 2rem;
-      margin-bottom: -1rem;
-    }
-
-    &__introduction2 {
-      text-align: center;
-      font-size: 22px;
-      letter-spacing: .02em;
-      line-height: 1.4em;
-      font-family: Big Caslon;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      margin-top: -7rem;
-    }
-
-
-    &__date {
-      font-style: normal;
-      font-weight: 500;
-      font-style: italic;
-      margin-bottom: 3rem;
-    }
-
-    .btn-rsvp {
-      padding: 1rem 4rem;
-      background-color: #db423d;
-      color: #fff;
-      border: none;
-      font-weight: 500;
-      letter-spacing: .08em;
-      line-height: 1.2em;
-      cursor: pointer;
-      font-family: Big Caslon;
-      margin-bottom: 8rem;
-    }      
   }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    margin: 0 0 3rem 0;
+  }
+
+  &__text-wrapper-about {
+    float: right;
+    margin: 2rem 0rem 0 0rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  &__introduction {
+    text-align: left;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 1.4em;
+    font-family: Big Caslon;
+    padding: 2rem;
+    margin-bottom: -1rem;
+  }
+
+  &__introduction2 {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 1.4em;
+    font-family: Big Caslon;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-top: -7rem;
+  }
+
+  &__date {
+    font-style: normal;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 3rem;
+  }
+
+  .btn-rsvp {
+    padding: 1rem 4rem;
+    background-color: #db423d;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 1.2em;
+    cursor: pointer;
+    font-family: Big Caslon;
+    margin-bottom: 8rem;
+  }
+}

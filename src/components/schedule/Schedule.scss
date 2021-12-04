@@ -1,4 +1,5 @@
 .schedule {
+  padding-bottom: 6rem;
 
   &__moutain-pic-wrapper {
     display: flex;
@@ -9,7 +10,6 @@
     width: 100%;
     object-fit: cover;
     height: 500px;
-    // margin-top: 2rem;
   }
 
   &__title-wrapper {
@@ -21,7 +21,6 @@
     font-style: italic;
     font-size: 14px;
     padding: 2rem;
-
   }
   &__info-wrapper {
     text-align: left;
@@ -52,37 +51,4 @@
   &__cap {
     margin: 0 0 4rem 0;
   }
-
-  &__nice {
-    margin: 0 0 4rem 0;
-  }
-
 }
-
-// .info-wrapper {
-//   border: 2px solid green;
-
-// }
-
-// .component-wrapper {
-//   border: 2px solid black;
-
-// }
-
-//   .villefranche {
-//     border: 2px solid red;
-
-//   }
-
-//   .cap {
-//     border: 2px solid black;
-
-//   }
-
-//   .nice {
-//     border: 2px solid green;
-//   }
-
-//   .bloc-wrapper {
-//     border: 2px solid blue;
-//   }

@@ -1,10 +1,9 @@
 import React from "react";
-import "./Schedule.scss";
+import { Translation } from "react-i18next";
 
-// import logo from "../../photos/20210530_174347MBB.jpg";
 import logo1 from "../../photos/latimers2br.jpg";
 
-import { Translation } from "react-i18next";
+import "./Schedule.scss";
 
 const Schedule = () => {
   return (
@@ -36,7 +35,14 @@ const Schedule = () => {
 
             <div className="schedule__location">
               <div className="schedule__villefranche">
-                <div className="schedule__venue"><a href="https://www.nicetourisme.com/nice/165-citadelle-de-villefranche-sur-mer">Jardins de la Citadelle</a></div>
+                <div className="schedule__venue">
+                  <a
+                    href="https://www.nicetourisme.com/nice/16 5-citadelle-de-villefranche-sur-mer"
+                    target="_blank"
+                  >
+                    Jardins de la Citadelle
+                  </a>
+                </div>
                 <div className="schedule__address">
                   {t("meeting1")}
                   <br></br>
@@ -45,19 +51,29 @@ const Schedule = () => {
               </div>
 
               <div className="schedule__cap">
-                <div className="schedule__venue"><a href="https://www.restaurantatrego.com/">Atrego</a></div>
+                <div className="schedule__venue">
+                  <a href="https://www.restaurantatrego.com/" target="_blank">
+                    A&apos;trego
+                  </a>
+                </div>
                 <div className="schedule__address">
                   {t("meeting2")} <br></br>
-                  <br></br>Port de Cap d'Ail, <br></br>06320 Cap-d'Ail,
+                  <br></br>Port de Cap d&apos;Ail, <br></br>06320
+                  Cap-d&apos;Ail,
                   <br></br>France
                 </div>
               </div>
               <div className="schedule__nice">
-                <div className="schedule__venue"><a href="https://www.faragoontheroof.com/en/">Farago on the roof</a></div>
+                <div className="schedule__venue">
+                  <a href="https://www.faragoontheroof.com/en/" target="_blank">
+                    Farago on the roof
+                  </a>
+                </div>
                 <div className="schedule__address">
                   {t("meeting3")}
                   <br></br>
-                  <br></br>Rooftop de l'AC Hotel by Marriott Nice, <br></br>
+                  <br></br>Rooftop de l&apos;AC Hotel by Marriott Nice,{" "}
+                  <br></br>
                   Rue Honoré Sauvan, Entrée, 59 Prom. des Anglais, <br></br>
                   06000 Nice,<br></br>France
                 </div>

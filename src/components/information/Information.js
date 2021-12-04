@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import "./Information.scss";
+import { Translation } from "react-i18next";
 
 import logo1 from "../../photos/miamibr.jpg";
-// import logo2 from "../../photos/20210531_175424BBB.jpg";
 import logo3 from "../../photos/berlin2br.jpg";
 
-import { Translation } from "react-i18next";
+import "./Information.scss";
 
 function Information() {
   const nice = "Nice";
@@ -34,9 +33,9 @@ function Information() {
                 </text>
 
                 <text
-                  onClick={() => setCity("Villefranche")}
+                  onClick={() => setCity("villefranche")}
                   className={`city ${
-                    city === "Villefranche" ? "selected" : "city"
+                    city === "villefranche" ? "selected" : "city"
                   }`}
                 >
                   {Villefranche}
@@ -49,57 +48,79 @@ function Information() {
                 </text>
               </div>
 
-              {city === "nice" && (
+              {city !== "hotel" && (
                 <>
-                  <p>{t("text_information_nice")}</p>
-                  <p>
-                    <a href="https://www.lonelyplanet.com/france/nice">
-                      {t("text_information_nice0")}
-                    </a>
-                  </p>
-                  <p>{t("text_information_nice1")}</p>
+                  <p>{t(`text_information_${city}`)}</p>
+                  <a
+                    target="_blank"
+                    href="https://www.lonelyplanet.com/france/nice"
+                  >
+                    {t(`text_information_${city}0`)}
+                  </a>
+                  <p>{t(`text_information_${city}1`)}</p>
 
-                  <p>{t("text_information_nice2")}</p>
-                  <p>
-                    <a href="bit.ly/nice_airbnb">
-                      {t("text_information_nice3")}
+                  {city === "villefranche" ? (
+                    <a target="_blank" href="bit.ly/nice_airbnb">
+                      {t(`text_information_${city}2`)}
                     </a>
-                  </p>
+                  ) : (
+                    <p>
+                      {t(`text_information_${city}2`)} <br />
+                      <a target="_blank" href="bit.ly/nice_airbnb">
+                        {t(`text_information_${city}3`)}
+                      </a>
+                    </p>
+                  )}
                 </>
               )}
-
-              {city === "Villefranche" && (
-                <>
-                  <p>{t("text_information_villefranche")}</p>
-                  <p>
-                    <a href="https://www.lonelyplanet.com/france/villefranche-sur-mer">
-                      {t("text_information_villefranche0")}
-                    </a>
-                  </p>
-                  <p>{t("text_information_villefranche1")}</p>
-                  <p>
-                    <a href="bit.ly/villefranche_airbnb">
-                      {t("text_information_villefranche2")}
-                    </a>
-                  </p>
-                </>
-              )}
-
               {city === "hotel" && (
                 <>
                   <p>{t("text_information_hotel")}</p>
-                  <p>{t("text_information_hotel0")}</p>
-                  <p>{t("text_information_hotel1")}</p>
-                  <p>{t("text_information_hotel2")}</p>
-                  <p>{t("text_information_hotel3")}</p>
+                  <div className="info__section-hotel">
+                    <a
+                      href="https://all.accor.com/hotel/8234/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
+                      target="_blank"
+                    >
+                      <p className="info__section-hotel-name">
+                        {t("text_information_hotel_0_title")}
+                      </p>
+                      <p className="info__section-hotel-address">
+                        {t("text_information_hotel_0_address")}
+                      </p>
+                    </a>
+                    <p className="info__section-hotel-deal">
+                      {t("text_information_hotel_0_deal")}
+                    </p>
+                    <p className="info__section-hotel-deal">
+                      {t("text_information_hotel_0_second_deal")}
+                    </p>
+                  </div>
+
+                  <div className="info__section-hotel">
+                    <a
+                      href="https://all.accor.com/hotel/8234/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
+                      target="_blank"
+                    >
+                      <p className="info__section-hotel-name">
+                        {t("text_information_hotel_1_title")}
+                      </p>
+                      <p className="info__section-hotel-address">
+                        {t("text_information_hotel_1_address")}
+                      </p>
+                      <p className="info__section-hotel-address">
+                        {t("text_information_hotel_1_address_tip")}
+                      </p>
+                    </a>
+                    <p className="info__section-hotel-deal">
+                      {t("text_information_hotel_1_deal")}
+                    </p>
+                  </div>
                 </>
               )}
             </div>
           </div>
 
-          <div className="info__section">
-            <img src={logo3} alt="Logo" className="info__section-img"></img>
-          </div>
+          <img src={logo3} alt="Logo" className="info__section-img"></img>
         </div>
       )}
     </Translation>

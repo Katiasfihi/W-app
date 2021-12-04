@@ -1,10 +1,7 @@
-import "./GettingThere.scss";
+import { Translation } from "react-i18next";
 
 import logo1 from "../../photos/hippy2br.jpg";
-// import logo2 from "../../photos/20210531_175424BBB.jpg";
-// import logo3 from "../../photos/city.jpg";
-
-import { Translation } from "react-i18next";
+import "./GettingThere.scss";
 
 function GettingThere() {
   return (
@@ -19,7 +16,10 @@ function GettingThere() {
               {t("gettingThere0")}
             </div>
             <div className="gettingThere__introduction">
-              <a href="https://www.nice.aeroport.fr/en/services/car-rental">
+              <a
+                href="https://www.nice.aeroport.fr/en/services/car-rental"
+                target="_blank"
+              >
                 {t("gettingThere1")}
               </a>
             </div>
@@ -30,11 +30,8 @@ function GettingThere() {
             <div className="gettingThere__introduction">
               {t("gettingThere3")}
             </div>
-
-            <div className="wrapper">
-              <img src={logo1} alt="Logo" className="gettingThere__img" />
-            </div>
           </div>
+          <img src={logo1} alt="Logo" className="gettingThere__img" />
         </div>
       )}
     </Translation>

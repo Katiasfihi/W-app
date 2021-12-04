@@ -5,7 +5,7 @@ import { Fade as Hamburger } from "hamburger-react";
 
 import "./Navigation.scss";
 
-const Navigation = () => {
+const Navigation = ({ noBurger }) => {
   const [lang, setLang] = useState("en");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -45,7 +45,9 @@ const Navigation = () => {
         </select>
       </div>
       <div className="navigation__burger">
-        <Hamburger direction="right" toggled={isOpen} toggle={handleBurger} />
+        {!noBurger && (
+          <Hamburger direction="right" toggled={isOpen} toggle={handleBurger} />
+        )}
       </div>
       {isOpen && (
         <div className="navigation__list-wrapper">
