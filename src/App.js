@@ -10,13 +10,13 @@ import "./App.scss";
 
 export default class App extends React.Component {
   render() {
-    const { t } = this.props;
+    // const { t } = this.props;
 
     return (
       <>
         <Router>
           <Switch>
-            <Route component={Login} t={t} path="/login" />
+            <Route component={Login} path="/login" />
           </Switch>
           <Switch>
             <Route component={Pages} path="/pages" />

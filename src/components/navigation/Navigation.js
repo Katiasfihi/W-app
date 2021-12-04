@@ -7,9 +7,11 @@ import "./Navigation.scss";
 
 const Navigation = ({ noBurger }) => {
   const [lang, setLang] = useState("en");
+
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    setLang(localStorage.getItem("language"));
     isOpen
       ? (document.querySelector("body").className = "no-scroll")
       : (document.querySelector("body").className = "");
@@ -17,7 +19,9 @@ const Navigation = ({ noBurger }) => {
 
   const langChange = (e) => {
     setLang(e.target.value);
-    i18n.changeLanguage(e.target.value);
+    localStorage.setItem("language", e.target.value);
+    const localLang = localStorage.getItem("language");
+    i18n.changeLanguage(localLang);
   };
 
   const handleBurger = () => {
