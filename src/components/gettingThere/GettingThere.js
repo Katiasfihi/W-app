@@ -19,6 +19,7 @@ function GettingThere() {
               <a
                 href="https://www.nice.aeroport.fr/en/services/car-rental"
                 target="_blank"
+                rel="noreferrer"
               >
                 {t("gettingThere1")}
               </a>

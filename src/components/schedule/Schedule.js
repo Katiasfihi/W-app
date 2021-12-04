@@ -39,6 +39,7 @@ const Schedule = () => {
                   <a
                     href="https://www.nicetourisme.com/nice/16 5-citadelle-de-villefranche-sur-mer"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Jardins de la Citadelle
                   </a>
@@ -52,7 +53,11 @@ const Schedule = () => {
 
               <div className="schedule__cap">
                 <div className="schedule__venue">
-                  <a href="https://www.restaurantatrego.com/" target="_blank">
+                  <a
+                    href="https://www.restaurantatrego.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     A&apos;trego
                   </a>
                 </div>
@@ -65,7 +70,11 @@ const Schedule = () => {
               </div>
               <div className="schedule__nice">
                 <div className="schedule__venue">
-                  <a href="https://www.faragoontheroof.com/en/" target="_blank">
+                  <a
+                    href="https://www.faragoontheroof.com/en/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Farago on the roof
                   </a>
                 </div>

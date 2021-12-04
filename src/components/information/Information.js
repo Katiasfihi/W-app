@@ -53,6 +53,7 @@ function Information() {
                   <p>{t(`text_information_${city}`)}</p>
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://www.lonelyplanet.com/france/nice"
                   >
                     {t(`text_information_${city}0`)}
@@ -80,6 +81,7 @@ function Information() {
                     <a
                       href="https://all.accor.com/hotel/8234/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <p className="info__section-hotel-name">
                         {t("text_information_hotel_0_title")}
@@ -100,6 +102,7 @@ function Information() {
                     <a
                       href="https://www.marriott.com/hotels/travel/mcmcd-riviera-marriott-hotel-la-porte-de-monaco/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MjY5NjEzMy03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <p className="info__section-hotel-name">
                         {t("text_information_hotel_1_title")}
