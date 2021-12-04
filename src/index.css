@@ -1,39 +1,48 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.no-scroll {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 @font-face {
-  font-family: 'Big Caslon';
-  src: local('Big Caslon'), url(./fonts/fonts/Big\ Caslon\ Medium.ttf) format('truetype');
+  font-family: "Big Caslon";
+  src: local("Big Caslon"),
+    url(./fonts/fonts/Big\ Caslon\ Medium.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Hopipolla';
-  src: local('Hopipolla'), url(./fonts/fonts/Hopipolla.ttf) format('truetype');
+  font-family: "Hopipolla";
+  src: local("Hopipolla"), url(./fonts/fonts/Hopipolla.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Typewriter';
-  src: local('Typewriter'), url(./fonts/fonts/Typewriter-Thin.ttf) format('truetype');
+  font-family: "Typewriter";
+  src: local("Typewriter"),
+    url(./fonts/fonts/Typewriter-Thin.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Typewriter-bold';
-  src: local('Typewriter-bold'), url(./fonts/fonts/Tybold.ttf) format('truetype');
+  font-family: "Typewriter-bold";
+  src: local("Typewriter-bold"),
+    url(./fonts/fonts/Tybold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'TravelingTypewriter';
-  src: local('Typewriter-bold'), url(./fonts/fonts/TravelingTypewriter.ttf) format('truetype');
+  font-family: "TravelingTypewriter";
+  src: local("Typewriter-bold"),
+    url(./fonts/fonts/TravelingTypewriter.ttf) format("truetype");
 }
-
