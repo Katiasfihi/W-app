@@ -1,24 +1,16 @@
-import React, { useState } from "react";
-
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import React, { useRef } from "react";
 import { useHistory, Link } from "react-router-dom";
+
+import { Formik, Field } from "formik";
+import * as Yup from "yup";
+import emailjs from "emailjs-com";
+
+import Navigation from "../navigation/Navigation";
 
 import "../rsvp/Rsvp.scss";
 
-import emailjs from "emailjs-com";
-// init("user_7Sik7Z8G3mzKbYSyVPBjE");
-
 function Rsvp() {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
-  // const [popup, setPopup] = useState("");
-
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
+  const form = useRef();
   const history = useHistory();
 
   const sendEmail = (e) => {
@@ -26,86 +18,167 @@ function Rsvp() {
       .sendForm(
         "service_u5nlqmi",
         "template_m1qfl9g",
-        "#form-id",
+        form.current,
         "user_7Sik7Z8G3mzKbYSyVPBjE"
       )
       .then(() => {
         console.log("it works");
-        // setPopup("Thank you for your message." )
         history.push("/thankyou");
       });
   };
 
   return (
     <div className="rsvp">
+      <Navigation noBurger />
       <Link to="/pages">
         <h1 className="katia">Katia & Carol</h1>
       </Link>
-      <div className="rsvp-span">
-        We look forward to celebrate our big day with you. <br></br> Please
-        confirm your attendance.
-      </div>
-      <Form className="rsvp-form" id="form-id" onSubmit={handleSubmit}>
-        <Form.Group size="lg" className="form-gr-rsvp">
-          <Form.Label>Name</Form.Label>
-          <Form.Control
-            className="name-specs"
-            name="name"
-            type="name"
-            id="name"
-            placeholder="Your Name..."
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group size="lg" className="form-gr-rsvp">
-          <Form.Label>Surname</Form.Label>
-          <Form.Control
-            className="surname-specs"
-            name="surname"
-            type="surname"
-            id="surname"
-            placeholder="Your Surname..."
-            value={surname}
-            onChange={(e) => setSurname(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group size="lg" className="form-gr-rsvp">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            className="email-specs"
-            name="email"
-            type="email address"
-            id="email"
-            placeholder="Your Email address..."
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </Form.Group>
-        {/* <h2 className="pop-message">{popup}</h2> */}
-        <Form.Group size="lg" className="mess-form">
-          <Form.Label>Message</Form.Label>
-          <textarea
-            className="message-specs"
-            name="message"
-            type="text"
-            id="text"
-            placeholder="Your Message..."
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-          />
-        </Form.Group>
-        {/* <Button className='rsvp-btn' block size="lg" type="submit" disabled={!name, !surname, !email}  onClick={sendEmail}> */}
-        <Button
-          className="rsvp-btn"
-          block
-          size="lg"
-          type="submit"
-          onClick={sendEmail}
+      <div className="rsvp__content">
+        <h2 className="rsvp__title">
+          We look forward to celebrate our big day with you. <br></br> Please
+          confirm your attendance.
+        </h2>
+        <Formik
+          initialValues={{ email: "" }}
+          onSubmit={sendEmail}
+          validationSchema={Yup.object().shape({
+            name: Yup.string().required("Please tell us your name"),
+            surname: Yup.string().required("Please tell us your surname"),
+            attendance: Yup.string().required(
+              "Please tell us if you can make it to the event"
+            ),
+          })}
         >
-          Send Response
-        </Button>
-      </Form>
+          {(props) => {
+            const {
+              values,
+              touched,
+              errors,
+              isSubmitting,
+              handleChange,
+              handleBlur,
+              handleSubmit,
+            } = props;
+            return (
+              <form onSubmit={handleSubmit} ref={form}>
+                <label htmlFor="name" style={{ display: "block" }}>
+                  First name *
+                </label>
+
+                <input
+                  id="name"
+                  name="name"
+                  placeholder="Enter your first name"
+                  type="text"
+                  value={values.name}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={
+                    errors.name && touched.name
+                      ? "text-input error"
+                      : "text-input"
+                  }
+                />
+                {errors.name && !touched.name && (
+                  <div className="input-feedback">{errors.name}</div>
+                )}
+                <label htmlFor="surname" style={{ display: "block" }}>
+                  Last name *
+                </label>
+
+                <input
+                  id="surname"
+                  name="surname"
+                  placeholder="Enter your last name"
+                  type="text"
+                  value={values.surname}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={
+                    errors.surname && touched.surname
+                      ? "text-input error"
+                      : "text-input"
+                  }
+                />
+                {errors.surname && !touched.surname && (
+                  <div className="input-feedback">{errors.surname}</div>
+                )}
+                <label htmlFor="email" style={{ display: "block" }}>
+                  Email
+                </label>
+
+                <input
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  type="text"
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={
+                    errors.email && touched.email
+                      ? "text-input error"
+                      : "text-input"
+                  }
+                />
+                {errors.email && touched.email && (
+                  <div className="input-feedback">{errors.email}</div>
+                )}
+
+                <div role="group" aria-labelledby="rsvp-radio-group">
+                  <p>Please tell us if you can make it to the event *</p>
+                  <label>
+                    <div className="rsvp__radio-label">
+                      <Field
+                        type="radio"
+                        name="attendance"
+                        value="yes"
+                        className="rsvp__radio-button"
+                      />
+                      <span>Yes, I will attend</span>
+                    </div>
+                  </label>
+                  <label>
+                    <div className="rsvp__radio-label">
+                      <Field
+                        type="radio"
+                        name="attendance"
+                        value="no"
+                        className="rsvp__radio-button"
+                      />
+                      <span> No, I will not attend</span>
+                    </div>
+                  </label>
+                  {errors.attendance && !touched.surname && (
+                    <div className="input-feedback">{errors.attendance}</div>
+                  )}
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="15"
+                  cols="50"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder="In case you want to tell us something"
+                />
+
+                <div className="rsvp__submit-wrapper">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="btn-rsvp"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            );
+          }}
+        </Formik>
+      </div>
     </div>
   );
 }

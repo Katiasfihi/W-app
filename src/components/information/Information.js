@@ -98,7 +98,7 @@ function Information() {
 
                   <div className="info__section-hotel">
                     <a
-                      href="https://all.accor.com/hotel/8234/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
+                      href="https://www.marriott.com/hotels/travel/mcmcd-riviera-marriott-hotel-la-porte-de-monaco/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MjY5NjEzMy03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D"
                       target="_blank"
                     >
                       <p className="info__section-hotel-name">
