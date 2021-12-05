@@ -22,8 +22,6 @@ function Header() {
               }}
             />
           </div>
-          <div></div>
-
           <div className="scroll">SCROLL FOR MORE</div>
           <div className="arrow-container">
             <a href="#about">

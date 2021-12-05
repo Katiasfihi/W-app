@@ -41,3 +41,32 @@
     text-decoration: none;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .navigation {
+    display: flex;
+    width: 100vw;
+
+    &__list-wrapper {
+      width: initial;
+      position: initial;
+      height: auto;
+      align-items: inherit;
+    }
+
+    &__list {
+      list-style: none;
+      margin: inherit;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 2rem 2rem 0;
+    }
+
+    &__list-item {
+      margin: 0 0 0 2rem;
+      font-size: 18px;
+    }
+  }
+}

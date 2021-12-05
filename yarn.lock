@@ -1552,6 +1552,11 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
   integrity sha512-IXf3XA7+XyN7CP9gGh/XB0UxVMlvARGEgGXLubFICsUMGz6Q+DU+i4gGlpOxTjKvXjkJDJC8YdqdKkDj9qZHEQ==
 
+"@react-hook/media-query@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@react-hook/media-query/-/media-query-1.1.1.tgz#7fc4e52591784a39be924b62b4270ae3e18ec578"
+  integrity sha512-VM14wDOX5CW5Dn6b2lTiMd79BFMTut9AZj2+vIRT3LCKgMCYmdqruTtzDPSnIVDQdtxdPgtOzvU9oK20LopuOw==
+
 "@rehooks/window-scroll-position@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@rehooks/window-scroll-position/-/window-scroll-position-1.0.1.tgz#3cb80f22cbf9cdbd2041b5236ae1fce8245b2f1c"
