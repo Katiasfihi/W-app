@@ -9,12 +9,15 @@ import Footer from "../footer/Footer";
 import GettingThere from "../gettingThere/GettingThere";
 import Parking from "../parking/Parking";
 import Navigation from "../navigation/Navigation";
+import { useMediaQuery } from "@react-hook/media-query";
 
 function Pages() {
+  const isMobile = useMediaQuery("only screen and (max-width: 992px)");
+
   return (
     <div>
       <Navigation />
-      <Header />
+      {isMobile && <Header />}
       <About />
       <Schedule />
       <Destination />
