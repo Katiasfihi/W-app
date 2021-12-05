@@ -73,11 +73,7 @@ function Rsvp() {
                   value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={
-                    errors.name && touched.name
-                      ? "text-input error"
-                      : "text-input"
-                  }
+                  className={errors.name ? "text-input error" : "text-input"}
                 />
                 {errors.name && !touched.name && (
                   <div className="input-feedback">{errors.name}</div>
@@ -94,11 +90,7 @@ function Rsvp() {
                   value={values.surname}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={
-                    errors.surname && touched.surname
-                      ? "text-input error"
-                      : "text-input"
-                  }
+                  className={errors.surname ? "text-input error" : "text-input"}
                 />
                 {errors.surname && !touched.surname && (
                   <div className="input-feedback">{errors.surname}</div>

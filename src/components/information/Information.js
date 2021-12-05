@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Translation } from "react-i18next";
 
-import logo1 from "../../photos/miamibr.jpg";
-import logo3 from "../../photos/berlin2br.jpg";
+import logo1 from "../../photos/miamibr-min.jpg";
+import logo3 from "../../photos/berlin2br-min.jpg";
 
 import "./Information.scss";
 

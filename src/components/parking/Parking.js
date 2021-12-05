@@ -1,6 +1,6 @@
 import { Translation } from "react-i18next";
 
-import logo1 from "../../photos/image2BB.jpg";
+import logo1 from "../../photos/image2BB-min.jpg";
 
 import "./Parking.scss";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Translation } from "react-i18next";
 
-import logo1 from "../../photos/latimers2br.jpg";
+import logo1 from "../../photos/latimers2br-min.jpg";
 
 import "./Schedule.scss";
 

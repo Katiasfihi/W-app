@@ -1,6 +1,6 @@
 import { Translation } from "react-i18next";
 
-import logo1 from "../../photos/hippy2br.jpg";
+import logo1 from "../../photos/hippy2br-min.jpg";
 import "./GettingThere.scss";
 
 function GettingThere() {

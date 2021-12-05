@@ -1,7 +1,7 @@
 import React from "react";
 import { Translation } from "react-i18next";
 
-import logo from "../../photos/20200614_220426.jpg";
+import logo from "../../photos/20200614_220426-min.jpg";
 
 import "./Destination.scss";
 
