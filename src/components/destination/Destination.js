@@ -5,21 +5,42 @@ import logo from "../../photos/20200614_220426-min.jpg";
 
 import "./Destination.scss";
 
-function Destination() {
+function Destination({ isMobile }) {
   return (
     <Translation>
       {(t) => (
         <div className="destination">
-          <div className="wrapper">
-            <img src={logo} alt="Logo" className="destination__img" />
+          {/* {isMobile && (
+            <div className="wrapper">
+              <img src={logo} alt="Logo" className="destination__img" />
+            </div>
+          )} */}
+          <div className="destination__content">
+            {isMobile && (
+              <div className="wrapper">
+                <img src={logo} alt="Logo" className="destination__img" />
+              </div>
+            )}
+            <div className="destination__image"></div>
+
+            <div>
+              <div className="destination__title" id="destination">
+                {t("Destination")}
+              </div>
+              <div className="destination__introduction">
+                {t("Destination0")}
+              </div>
+              <div className="destination__introduction">
+                {t("Destination1")}
+              </div>
+              <div className="destination__introduction">
+                {t("Destination2")}
+              </div>
+              <div className="destination__introduction">
+                {t("Destination3")}
+              </div>
+            </div>
           </div>
-          <div className="destination__title" id="destination">
-            {t("Destination")}
-          </div>
-          <div className="destination__introduction">{t("Destination0")}</div>
-          <div className="destination__introduction">{t("Destination1")}</div>
-          <div className="destination__introduction">{t("Destination2")}</div>
-          <div className="destination__introduction">{t("Destination3")}</div>
         </div>
       )}
     </Translation>

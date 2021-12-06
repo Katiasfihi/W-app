@@ -2,14 +2,11 @@ import React from "react";
 import "./About.scss";
 import logo from "../../photos/parisbr-min.jpg";
 import { useHistory } from "react-router-dom";
-import { useMediaQuery } from "@react-hook/media-query";
 
 import { Translation } from "react-i18next";
-import TypewriterComponent from "typewriter-effect";
 
-function About() {
+function About({ isMobile }) {
   const history = useHistory();
-  const isMobile = useMediaQuery("only screen and (max-width: 992px)");
 
   function validateRsvp() {
     history.push("/rsvp");

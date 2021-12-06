@@ -15,17 +15,17 @@ function Pages() {
   const isMobile = useMediaQuery("only screen and (max-width: 992px)");
 
   return (
-    <div>
+    <>
       <Navigation />
       {isMobile && <Header />}
-      <About />
-      <Schedule />
-      <Destination />
-      <Information />
-      <GettingThere />
-      <Parking />
-      <Footer />
-    </div>
+      <About isMobile={isMobile} />
+      <Schedule isMobile={isMobile} />
+      <Destination isMobile={isMobile} />
+      <Information isMobile={isMobile} />
+      <GettingThere isMobile={isMobile} />
+      <Parking isMobile={isMobile} />
+      <Footer isMobile={isMobile} />
+    </>
   );
 }
 

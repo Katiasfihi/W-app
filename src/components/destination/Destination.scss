@@ -1,9 +1,7 @@
 .destination {
   display: flex;
-  justify-content: left;
   flex-wrap: wrap;
   background-color: #f5e2df;
-  display: flex;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 6rem;
@@ -76,5 +74,32 @@
     cursor: pointer;
     font-family: Big Caslon;
     margin-bottom: 8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .destination {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 6rem;
+    font-size: 27px;
+
+    &__content {
+      display: flex;
+      width: 80%;
+    }
+
+    &__introduction {
+      font-size: 27px;
+    }
+
+    &__image {
+      width: 100%;
+      background-image: url("../../photos/20200614_220426-min.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
   }
 }

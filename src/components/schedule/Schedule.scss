@@ -52,3 +52,53 @@
     margin: 0 0 4rem 0;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: center;
+
+    &__content {
+      display: flex;
+      width: 80%;
+    }
+
+    &__title-wrapper {
+      padding: 0;
+      width: 40%;
+      margin: 1.5rem 0;
+    }
+
+    &__info-wrapper {
+      padding: 0;
+      margin-bottom: 7rem;
+      font-size: 27px;
+    }
+
+    &__location {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__city {
+      width: 50%;
+      text-align: left;
+      margin-bottom: 3rem;
+
+      &--last {
+        margin-bottom: 15rem;
+      }
+    }
+
+    &__moutain-pic-wrapper {
+      background-image: url("../../photos/latimers2br-min.jpg");
+      width: 80vw;
+      height: 56rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: -22rem;
+    }
+  }
+}

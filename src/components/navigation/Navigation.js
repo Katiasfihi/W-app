@@ -2,17 +2,14 @@ import React, { useState, useEffect } from "react";
 import i18n from "i18next";
 import { Translation } from "react-i18next";
 
-import { useMediaQuery } from "@react-hook/media-query";
-
 import { Fade as Hamburger } from "hamburger-react";
 import NavList from "./NavList";
 
 import "./Navigation.scss";
 
-const Navigation = ({ noBurger }) => {
+const Navigation = ({ noBurger, isMobile }) => {
   const [lang, setLang] = useState("en");
   const [isOpen, setIsOpen] = useState(false);
-  const isMobile = useMediaQuery("only screen and (max-width: 992px)");
   const navOnMobile = isOpen && isMobile;
   const navOnDesktop = !isMobile;
 
