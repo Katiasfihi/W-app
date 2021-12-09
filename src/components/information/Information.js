@@ -6,7 +6,7 @@ import logo3 from "../../photos/berlin2br-min.jpg";
 
 import "./Information.scss";
 
-function Information() {
+function Information({ isMobile }) {
   const nice = "Nice";
   const [city, setCity] = useState("nice");
   const Villefranche = "Villefranche sur Mer";
@@ -18,11 +18,11 @@ function Information() {
         <div className="info">
           <div className="info__section">
             <img src={logo1} alt="Logo" className="info__section-img" />
-            <div className="info__title" id="accommodation">
-              Accommodation
-            </div>
 
             <div className="info__section-text-wrapper">
+              <div className="info__title" id="accommodation">
+                Accommodation
+              </div>
               <p>{t("text_information1")}</p>
               <div className="cities">
                 <text
@@ -123,7 +123,9 @@ function Information() {
             </div>
           </div>
 
-          <img src={logo3} alt="Logo" className="info__section-img"></img>
+          {isMobile && (
+            <img src={logo3} alt="Logo" className="info__section-img"></img>
+          )}
         </div>
       )}
     </Translation>

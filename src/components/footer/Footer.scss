@@ -1,14 +1,12 @@
 .footer {
-
-margin: 1rem 3rem 1rem 3rem;
+  margin: 1rem 3rem 1rem 3rem;
 
   &__wrapper-last {
-  flex-basis: 40%;
-  text-align: center;
-  margin: 2rem 0 2rem 0;
-  font-style: italic;
-  font-size: 13px;
-
+    flex-basis: 40%;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    font-style: italic;
+    font-size: 13px;
   }
 
   &__wrapper-quote {
@@ -16,10 +14,10 @@ margin: 1rem 3rem 1rem 3rem;
     text-align: center;
     margin: 2rem 0 3rem 0;
     font-size: 24px;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     line-height: 1.7rem;
     font-family: Big Caslon;
-    }
+  }
 
   &__wrap {
     display: flex;
@@ -32,35 +30,13 @@ margin: 1rem 3rem 1rem 3rem;
     color: #fff;
     border: none;
     font-weight: 500;
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
     line-height: 1.2em;
     cursor: pointer;
     font-family: Big Caslon;
     margin-bottom: 9rem;
   }
-    
-  
-
 }
-
-
-
-
-
-// .footer-wrapper {
-//   border: 2px solid green;
-//   flex-basis: 40%;
-//   text-align: center;
-//   margin: 2rem 0 2rem 0;
-// }
-
-// .button-wrapper {
-//   border: 2px solid blue;
-//   float: right;
-//   margin: 2rem 0rem 5rem 0.9rem;
-//   text-align: center;
-
-// }
 
 .button2 {
   padding: 1rem 4rem;
@@ -68,77 +44,21 @@ margin: 1rem 3rem 1rem 3rem;
   color: #fff;
   border: none;
   font-weight: 500;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   line-height: 1.2em;
   cursor: pointer;
   font-family: Big Caslon;
   margin-bottom: 5rem;
 }
 
-
-// .footer-wrapper {
-//     border: 2px solid green;
-//     flex-basis: 40%;
-//     text-align: center;
-//     margin: 10rem 0 3rem 0;
-//   }
-// //   .text-wrapper {
-// //     border: 2px solid blue;
-// //     float: right;
-// //     padding: 3rem;
-// //     margin: 18rem 20rem 0 0;
-// //   }
-
-//   .btn2 {
-//     margin: auto;
-//     display: block;
-//     padding: 1rem 4rem;
-//     background-color: #db423d;
-//     color: #fff;
-//     border: none;
-//     font-weight: 500;
-//     letter-spacing: .08em;
-//     line-height: 1.2em;
-//     text-align: center;
-//     font-family: Big Caslon;
-//   }
-
-// @media only screen and (max-width: 700px)  { 
-
-// .footer-wrapper {
-//     border: 2px solid green;
-//     flex-basis: 40%;
-//     text-align: center;
-//   }
-
-//   .button-wrapper {
-//     border: 2px solid blue;
-//     float: right;
-//     margin: 2rem 0rem 5rem 0.9rem;
-//     text-align: center;
-
-//   }
-
-//   .btn2 {
-//     margin: 0 6.5rem;
-//     padding: 1rem 4rem;
-//     background-color: #db423d;
-//     color: #fff;
-//     border: none;
-//     font-weight: 500;
-//     letter-spacing: .08em;
-//     line-height: 1.2em;
-//     font-family: Big Caslon;
-//   }
-
-// //   .beach-pic {
-// //     width: 376px;
-// //     object-fit: cover;
-// //     margin: 3rem 0 0 0;
-// //     height: 500px;  
-// //      padding: 0 0 0rem 0rem;
-// // }
-
-// }
-
-
+@media screen and (min-width: 992px) {
+  .footer {
+    &__wrapper-quote {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      font-size: 35px;
+      line-height: 2.5rem;
+    }
+  }
+}

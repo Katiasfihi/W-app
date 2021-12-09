@@ -52,3 +52,33 @@
     }
   }
 }
+
+@media screen and (min-width: 992px) {
+  .gettingThere {
+    padding: 10rem 0;
+
+    &__section-wrapper {
+      display: grid;
+      width: 80%;
+      grid-template-columns: 40% 60%;
+      margin: 0 auto;
+      grid-template-areas: "image description";
+    }
+
+    &__title {
+      padding: 2rem 2rem 2rem 2rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: -webkit-fill-available;
+      grid-area: image;
+    }
+
+    &__section {
+      padding: 0;
+      grid-area: description;
+      margin-left: 10rem;
+    }
+  }
+}

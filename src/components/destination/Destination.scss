@@ -82,12 +82,17 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    padding-top: 6rem;
+    padding: 10rem 0;
     font-size: 27px;
 
     &__content {
-      display: flex;
+      display: grid;
       width: 80%;
+      grid-template-columns: 40% 60%;
+    }
+
+    &__details {
+      margin-left: 10rem;
     }
 
     &__introduction {

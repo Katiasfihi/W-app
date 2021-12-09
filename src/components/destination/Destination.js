@@ -23,7 +23,7 @@ function Destination({ isMobile }) {
             )}
             <div className="destination__image"></div>
 
-            <div>
+            <div className="destination__details">
               <div className="destination__title" id="destination">
                 {t("Destination")}
               </div>

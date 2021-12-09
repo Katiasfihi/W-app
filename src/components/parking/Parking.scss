@@ -48,3 +48,24 @@
     }
   }
 }
+
+@media screen and (min-width: 992px) {
+  .parking {
+    background-color: #fdf8f7;
+    justify-content: center;
+    flex-direction: column;
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem 0;
+    grid-template-columns: 54% 46%;
+
+    &__description {
+      margin-right: 10rem;
+    }
+
+    &__img {
+      height: inherit;
+    }
+  }
+}

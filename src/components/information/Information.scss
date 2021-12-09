@@ -27,7 +27,7 @@
     font-family: Big Caslon;
     font-style: italic;
     font-size: 14px;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 0;
   }
 
   &__section-img {
@@ -65,4 +65,32 @@
 .selected {
   border-bottom: 2px solid #db423d;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .info {
+    padding: 10rem 0;
+
+    &__section {
+      display: grid;
+      width: 80%;
+      grid-template-columns: 54% 46%;
+      margin: 0 auto;
+      grid-template-areas: "description image";
+    }
+
+    &__title {
+      padding: 2rem 2rem 2rem 0;
+    }
+
+    &__section-img {
+      width: 100%;
+      height: inherit;
+      grid-area: image;
+    }
+
+    &__section-text-wrapper {
+      padding: 0rem 10rem 5rem 2rem;
+    }
+  }
 }
