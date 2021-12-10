@@ -16,7 +16,7 @@ function Pages() {
 
   return (
     <>
-      <Navigation />
+      <Navigation isMobile={isMobile} />
       {isMobile && <Header />}
       <About isMobile={isMobile} />
       <Schedule isMobile={isMobile} />

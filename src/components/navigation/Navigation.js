@@ -10,7 +10,7 @@ import "./Navigation.scss";
 const Navigation = ({ noBurger, isMobile }) => {
   const [lang, setLang] = useState("en");
   const [isOpen, setIsOpen] = useState(false);
-  const navOnMobile = isOpen && isMobile;
+  const navOnMobile = isMobile;
   const navOnDesktop = !isMobile;
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Navigation = ({ noBurger, isMobile }) => {
     isOpen && isMobile
       ? (document.querySelector("body").className = "no-scroll")
       : (document.querySelector("body").className = "");
-  }, [isOpen]);
+  }, [isOpen, isMobile]);
 
   const langChange = (e) => {
     setLang(e.target.value);
@@ -63,7 +63,9 @@ const Navigation = ({ noBurger, isMobile }) => {
             </div>
           )}
           {navOnDesktop && <NavList handleBurger={handleBurger} />}
-          {navOnMobile && <NavList handleBurger={handleBurger} isMobile />}
+          {isOpen && navOnMobile && (
+            <NavList handleBurger={handleBurger} isMobile />
+          )}
         </div>
       )}
     </Translation>
