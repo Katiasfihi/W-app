@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { useHistory, Link } from "react-router-dom";
-
 import { Formik, Field } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
+import { useMediaQuery } from "@react-hook/media-query";
 
 import Navigation from "../navigation/Navigation";
 
@@ -12,6 +12,7 @@ import "../rsvp/Rsvp.scss";
 function Rsvp() {
   const form = useRef();
   const history = useHistory();
+  const isMobile = useMediaQuery("only screen and (max-width: 992px)");
 
   const sendEmail = (e) => {
     emailjs
@@ -29,7 +30,7 @@ function Rsvp() {
 
   return (
     <div className="rsvp">
-      <Navigation noBurger />
+      <Navigation noBurger hideNavList isMobile={isMobile} />
       <Link to="/pages">
         <h1 className="katia">Katia & Carol</h1>
       </Link>

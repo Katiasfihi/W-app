@@ -7,7 +7,7 @@ import NavList from "./NavList";
 
 import "./Navigation.scss";
 
-const Navigation = ({ noBurger, isMobile }) => {
+const Navigation = ({ noBurger, isMobile, hideNavList }) => {
   const [lang, setLang] = useState("en");
   const [isOpen, setIsOpen] = useState(false);
   const navOnMobile = isMobile;
@@ -63,7 +63,7 @@ const Navigation = ({ noBurger, isMobile }) => {
             </div>
           )}
           {navOnDesktop && <NavList handleBurger={handleBurger} />}
-          {isOpen && navOnMobile && (
+          {isOpen && navOnMobile && !hideNavList && (
             <NavList handleBurger={handleBurger} isMobile />
           )}
         </div>
