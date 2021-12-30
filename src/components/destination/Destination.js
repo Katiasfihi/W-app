@@ -9,7 +9,7 @@ function Destination({ isMobile }) {
   return (
     <Translation>
       {(t) => (
-        <div className="destination">
+        <div className="destination" id="destination">
           {/* {isMobile && (
             <div className="wrapper">
               <img src={logo} alt="Logo" className="destination__img" />
@@ -24,9 +24,7 @@ function Destination({ isMobile }) {
             <div className="destination__image"></div>
 
             <div className="destination__details">
-              <div className="destination__title" id="destination">
-                {t("Destination")}
-              </div>
+              <div className="destination__title">{t("Destination")}</div>
               <div className="destination__introduction">
                 {t("Destination0")}
               </div>

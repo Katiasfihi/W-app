@@ -7,12 +7,10 @@ function GettingThere() {
   return (
     <Translation>
       {(t) => (
-        <div className="gettingThere">
+        <div className="gettingThere" id="getting-there">
           <div className="gettingThere__section-wrapper">
             <div className="gettingThere__section">
-              <div id="getting-there" className="gettingThere__title">
-                {t("gettingThere")}
-              </div>
+              <div className="gettingThere__title">{t("gettingThere")}</div>
               <div className="gettingThere__introduction">
                 {t("gettingThere0")}
               </div>

@@ -15,14 +15,12 @@ function Information({ isMobile }) {
   return (
     <Translation>
       {(t) => (
-        <div className="info">
+        <div className="info" id="accommodation">
           <div className="info__section">
             <img src={logo1} alt="Logo" className="info__section-img" />
 
             <div className="info__section-text-wrapper">
-              <div className="info__title" id="accommodation">
-                Accommodation
-              </div>
+              <div className="info__title">{t(`Accommodation`)}</div>
               <p>{t("text_information1")}</p>
               <div className="cities">
                 <text
@@ -61,13 +59,21 @@ function Information({ isMobile }) {
                   <p>{t(`text_information_${city}1`)}</p>
 
                   {city === "villefranche" ? (
-                    <a target="_blank" href="bit.ly/nice_airbnb">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://www.bit.ly/nice_airbnb"
+                    >
                       {t(`text_information_${city}2`)}
                     </a>
                   ) : (
                     <p>
                       {t(`text_information_${city}2`)} <br />
-                      <a target="_blank" href="bit.ly/nice_airbnb">
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://www.bit.ly/nice_airbnb"
+                      >
                         {t(`text_information_${city}3`)}
                       </a>
                     </p>
