@@ -10,10 +10,21 @@ import "./Navigation.scss";
 const Navigation = ({ noBurger, isMobile, hideNavList }) => {
   const [lang, setLang] = useState("en");
   const [isOpen, setIsOpen] = useState(false);
+  const [colorChange, setColorchange] = useState(false);
   const navOnMobile = isMobile;
   const navOnDesktop = !isMobile;
 
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+
   useEffect(() => {
+    window.addEventListener('scroll', changeNavbarColor);  
     setLang(localStorage.getItem("language"));
     isOpen && isMobile
       ? (document.querySelector("body").className = "no-scroll")
@@ -34,7 +45,7 @@ const Navigation = ({ noBurger, isMobile, hideNavList }) => {
   return (
     <Translation>
       {(t) => (
-        <div className="navigation">
+        <div className={colorChange && navOnDesktop ? 'colorchange' : 'navigation'}>
           <div className="navigation__translation">
             <select
               className="selectBox"
