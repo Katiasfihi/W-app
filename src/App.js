@@ -19,13 +19,13 @@ export default class App extends React.Component {
             <Route component={Login} path="/login" />
           </Switch>
           <Switch>
-            <Route component={Pages} path="/pages" />
-          </Switch>
-          <Switch>
             <Route component={Rsvp} path="/rsvp" />
           </Switch>
           <Switch>
             <Route component={Thankyou} path="/thankyou" />
+          </Switch>
+          <Switch>
+            <Route component={Pages} path="/" exact />
           </Switch>
         </Router>
       </>

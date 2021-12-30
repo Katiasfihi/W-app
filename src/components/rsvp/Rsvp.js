@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useHistory, Link } from "react-router-dom";
 import { Formik, Field } from "formik";
 import * as Yup from "yup";
@@ -13,6 +13,7 @@ function Rsvp() {
   const form = useRef();
   const history = useHistory();
   const isMobile = useMediaQuery("only screen and (max-width: 992px)");
+  const [isAttending, setIsAttending] = useState(false);
 
   const sendEmail = (e) => {
     emailjs
@@ -31,7 +32,7 @@ function Rsvp() {
   return (
     <div className="rsvp">
       <Navigation noBurger hideNavList isMobile={isMobile} />
-      <Link to="/pages">
+      <Link to="/">
         <h1 className="katia">Katia & Carol</h1>
       </Link>
       <div className="rsvp__content">
@@ -40,7 +41,13 @@ function Rsvp() {
           confirm your attendance.
         </h2>
         <Formik
-          initialValues={{ email: "" }}
+          initialValues={{
+            email: "",
+            surname: "",
+            name: "",
+            attendance: "",
+            car: "",
+          }}
           onSubmit={sendEmail}
           validationSchema={Yup.object().shape({
             name: Yup.string().required("Please tell us your name"),
@@ -48,6 +55,11 @@ function Rsvp() {
             attendance: Yup.string().required(
               "Please tell us if you can make it to the event"
             ),
+            car:
+              isAttending &&
+              Yup.string().required(
+                "Please tell us if you will have access to a car this weekend"
+              ),
           })}
         >
           {(props) => {
@@ -60,6 +72,11 @@ function Rsvp() {
               handleBlur,
               handleSubmit,
             } = props;
+
+            if (values.attendance === "yes") {
+              setIsAttending(true);
+            }
+
             return (
               <form onSubmit={handleSubmit} ref={form}>
                 <label htmlFor="name" style={{ display: "block" }}>
@@ -74,9 +91,13 @@ function Rsvp() {
                   value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={errors.name ? "text-input error" : "text-input"}
+                  className={
+                    errors.name && touched.name
+                      ? "text-input error"
+                      : "text-input"
+                  }
                 />
-                {errors.name && !touched.name && (
+                {errors.name && touched.name && (
                   <div className="input-feedback">{errors.name}</div>
                 )}
                 <label htmlFor="surname" style={{ display: "block" }}>
@@ -91,9 +112,13 @@ function Rsvp() {
                   value={values.surname}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={errors.surname ? "text-input error" : "text-input"}
+                  className={
+                    errors.surname && touched.surname
+                      ? "text-input error"
+                      : "text-input"
+                  }
                 />
-                {errors.surname && !touched.surname && (
+                {errors.surname && touched.surname && (
                   <div className="input-feedback">{errors.surname}</div>
                 )}
                 <label htmlFor="email" style={{ display: "block" }}>
@@ -114,9 +139,6 @@ function Rsvp() {
                       : "text-input"
                   }
                 />
-                {errors.email && touched.email && (
-                  <div className="input-feedback">{errors.email}</div>
-                )}
 
                 <div role="group" aria-labelledby="rsvp-radio-group">
                   <p>Please tell us if you can make it to the event *</p>
@@ -142,10 +164,43 @@ function Rsvp() {
                       <span> No, I will not attend</span>
                     </div>
                   </label>
-                  {errors.attendance && !touched.surname && (
+                  {errors.attendance && touched.attendance && (
                     <div className="input-feedback">{errors.attendance}</div>
                   )}
                 </div>
+                {isAttending && (
+                  <div role="group" aria-labelledby="rsvp-radio-group">
+                    <p>
+                      Please tell us if you will have access to a car this
+                      weekend*
+                    </p>
+                    <label>
+                      <div className="rsvp__radio-label">
+                        <Field
+                          type="radio"
+                          name="car"
+                          value="yes"
+                          className="rsvp__radio-button"
+                        />
+                        <span>Yes, I will have access to a car</span>
+                      </div>
+                    </label>
+                    <label>
+                      <div className="rsvp__radio-label">
+                        <Field
+                          type="radio"
+                          name="car"
+                          value="no"
+                          className="rsvp__radio-button"
+                        />
+                        <span> No, I will not have access to a car</span>
+                      </div>
+                    </label>
+                    {errors.car && touched.car && (
+                      <div className="input-feedback">{errors.car}</div>
+                    )}
+                  </div>
+                )}
 
                 <label for="message">Message:</label>
                 <textarea
