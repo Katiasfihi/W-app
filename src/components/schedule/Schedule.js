@@ -9,7 +9,7 @@ const Schedule = ({ isMobile }) => {
   return (
     <Translation>
       {(t) => (
-        <div className="schedule">
+        <div className="schedule" id="schedule">
           {isMobile && (
             <div className="schedule__moutain-pic-wrapper">
               <img
@@ -21,9 +21,7 @@ const Schedule = ({ isMobile }) => {
           )}
 
           <div className="schedule__content">
-            <h3 className="schedule__title-wrapper" id="schedule">
-              Schedule
-            </h3>
+            <h3 className="schedule__title-wrapper">{t("Schedule")}</h3>
             <div className="schedule__bloc-wrapper">
               <div className="schedule__info-wrapper">
                 <p className="schedule__text-schedule">{t("text_schedule")}</p>

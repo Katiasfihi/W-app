@@ -11,6 +11,7 @@ i18n.use(initReactI18next).init({
         Schedule: "Schedule",
         Information: "Information",
         Rsvp: "Rsvp",
+        Accommodation: "Accommodation",
         About: "About",
         About0:
           "We are so delighted to finally be able to organise our wedding and to celebrate this special day with you, full of love, kindness, laugh and champagne of course!",
@@ -76,7 +77,7 @@ i18n.use(initReactI18next).init({
           "Nice Côte d'Azur Airport is the closest airport. We suggest renting a car once you arrive, so you have the chance to explore. Also all the venues are next to each other but a car would be needed to commute from the wedding ceremony (Villefranche) to the restaurant (Cap d’Ail). ",
         gettingThere1: "Car rental at Nice airport",
         gettingThere2:
-          "If you don’t have the possibility to rent a car, let us know so we can plan ahead.",
+          "If you don’t have the possibility to rent a car, let us know so we can plan ahead. We are considering renting sa shuttle",
         gettingThere3: "If you come by train you can stop at Gare Nice-Ville.",
         parking: "Parking",
         parking0:
@@ -97,6 +98,7 @@ i18n.use(initReactI18next).init({
         Schedule: "Agenda",
         Information: "Information",
         Rsvp: "Rsvp",
+        Accommodation: "Accommodation",
         About: "À propos",
         About0:
           "Nous nous sommes rencontrés il y a 9 ans à Londres pour la première fois. Dave était dans un supermarché, dans l'allée des surgelés, essayant de comprendre ce qu'est la crème glacée végétalienne et une fille s'approche et dit ",
@@ -120,29 +122,87 @@ i18n.use(initReactI18next).init({
     },
     ro: {
       translation: {
-        Password: "Parola :",
-        Login: "Autentificare",
-        Schedule: "Calendar",
+        Password: "Password :",
+        Login: "Login",
+        Schedule: "Program",
         Information: "Information",
         Rsvp: "Rsvp",
-        About:
-          "Ne-am întâlnit acum 9 ani la Londra pentru prima dată. Dave era într-un supermarket, pe culoarul cu alimente congelate, încercând să-și dea seama ce este înghețata vegană și o fată se apropie și spune: „Hei, știi de unde să iei ",
-        Date: "2 iulie 2022",
-        text_schedule:
-          "Ne-am întâlnit acum 9 ani la Londra pentru prima dată. Dave era într-un supermarket, pe culoarul cu alimente congelate, încercând să-și dea seama ce este înghețata vegană și o fată se apropie și spune: „Hei, știi de unde să iei înghețată vegană?”. Ca cuplu suntem împreună de 8 ani și ne căsătorim anul viitor.",
+        Accommodation: "Cazare",
+        About: "About",
+        About0:
+          "Suntem atât de încântați să putem în sfârșit să ne organizăm nunta și să sărbătorim această zi specială alături de voi, plină de dragoste, voie bună, râs și șampanie bineînțeles!",
+        About1:
+          "We fell in love in London more than 6 years ago, and it is now time to throw the party of our lifetime in the beautiful French Riveira.",
+        About2:
+          "Evenimentul va avea loc pe 2 și 3 iulie 2022 în Coasta de Azur, sudul Franței.",
+        Date: "2nd of July 2022",
+        text_schedule: "Două zile, în trei locații!",
+        text_schedule0:
+          "Trăim atât de departe de mulți dintre voi și nu ajungem să vă vedem atât de mult pe cât ne-am dori, așa că ne-ar plăcea să petrecem întregul weekend sărbătorind cu voi.",
+        text_schedule1:
+          "Programul include o ceremonie de nuntă în Citadela din secolul al XVI-lea din Villefranche, o cină de nuntă la Atrego și, în final, un prânz de nuntă a două zi pe acoperișul AC Marriott din Nisa.",
         text_schedule2:
-          "Decor proiectat de Philippe Starck și o vedere unică la mare pentru un restaurant provensal cu un decor de designer.",
-        meeting1: "Întâlnire la ora 16:00",
-        meeting2: "Întâlnire la ora 19:00",
-        meeting3: "Ne întâlnim la 12:30 a doua zi",
+          "Va rog să faceți clic pe locații pentru a fi redirecționați către site-urile lor.",
+        meeting1: "Meeting at 4 o'clock",
+        meeting2: "Meeting at 7 o'clock",
+        meeting3: "Meeting at 12:30pm the day after",
+        Destination: "Destinația",
+        Destination0:
+          "Cunoscută și sub denumirea de Riviera Franceză, Coasta de Azur se traduce în Coasta Albastră, luând numele de la culoarea albastru-azuriu profund a Mării Mediterane.",
+        Destination1:
+          "După ce am petrecut două veri și mai bine de 7 săptămâni creând amintiri în această minunată destinație, decizia de a ne căsătorii  acolo a fost firescă.",
+        Destination2:
+          "Clipe de relaxare sub un baldachin la Cannes, plecări cu barcă din portul Villefranche, petreceri la Saint Tropez să plimbări pe bulevardele din Nisa sunt amintiri petrecute împreună pe care nu le vom uită.",
+        Destination3:
+          "Suntem încântați să petrecem un weekend alături de voi într-un loc atât de special pentru noi.",
         text_information1:
-          "Villefranche-sur-Mer este o comună franceză, învecinată cu Nisa, situată în departamentul Alpes-Maritimes din regiunea Provence-Alpes-Côte d'Azur. Locuitorii săi sunt numiți Villefranchois, ca în majoritatea orașelor care poartă numele de Villefranche, și citesc Vilafranquié în Nisa.",
-        text_information2:
-          "Villefranche-sur-Mer este o comună franceză, învecinată cu Nisa, situată în departamentul Alpes-Maritimes din regiunea Provence-Alpes-Côte d'Azur. Locuitorii săi sunt numiți Villefranchois, ca în majoritatea orașelor care poartă numele de Villefranche, și citesc Vilafranquié în Nisa.",
-        text_information3:
-          "Villefranche-sur-Mer este o comună franceză, învecinată cu Nisa, situată în departamentul Alpes-Maritimes din regiunea Provence-Alpes-Côte d'Azur. Locuitorii săi sunt numiți Villefranchois, ca în majoritatea orașelor care poartă numele de Villefranche, și citesc Vilafranquié în Nisa.",
-        text_information4:
-          "Villefranche-sur-Mer este o comună franceză, învecinată cu Nisa, situată în departamentul Alpes-Maritimes din regiunea Provence-Alpes-Côte d'Azur. Locuitorii săi sunt numiți Villefranchois, ca în majoritatea orașelor care poartă numele de Villefranche, și citesc Vilafranquié în Nisa.",
+          "Riviera Franceză este uimitoare și este plină de locuri incredibile în care să va puteți caza . Toate locațiile sunt una lângă celalaltă, așa că șederea în Nisa, Villefranche sau Cap d’ail nu va face nici o diferență. Cu toate acestea, vă recomandăm fie în Nisa sau Villefranche, deoarece ambele sunt aproape, foarte diverse, energice și frumoase.",
+        text_information_nice:
+          "Nisa este un oraș incredibil și vibrant, cu o mulțime de lucruri de făcut și foarte aproape de orice. Un contra argument la cele de mai sus ar fi că plajă are stânci și nu nisip.",
+        text_information_nice0: "Dacă vrei să afli mai multe despre Nisa",
+        text_information_nice1:
+          "Cele mai frumoase zone din Nisa sunt: ​​Le Quartier Mont Boron, le Quartier Libération, le Quartier Cimiez, le Quartier de Valrose, le quartier du Port, le Vieux-Nice, le Quartier Gairaut, le quartier Jean-Médecin.",
+        text_information_nice2: "Puteți găsii cazare pe Airbnb:",
+        text_information_nice3: "Cazare prin Airbnb la Nisa",
+        text_information_villefranche:
+          "Villefranche-sur-mer este un sat uimitor cu vedere la peninsula St Jean Cap Ferrat. Am stat acolo 5 săptămâni anul trecut și ne-a plăcut:",
+        text_information_villefranche0:
+          "Dacă doriți să aflați mai multe despre Villefranche-sur-mer",
+        text_information_villefranche1: "Puteți găsii cazare pe Airbnb:",
+        text_information_villefranche2: "Cazare prin Airbnb in Villefranche",
+        text_information_hotel:
+          "Beige, agenția care ne ajută să organizăm evenimentul, ne-a oferit tarife preferențiale pentru weekendul nunții noastre.",
+
+        text_information_hotel_0_title: "Ibis Beaulieu sur Mer",
+        text_information_hotel_0_address:
+          "3 Bd Maréchal Joffre – 06310 Beaulieu-sur-Mer – France",
+        text_information_hotel_0_deal:
+          "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€ (tax not included)",
+        text_information_hotel_0_second_deal:
+          "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€ (tax not included)",
+        text_information_hotel_1_title: "Riviera Marriott Hôtel Cap d’Ail",
+        text_information_hotel_1_address: "Le Port - 06 320 Cap d’Ail",
+        text_information_hotel_1_address_tip:
+          "(2 min walk distance from A'trego)",
+        text_information_hotel_1_deal:
+          "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 608€ (tax not included)",
+        gettingThere: "Cum ajungem",
+        gettingThere0:
+          "Aeroportul Nice Côte d'Azur este cel mai apropiat aeroport. Vă sugerăm să închiriați o mașină odată ce ajungeți, astfel încât să aveți șansa de a explora. De asemenea, toate locațiile sunt aproape una de cealaltă, dar ar fi nevoie de o mașină pentru a vă deplasa de la ceremonie (Villefranche) la restaurant (Cap d’Ail).",
+        gettingThere1: "Închirieri auto pe aeroportul din Nisa",
+        gettingThere2:
+          "Dacă nu aveți posibilitatea de a închiria o mașină, anunțați-ne astfel încât să putem planifica din timp. Ne gândim să închiriem un serviciu de transfer",
+        gettingThere3: "Dacă veniți cu trenul puteți opri la Gare Nice-Ville.",
+        parking: "Parcare",
+        parking0:
+          "Pentru ceremonia de la Citadelă, puteți parca mașina la Parking Wilson. Este foarte aproape (5 minute), dar parcarea este în partea de jos a cetății, așa că un sfat util aici ar fi să-ți lași partenerul la intrarea în cetate înainte de a parca mașina.",
+        parking1:
+          "Odată ajunși la restaurant, parcarea de la Atrego va avea valeți care se vor ocupă gratuit de mașini așa că nu va trebuii să va faceți griji.",
+        parking2:
+          "În ceea ce privește brunch-ul de nuntă la Farago on the roof, puteți parca la Parking Beach Regency (300m). De asemenea, este destul de ușor să parcați pe rue de France.",
+        footer:
+          "Fie ca această sărbătoare a iubirii și a prieteniei: nunta noastră, să fie plină de râs și voie bună.",
+        footer1: "Proudly powered by Katia (and Carol)",
       },
     },
   },
