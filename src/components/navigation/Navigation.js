@@ -8,13 +8,16 @@ import NavList from "./NavList";
 import "./Navigation.scss";
 
 const Navigation = ({ noBurger, isMobile, hideNavList }) => {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(localStorage.getItem("language"));
   const [isOpen, setIsOpen] = useState(false);
   const navOnMobile = isMobile;
   const navOnDesktop = !isMobile;
 
   useEffect(() => {
-    setLang(localStorage.getItem("language"));
+    i18n.changeLanguage(lang);
+  }, [lang]);
+
+  useEffect(() => {
     isOpen && isMobile
       ? (document.querySelector("body").className = "no-scroll")
       : (document.querySelector("body").className = "");
@@ -24,6 +27,7 @@ const Navigation = ({ noBurger, isMobile, hideNavList }) => {
     setLang(e.target.value);
     localStorage.setItem("language", e.target.value);
     const localLang = localStorage.getItem("language");
+    console.log("localLang ", localLang);
     i18n.changeLanguage(localLang);
   };
 

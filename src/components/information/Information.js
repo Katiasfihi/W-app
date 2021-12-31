@@ -7,27 +7,26 @@ import logo3 from "../../photos/berlin2br-min.jpg";
 import "./Information.scss";
 
 function Information({ isMobile }) {
-  const nice = "Nice";
-  const [city, setCity] = useState("nice");
-  const Villefranche = "Villefranche sur Mer";
-  const hotel = "Hotel deals";
+  const [city, setCity] = useState("hotel");
 
   return (
     <Translation>
       {(t) => (
-        <div className="info" id="accommodation">
+        <div className="info">
           <div className="info__section">
             <img src={logo1} alt="Logo" className="info__section-img" />
 
             <div className="info__section-text-wrapper">
-              <div className="info__title">{t(`Accommodation`)}</div>
+              <div className="info__title" id="accommodation">
+                {t(`Accommodation`)}
+              </div>
               <p>{t("text_information1")}</p>
               <div className="cities">
                 <text
                   onClick={() => setCity("nice")}
                   className={`city ${city === "nice" ? "selected" : "city"}`}
                 >
-                  {nice}
+                  {t("Nice")}
                 </text>
 
                 <text
@@ -36,13 +35,13 @@ function Information({ isMobile }) {
                     city === "villefranche" ? "selected" : "city"
                   }`}
                 >
-                  {Villefranche}
+                  {t("Villefranche")}
                 </text>
                 <text
                   onClick={() => setCity("hotel")}
                   className={`city ${city === "hotel" ? "selected" : "city"}`}
                 >
-                  {hotel}
+                  {t("hotel")}
                 </text>
               </div>
 

@@ -1,8 +1,9 @@
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 
+const language = localStorage.getItem("language");
 i18n.use(initReactI18next).init({
-  lng: "en",
+  lng: language ? language : "en",
   resources: {
     en: {
       translation: {
@@ -89,6 +90,32 @@ i18n.use(initReactI18next).init({
         footer:
           "May this celebration of love and friendship: our marriage, be full of laughter, our every day in paradise.",
         footer1: "Proudly powered by Katia (and Carol)",
+        Nice: "Nice",
+        Villefranche: "Villefranche-sur-Mer",
+        hotel: "Hotel deals",
+        rsvp_title: "We look forward to celebrate our big day with you.",
+        rsvp_title_2: "Please confirm your attendance.",
+        rsvp_first_name: "First name",
+        rsvp_last_name: "Last name",
+        rsvp_email: "Email",
+        rsvp_confirmation: "Please tell us if you can make it to the event",
+        rsvp_confirmation_yes: "Yes, I will attend",
+        rsvp_confirmation_nope: " No, I will not attend",
+        rsvp_car:
+          "Please tell us if you will have access to a car this weekend",
+        rsvp_car_yes: "Yes, I will have access to a car",
+        rsvp_car_nope: "No, I will not have access to a car",
+        rsvp_message: "Message:",
+        rsvp_message_placeholder: "In case you want to tell us something",
+        rsvp_submit: "Submit",
+        rsvp_error_name: "Please tell us your name",
+        rsvp_error_surname: "Please tell us your surname",
+        rsvp_error_car:
+          "Please tell us if you will have access to a car this weekend",
+        rsvp_error_attendance: "Please tell us if you can make it to the event",
+        rsvp_error_name_placeholder: "Enter your first name",
+        rsvp_error_surname_placeholder: "Enter your last name",
+        rsvp_error_email_placeholder: "Enter your email",
       },
     },
     fr: {
@@ -128,11 +155,11 @@ i18n.use(initReactI18next).init({
         Information: "Information",
         Rsvp: "Rsvp",
         Accommodation: "Cazare",
-        About: "About",
+        About: "Eveniment",
         About0:
           "Suntem atât de încântați să putem în sfârșit să ne organizăm nunta și să sărbătorim această zi specială alături de voi, plină de dragoste, voie bună, râs și șampanie bineînțeles!",
         About1:
-          "We fell in love in London more than 6 years ago, and it is now time to throw the party of our lifetime in the beautiful French Riveira.",
+          "Ne-am îndrăgostit la Londra în urmă cu mai bine de 6 ani, iar acum este timpul să organizăm petrecerea vieții noastre în frumoasa Riveira franceză.",
         About2:
           "Evenimentul va avea loc pe 2 și 3 iulie 2022 în Coasta de Azur, sudul Franței.",
         Date: "2nd of July 2022",
@@ -203,6 +230,36 @@ i18n.use(initReactI18next).init({
         footer:
           "Fie ca această sărbătoare a iubirii și a prieteniei: nunta noastră, să fie plină de râs și voie bună.",
         footer1: "Proudly powered by Katia (and Carol)",
+        Nice: "Nisa",
+        Villefranche: "Villefranche",
+        hotel: "Oferte Hoteluri",
+        rsvp_title:
+          "Vă așteptăm cu drag să sărbătorim ziua noastră cea mare împreună.",
+        rsvp_title_2: "Vă rugăm să vă confirmați prezența.",
+        rsvp_first_name: "Prenumele dvs",
+        rsvp_last_name: "Numele dvs. de familie",
+        rsvp_email: "Email",
+        rsvp_confirmation:
+          "Vă rugăm să ne spuneți dacă puteți ajunge la eveniment",
+        rsvp_confirmation_yes: "Da, voi participa",
+        rsvp_confirmation_nope: "Nu, nu voi participa",
+        rsvp_car:
+          "Vă rugăm să ne spuneți dacă veți avea acces la o mașină în acest weekend",
+        rsvp_car_yes: "Da, voi avea acces la o mașină",
+        rsvp_car_nope: "Nu, voi avea acces la o mașină",
+        rsvp_message: "Mesaj:",
+        rsvp_message_placeholder:
+          "În caz că vreți să ne spuneți ceva, vă rugăm să ne scrieți aici",
+        rsvp_submit: "Trimite",
+        rsvp_error_name: "Vă rugăm să ne spuneți prenumele dvs",
+        rsvp_error_surname: "Vă rugăm să ne spuneți numele dvs. de familie",
+        rsvp_error_car:
+          "Vă rugăm să ne spuneți dacă veți avea acces la o mașină în acest weekend",
+        rsvp_error_attendance:
+          "Vă rugăm să ne spuneți dacă puteți ajunge la eveniment",
+        rsvp_error_name_placeholder: "Introduceți prenumele dvs",
+        rsvp_error_surname_placeholder: "Introduceți numele dvs. de familie",
+        rsvp_error_email_placeholder: "Introduceți adresa dvs. de email",
       },
     },
   },
