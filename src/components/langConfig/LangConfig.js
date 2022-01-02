@@ -62,16 +62,29 @@ i18n.use(initReactI18next).init({
         text_information_hotel_0_title: "Ibis Beaulieu sur Mer",
         text_information_hotel_0_address:
           "3 Bd Maréchal Joffre – 06310 Beaulieu-sur-Mer – France",
+        text_information_hotel_deal:"The 3 deals include breakfast and tax. If you would like to book, you can send an email to h8234@accor.com and mention Mariage de Katia et Carol in the subject. These rates are available until the 1st of May.",
+
         text_information_hotel_0_deal:
-          "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€ (tax not included)",
-        text_information_hotel_0_second_deal:
-          "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€ (tax not included)",
+          "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€",
+        text_information_hotel_1_deal:
+          "From the 1st of July until the 4th, 3 nights for 2 people for the price of 371€, (336,50€ for 1 person)",
+        text_information_hotel_2_deal:
+         "From the 1st of July until the 5th, 4 nights for 2 people for the price of 498€, (452€ for 1 person)",
+        
+        text_information_hotel_4_deal:"",
+        text_information_hotel_5_deal:"",
+
         text_information_hotel_1_title: "Riviera Marriott Hôtel Cap d’Ail",
         text_information_hotel_1_address: "Le Port - 06 320 Cap d’Ail",
         text_information_hotel_1_address_tip:
           "(2 min walk distance from A'trego)",
         text_information_hotel_1_deal:
-          "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 608€ (tax not included)",
+          "'Chambre vue montagne', 1st of July for 2 people : 264€, for 1 person: 249€",
+        text_information_hotel_2_deal:
+          "'Chambre vue montagne', 2nd of July for 2 people : 264€, for 1 person: 249€",
+        text_information_hotel_3_deal:
+        "The deals include breakfast. If you would like to book, you can click on the following link : https://www.marriott.com/event-reservations/reservation-link.mi?id=1639585030844&key=GRP&app=resvlink or send an email to  France.Reservations@marriotthotels.com  and mention Mariage Katia & Carol in the subject. These rates are available until the 1st of May.",
+
         gettingThere: "Getting there",
         gettingThere0:
           "Nice Côte d'Azur Airport is the closest airport. We suggest renting a car once you arrive, so you have the chance to explore. Also all the venues are next to each other but a car would be needed to commute from the wedding ceremony (Villefranche) to the restaurant (Cap d’Ail). ",

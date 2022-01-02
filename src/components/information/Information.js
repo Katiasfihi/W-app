@@ -96,11 +96,18 @@ function Information({ isMobile }) {
                         {t("text_information_hotel_0_address")}
                       </p>
                     </a>
+                  
                     <p className="info__section-hotel-deal">
                       {t("text_information_hotel_0_deal")}
                     </p>
                     <p className="info__section-hotel-deal">
-                      {t("text_information_hotel_0_second_deal")}
+                      {t("text_information_hotel_1_deal")}
+                    </p>
+                    <p className="info__section-hotel-deal">
+                      {t("text_information_hotel_2_deal")}
+                    </p>
+                    <p className="info__section-hotel-deal">
+                      {t("text_information_hotel_deal")}
                     </p>
                   </div>
 

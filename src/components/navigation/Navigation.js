@@ -24,7 +24,7 @@ const Navigation = ({ noBurger, isMobile, hideNavList }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNavbarColor);  
+    window.addEventListener('scroll', () => changeNavbarColor());  
     setLang(localStorage.getItem("language"));
     isOpen && isMobile
       ? (document.querySelector("body").className = "no-scroll")
