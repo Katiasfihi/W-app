@@ -82,7 +82,7 @@ function Information({ isMobile }) {
               {city === "hotel" && (
                 <>
                   <p>{t("text_information_hotel")}</p>
-                  <div className="info__section-hotel">
+                  <ul className="info__section-hotel">
                     <a
                       href="https://all.accor.com/hotel/8234/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
                       target="_blank"
@@ -96,21 +96,21 @@ function Information({ isMobile }) {
                       </p>
                     </a>
                   
+                    <li className="info__section-hotel-deal">
+                      {t("text_information_hotel_0_deal_ibis")}
+                    </li>
+                    <li className="info__section-hotel-deal">
+                      {t("text_information_hotel_1_deal_ibis")}
+                    </li>
+                    <li className="info__section-hotel-deal">
+                      {t("text_information_hotel_2_deal_ibis")}
+                    </li>
                     <p className="info__section-hotel-deal">
-                      {t("text_information_hotel_0_deal")}
+                      {t("text_information_hotel_deal_ibis")}
                     </p>
-                    <p className="info__section-hotel-deal">
-                      {t("text_information_hotel_1_deal")}
-                    </p>
-                    <p className="info__section-hotel-deal">
-                      {t("text_information_hotel_2_deal")}
-                    </p>
-                    <p className="info__section-hotel-deal">
-                      {t("text_information_hotel_deal")}
-                    </p>
-                  </div>
+                  </ul>
 
-                  <div className="info__section-hotel">
+                  <ul className="info__section-hotel">
                     <a
                       href="https://www.marriott.com/hotels/travel/mcmcd-riviera-marriott-hotel-la-porte-de-monaco/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MjY5NjEzMy03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D"
                       target="_blank"
@@ -126,10 +126,26 @@ function Information({ isMobile }) {
                         {t("text_information_hotel_1_address_tip")}
                       </p>
                     </a>
-                    <p className="info__section-hotel-deal">
+                    <li className="info__section-hotel-deal">
                       {t("text_information_hotel_1_deal")}
+                    </li>
+                    <li className="info__section-hotel-deal">
+                      {t("text_information_hotel_2_deal")}
+                    </li>
+                    <p className="info__section-hotel-deal">
+                      {t("text_information_hotel_3_deal")}
                     </p>
-                  </div>
+                    <a
+                  href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1639585030844&key=GRP&app=resvlink"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {t("link_marriott")}
+                </a>
+                <p className="info__section-hotel-deal">
+                      {t("text_information_hotel_4_deal")}
+                    </p>
+                  </ul>
                 </>
               )}
             </div>

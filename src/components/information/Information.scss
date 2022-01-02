@@ -4,7 +4,7 @@
   flex-direction: column;
 
   &__section-hotel {
-    margin-top: 6rem;
+    margin-top: 4rem;
     text-align: center;
     a {
       text-decoration: none;
@@ -18,6 +18,8 @@
   }
   &__section-hotel-deal {
     text-align: left;
+    font-size: 18px;
+    margin: 1rem 0;
   }
 
   &__title {
@@ -60,6 +62,8 @@
   justify-content: space-evenly;
   font-size: 17px;
   margin: 3rem 0 3rem 0;
+  cursor: pointer;
+
 }
 
 .selected {

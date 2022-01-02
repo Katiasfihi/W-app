@@ -5,6 +5,7 @@
   justify-content: center;
   flex-direction: column;
   padding-bottom: 6rem;
+  font-size: 22px;
 
   &__title {
     font-weight: 500;
@@ -101,7 +102,7 @@
 
     &__image {
       width: 100%;
-      background-image: url("../../photos/20200614_220426-min.jpg");
+      background-image: url("../../photos/brighton.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: right;
