@@ -10,8 +10,17 @@ import "./Navigation.scss";
 const Navigation = ({ noBurger, isMobile, hideNavList }) => {
   const [lang, setLang] = useState(localStorage.getItem("language"));
   const [isOpen, setIsOpen] = useState(false);
+  const [colorChange, setColorchange] = useState(false);
   const navOnMobile = isMobile;
   const navOnDesktop = !isMobile;
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
 
   useEffect(() => {
     i18n.changeLanguage(lang);
@@ -38,7 +47,9 @@ const Navigation = ({ noBurger, isMobile, hideNavList }) => {
   return (
     <Translation>
       {(t) => (
-        <div className="navigation">
+        <div
+          className={colorChange && navOnDesktop ? "colorchange" : "navigation"}
+        >
           <div className="navigation__translation">
             <select
               className="selectBox"

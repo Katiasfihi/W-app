@@ -1,4 +1,16 @@
-.navigation {
+
+  .colorchange {
+    color: rgba(0, 0, 0, 0.488);
+    background: linear-gradient(180deg, #e7ded0, #eed8d500);
+    transition: 0.8s all ease;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navigation {
   display: flex;
   justify-content: space-between;
 
