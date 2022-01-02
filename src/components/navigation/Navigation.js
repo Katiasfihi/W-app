@@ -8,19 +8,18 @@ import NavList from "./NavList";
 import "./Navigation.scss";
 
 const Navigation = ({ noBurger, isMobile, hideNavList }) => {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(localStorage.getItem("language"));
   const [isOpen, setIsOpen] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const navOnMobile = isMobile;
   const navOnDesktop = !isMobile;
 
-  const changeNavbarColor = () =>{
-     if(window.scrollY >= 80){
-       setColorchange(true);
-     }
-     else{
-       setColorchange(false);
-     }
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
   };
 
   useEffect(() => {
@@ -35,6 +34,7 @@ const Navigation = ({ noBurger, isMobile, hideNavList }) => {
     setLang(e.target.value);
     localStorage.setItem("language", e.target.value);
     const localLang = localStorage.getItem("language");
+    console.log("localLang ", localLang);
     i18n.changeLanguage(localLang);
   };
 
@@ -45,7 +45,9 @@ const Navigation = ({ noBurger, isMobile, hideNavList }) => {
   return (
     <Translation>
       {(t) => (
-        <div className={colorChange && navOnDesktop ? 'colorchange' : 'navigation'}>
+        <div
+          className={colorChange && navOnDesktop ? "colorchange" : "navigation"}
+        >
           <div className="navigation__translation">
             <select
               className="selectBox"

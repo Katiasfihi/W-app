@@ -8,9 +8,11 @@ function Parking() {
   return (
     <Translation>
       {(t) => (
-        <div className="parking" id="parking-section">
+        <div className="parking">
           <div className="parking__description">
-            <div className="parking__title">{t("parking")}</div>
+            <div className="parking__title" id="parking-section">
+              {t("parking")}
+            </div>
             <p className="parking__introduction">{t("parking0")}</p>
             <p className="parking__introduction">{t("parking1")}</p>
             <p className="parking__introduction parking__introduction--last">

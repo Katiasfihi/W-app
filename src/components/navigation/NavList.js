@@ -13,7 +13,7 @@ const NavList = ({ handleBurger, isMobile }) => (
                 onClick={handleBurger}
                 className="navigation__link"
               >
-                About
+                {t(`About`)}
               </a>
             </li>
           )}
