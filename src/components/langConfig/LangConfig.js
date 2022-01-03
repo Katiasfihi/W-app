@@ -66,7 +66,7 @@ i18n.use(initReactI18next).init({
         text_information_villefranche4:
         "Achill's",
         text_information_villefranche5:
-        "Baia Bella (à Beaulieu-sur-mer)",
+        "Baia Bella (Beaulieu-sur-mer)",
         text_information_villefranche6:
         "Breakfast/ brunch at Welcome hotel",
         text_information_hotel:
@@ -342,6 +342,8 @@ i18n.use(initReactI18next).init({
         "Achill's",
         text_information_villefranche5:
         "Baia Bella (à Beaulieu-sur-mer)",
+        text_information_villefranche6:
+        "Breakfast/ brunch at Welcome hotel",
         text_information_hotel:
           "Beige, agenția care ne ajută să organizăm evenimentul, ne-a oferit tarife preferențiale pentru weekendul nunții noastre.",
 
