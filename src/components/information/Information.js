@@ -92,6 +92,14 @@ function Information({ isMobile }) {
                           {t(`text_information_${city}5`)}
                           <br />
                         </a>
+                        <a
+                          rel="noreferrer"
+                          target="_blank"
+                          href="http://www.welcomehotel.com/"
+                        >
+                          {t(`text_information_${city}6`)}
+                          <br />
+                        </a>
                       </p>
                     </>
                   ) : (

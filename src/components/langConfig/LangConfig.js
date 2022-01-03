@@ -67,6 +67,8 @@ i18n.use(initReactI18next).init({
         "Achill's",
         text_information_villefranche5:
         "Baia Bella (à Beaulieu-sur-mer)",
+        text_information_villefranche6:
+        "Breakfast/ brunch at Welcome hotel",
         text_information_hotel:
           "Beige, the agency helping us organising our event, got us preferred rates available the weekend of our wedding.",
 
@@ -175,7 +177,7 @@ i18n.use(initReactI18next).init({
         Destination3:
           "Nous sommes plus que ravis de passer un week-end avec vous dans un endroit qui nous est si spécial.",
         text_information1:
-          "Nos différents lieux de réception sont proches les uns des autres, il vous est donc possible de vous loger à Nice, Villefranche, Beaulieu ou encore Cap d’Ail. Cependant nous vous recommendons Nice et Villefrance (si vous souhaitez rester un peu plus longtemps) pour leur accès faciles aux commerces, leurs activités et restaurants.",
+          "Nos différents lieux de réception sont proches les uns des autres, il vous est donc possible de vous loger à Nice, Villefranche, Beaulieu ou encore Cap d’Ail. Cependant nous vous recommendons Nice et Villefranche (si vous souhaitez rester un peu plus longtemps) pour leur accès faciles aux commerces, leurs activités et restaurants.",
         text_information_nice:
           "Nice est une ville dynamique avec beaucoup de choses à faire et aussi proche de tout. Seul inconvénient, la plage est recouverte de galets et non de sable.",
         text_information_nice0: "En savoir plus sur Nice",
@@ -203,7 +205,9 @@ i18n.use(initReactI18next).init({
           text_information_villefranche4:
           "Achill's",
           text_information_villefranche5:
-          "Baia Bella (à Beaulieu-sur-mer)",
+          "Plage Baia Bella (à Beaulieu-sur-mer)",
+          text_information_villefranche6:
+          "Petit-déjeuner/ brunch de l'hôtel Welcome",
         text_information_hotel:
           "Beige, l'agence nous aidant à organiser notre événement, nous a fait bénéficier de tarifs préférentiels disponibles le week-end de notre mariage.",
 
