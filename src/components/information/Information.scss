@@ -4,22 +4,22 @@
   flex-direction: column;
 
   &__section-hotel {
-    margin-top: 4rem;
+    margin-top: 6rem;
     text-align: center;
     a {
       text-decoration: none;
     }
+    margin-left: -1rem;
   }
   &__section-hotel-name {
     margin: 0;
   }
   &__section-hotel-address {
     margin: 0;
+    margin-bottom: 1rem;
   }
   &__section-hotel-deal {
     text-align: left;
-    font-size: 18px;
-    margin: 1rem 0;
   }
 
   &__title {
@@ -62,8 +62,6 @@
   justify-content: space-evenly;
   font-size: 17px;
   margin: 3rem 0 3rem 0;
-  cursor: pointer;
-
 }
 
 .selected {
@@ -72,6 +70,10 @@
 }
 
 @media screen and (min-width: 992px) {
+  .cities {
+  cursor: pointer;
+  }
+
   .info {
     padding: 10rem 0;
 
@@ -81,6 +83,7 @@
       grid-template-columns: 54% 46%;
       margin: 0 auto;
       grid-template-areas: "description image";
+      font-size: 20px;
     }
 
     &__title {
@@ -93,8 +96,22 @@
       grid-area: image;
     }
 
+    &__section-hotel {
+      margin-top: 4rem;
+    }
+
     &__section-text-wrapper {
       padding: 0rem 10rem 5rem 2rem;
+
+      p {
+        font-size: 20px;
+      }
+
+    }
+
+    &__section-hotel-deal {
+      font-size: 18px;
+      margin: 1rem 0;
     }
   }
 }

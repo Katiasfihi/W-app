@@ -82,7 +82,9 @@ function Rsvp() {
                     <label htmlFor="name" style={{ display: "block" }}>
                       {t(`rsvp_first_name`)}*
                     </label>
-
+                    {errors.name && touched.name && (
+                      <div className="input-feedback">{errors.name}</div>
+                    )}
                     <input
                       id="name"
                       name="name"
@@ -97,13 +99,16 @@ function Rsvp() {
                           : "text-input"
                       }
                     />
-                    {errors.name && touched.name && (
+                    {/* {errors.name && touched.name && (
                       <div className="input-feedback">{errors.name}</div>
-                    )}
+                    )} */}
                     <label htmlFor="surname" style={{ display: "block" }}>
                       {t(`rsvp_last_name`)}*
                     </label>
 
+                    {errors.surname && touched.surname && (
+                      <div className="input-feedback">{errors.surname}</div>
+                    )}
                     <input
                       id="surname"
                       name="surname"
@@ -118,9 +123,9 @@ function Rsvp() {
                           : "text-input"
                       }
                     />
-                    {errors.surname && touched.surname && (
+                    {/* {errors.surname && touched.surname && (
                       <div className="input-feedback">{errors.surname}</div>
-                    )}
+                    )} */}
                     <label htmlFor="email" style={{ display: "block" }}>
                       {t(`rsvp_email`)}
                     </label>
@@ -140,6 +145,11 @@ function Rsvp() {
                       }
                     />
 
+  {errors.attendance && touched.attendance && (
+                        <div className="input-feedback">
+                          {errors.attendance}
+                        </div>
+                      )}
                     <div role="group" aria-labelledby="rsvp-radio-group">
                       <p> {t(`rsvp_confirmation`)}*</p>
                       <label>
@@ -164,12 +174,16 @@ function Rsvp() {
                           <span>{t(`rsvp_confirmation_nope`)}</span>
                         </div>
                       </label>
-                      {errors.attendance && touched.attendance && (
+                      {/* {errors.attendance && touched.attendance && (
                         <div className="input-feedback">
                           {errors.attendance}
                         </div>
-                      )}
+                      )} */}
                     </div>
+
+                    {errors.car && touched.car && (
+                          <div className="input-feedback">{errors.car}</div>
+                        )}
                     {isAttending && (
                       <div role="group" aria-labelledby="rsvp-radio-group">
                         <p>{t(`rsvp_car`)}*</p>
@@ -195,9 +209,9 @@ function Rsvp() {
                             <span> {t(`rsvp_car_nope`)}</span>
                           </div>
                         </label>
-                        {errors.car && touched.car && (
+                        {/* {errors.car && touched.car && (
                           <div className="input-feedback">{errors.car}</div>
-                        )}
+                        )} */}
                       </div>
                     )}
 

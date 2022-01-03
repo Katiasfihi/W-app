@@ -5,7 +5,6 @@
   justify-content: center;
   flex-direction: column;
   padding-bottom: 6rem;
-  font-size: 22px;
 
   &__title {
     font-weight: 500;
@@ -84,7 +83,7 @@
     flex-direction: row;
     justify-content: center;
     padding: 10rem 0;
-    font-size: 27px;
+    font-size: 22px;
 
     &__content {
       display: grid;
@@ -97,7 +96,7 @@
     }
 
     &__introduction {
-      font-size: 27px;
+      font-size: 22px;
     }
 
     &__image {

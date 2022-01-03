@@ -4,6 +4,9 @@ import logo1 from "../../photos/hippy2br-min.jpg";
 import "./GettingThere.scss";
 
 function GettingThere() {
+
+  const language = localStorage.getItem("language") ? localStorage.getItem("language") : 'en';
+
   return (
     <Translation>
       {(t) => (
@@ -18,7 +21,7 @@ function GettingThere() {
               </div>
               <div className="gettingThere__introduction">
                 <a
-                  href="https://www.nice.aeroport.fr/en/services/car-rental"
+                href={`https://www.nice.aeroport.${language}/en/services/car-rental`}
                   target="_blank"
                   rel="noreferrer"
                 >
