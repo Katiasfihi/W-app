@@ -49,7 +49,7 @@ i18n.use(initReactI18next).init({
           "The nicest areas in Nice are: Le Quartier Mont Boron, le Quartier Libération, le Quartier Cimiez, le Quartier de Valrose, le quartier du Port, le Vieux-Nice, le Quartier Gairaut, le quartier Jean-Médecin.",
         text_information_nice2: "You can check accommodation on Airbnb :",
         text_information_nice3: "Accomodation with Airbnb at Nice",
-        text_information_nice4: "Places to have fun that we recommend",
+        text_information_nice4: "Places to have fun that we recommend :",
         text_information_nice5: "La Plage de l’Hôtel Amour",
         text_information_nice6: "Le Plongeoir",
         text_information_nice7: "Bclub Rooftop",
@@ -62,7 +62,7 @@ i18n.use(initReactI18next).init({
         text_information_villefranche2:
           "Accomodation with Airbnb at Villefranche",
         text_information_villefranche3:
-        "Places to have fun that we recommend",
+        "Places to have fun that we recommend :",
         text_information_villefranche4:
         "Achill's",
         text_information_villefranche5:
@@ -149,9 +149,9 @@ i18n.use(initReactI18next).init({
         Accommodation: "Logement",
         About: "À propos",
         About0:
-          "Nous sommes très heureux de pouvoir célébrer ce jour si spécial avec vous. Émotions, rire, partage et surtout champagne seront au rendez-vous!",
+          "Nous avons la joie de vous convier à notre mariage. Émotions, rire, partage et surtout champagne seront au rendez-vous!",
         About1:
-          "Nous nous sommes rencontrés à Londres, il y a maintenant 6 ans, et s’unir devant vous était une évidence. Nous sommes heureux de célébrer notre mariage parmi vous, chère famille et chers amis. ",
+          "Nous nous sommes rencontrés à Londres, il y a maintenant 6 ans et nous sommes très heureux de pouvoir célébrer ce jour si spécial avec vous.",
         About2:
           "L'événement aura lieu les 2 et 3 juillet 2022 sur la French Riviera.",
         Date: "2 Juillet 2022",

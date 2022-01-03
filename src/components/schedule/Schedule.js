@@ -20,8 +20,8 @@ const Schedule = ({ isMobile }) => {
             </div>
           )}
 
-          <div className="schedule__content">
-            <h3 className="schedule__title-wrapper" id="schedule">
+          <div className="schedule__content" id="schedule">
+            <h3 className="schedule__title-wrapper" >
               {t("Schedule")}
             </h3>
             <div className="schedule__bloc-wrapper">

@@ -3,17 +3,17 @@ import { useHistory, Link } from "react-router-dom";
 import { Formik, Field } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
-import { useMediaQuery } from "@react-hook/media-query";
+// import { useMediaQuery } from "@react-hook/media-query";
 import { Translation } from "react-i18next";
 
-import Navigation from "../navigation/Navigation";
+// import Navigation from "../navigation/Navigation";
 
 import "../rsvp/Rsvp.scss";
 
 function Rsvp() {
   const form = useRef();
   const history = useHistory();
-  const isMobile = useMediaQuery("only screen and (max-width: 992px)");
+  // const isMobile = useMediaQuery("only screen and (max-width: 992px)");
   const [isAttending, setIsAttending] = useState(false);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ function Rsvp() {
     <Translation>
       {(t) => (
         <div className="rsvp">
-          <Navigation noBurger hideNavList isMobile={isMobile} />
+          {/* <Navigation noBurger hideNavList isMobile={isMobile} /> */}
           <Link to="/">
             <h1 className="katia">Katia & Carol</h1>
           </Link>
@@ -145,11 +145,9 @@ function Rsvp() {
                       }
                     />
 
-  {errors.attendance && touched.attendance && (
-                        <div className="input-feedback">
-                          {errors.attendance}
-                        </div>
-                      )}
+                    {errors.attendance && touched.attendance && (
+                      <div className="input-feedback">{errors.attendance}</div>
+                    )}
                     <div role="group" aria-labelledby="rsvp-radio-group">
                       <p> {t(`rsvp_confirmation`)}*</p>
                       <label>
@@ -182,8 +180,8 @@ function Rsvp() {
                     </div>
 
                     {errors.car && touched.car && (
-                          <div className="input-feedback">{errors.car}</div>
-                        )}
+                      <div className="input-feedback">{errors.car}</div>
+                    )}
                     {isAttending && (
                       <div role="group" aria-labelledby="rsvp-radio-group">
                         <p>{t(`rsvp_car`)}*</p>
