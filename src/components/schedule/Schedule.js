@@ -33,32 +33,30 @@ const Schedule = ({ isMobile }) => {
               </div>
 
               <div className="schedule__location">
-                <div className="schedule__city">
+                <a className="schedule__city"       
+                 href="https://en.meet-in-nice.com/around-nice/imod/ref/ictlr/front/iact/view/165-citadelle-de-villefranche-sur-mer"
+                 target="_blank"
+                 rel="noreferrer">
                   <div className="schedule__venue">
-                    <a
-                      href="https://en.meet-in-nice.com/around-nice/imod/ref/ictlr/front/iact/view/165-citadelle-de-villefranche-sur-mer"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <div>
                       Jardins de la Citadelle
-                    </a>
+                    </div>
                   </div>
                   <div className="schedule__address">
                     {t("meeting1")}
                     <br></br>
                     <br></br>06230, Villefranche-sur-Mer, <br></br>France
                   </div>
-                </div>
+                </a>
 
-                <div className="schedule__city">
+                <a className="schedule__city"
+                   href="https://www.restaurantatrego.com/"
+                   target="_blank"
+                   rel="noreferrer">
                   <div className="schedule__venue">
-                    <a
-                      href="https://www.restaurantatrego.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <div>
                       A&apos;trego
-                    </a>
+                    </div>
                   </div>
                   <div className="schedule__address">
                     {t("meeting2")} <br></br>
@@ -66,16 +64,15 @@ const Schedule = ({ isMobile }) => {
                     Cap-d&apos;Ail,
                     <br></br>France
                   </div>
-                </div>
-                <div className="schedule__city schedule__city--last">
+                </a>
+                <a className="schedule__city schedule__city--last"
+                  href="https://www.faragoontheroof.com/en/"
+                  target="_blank"
+                  rel="noreferrer">
                   <div className="schedule__venue">
-                    <a
-                      href="https://www.faragoontheroof.com/en/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <div>
                       Farago on the roof
-                    </a>
+                    </div>
                   </div>
                   <div className="schedule__address">
                     {t("meeting3")}
@@ -85,7 +82,7 @@ const Schedule = ({ isMobile }) => {
                     Rue Honoré Sauvan, Entrée, 59 Prom. des Anglais, <br></br>
                     06000 Nice,<br></br>France
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
