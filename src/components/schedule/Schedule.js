@@ -36,7 +36,7 @@ const Schedule = ({ isMobile }) => {
                 <div className="schedule__city">
                   <div className="schedule__venue">
                     <a
-                      href="https://www.nicetourisme.com/nice/16 5-citadelle-de-villefranche-sur-mer"
+                      href="https://en.meet-in-nice.com/around-nice/imod/ref/ictlr/front/iact/view/165-citadelle-de-villefranche-sur-mer"
                       target="_blank"
                       rel="noreferrer"
                     >

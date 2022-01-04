@@ -49,7 +49,7 @@ i18n.use(initReactI18next).init({
           "The nicest areas in Nice are: Le Quartier Mont Boron, le Quartier Libération, le Quartier Cimiez, le Quartier de Valrose, le quartier du Port, le Vieux-Nice, le Quartier Gairaut, le quartier Jean-Médecin.",
         text_information_nice2: "You can check accommodation on Airbnb :",
         text_information_nice3: "Accomodation with Airbnb at Nice",
-        text_information_nice4: "Places to have fun that we recommend :",
+        text_information_nice4: "Places to have fun that we recommend:",
         text_information_nice5: "La Plage de l’Hôtel Amour",
         text_information_nice6: "Le Plongeoir",
         text_information_nice7: "Bclub Rooftop",
@@ -79,18 +79,18 @@ i18n.use(initReactI18next).init({
         text_information_hotel_0_deal_ibis:
           "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€",
         text_information_hotel_1_deal_ibis:
-          "From the 1st of July until the 4th, 3 nights for 2 people for the price of 371€, (336,50€ for 1 person)",
+          "From the 1st of July until the 4th, 3 nights for 2 people for the price of 371€, (336,50€ if only 1 person)",
         text_information_hotel_2_deal_ibis:
-         "From the 1st of July until the 5th, 4 nights for 2 people for the price of 498€, (452€ for 1 person)",
+         "From the 1st of July until the 5th, 4 nights for 2 people for the price of 498€, (452€ if only for 1 person)",
         text_information_hotel_deal_ibis:"The 3 deals include breakfast and tax. If you would like to book, you can send an email to h8234@accor.com and mention Mariage de Katia et Carol in the subject. These rates are available until the 1st of May.",
         text_information_hotel_1_title: "Riviera Marriott Hôtel Cap d’Ail",
         text_information_hotel_1_address: "Le Port - 06 320 Cap d’Ail",
         text_information_hotel_1_address_tip:
           "(2 min walk distance from A'trego)",
         text_information_hotel_1_deal:
-          "'Chambre vue montagne', 1st of July for 2 people : 264€, for 1 person: 249€",
+          "'Chambre vue montagne', 1st of July for 2 people : 264€",
         text_information_hotel_2_deal:
-          "'Chambre vue montagne', 2nd of July for 2 people : 264€, for 1 person: 249€",
+          "'Chambre vue montagne', 2nd of July for 2 people : 264€",
         text_information_hotel_3_deal:
         "The deals include breakfast. If you would like to book, you can click on the following link : ",
         text_information_hotel_4_deal: "These rates are available until the 1st of May.",
@@ -100,7 +100,7 @@ i18n.use(initReactI18next).init({
           "Nice Côte d'Azur Airport is the closest airport. We suggest renting a car once you arrive, so you have the chance to explore. Also all the venues are next to each other but a car would be needed to commute from the wedding ceremony (Villefranche) to the restaurant (Cap d’Ail). ",
         gettingThere1: "Car rental at Nice airport",
         gettingThere2:
-          "If you don’t have the possibility to rent a car, let us know so we can plan ahead. We are considering renting sa shuttle",
+          "If you don’t have the possibility to rent a car, let us know so we can plan ahead. We are considering renting a shuttle",
         gettingThere3: "If you come by train you can stop at Gare Nice-Ville.",
         parking: "Parking",
         parking0:
@@ -155,7 +155,7 @@ i18n.use(initReactI18next).init({
         About1:
           "Nous nous sommes rencontrés à Londres, il y a maintenant 6 ans et nous sommes très heureux de pouvoir célébrer ce jour si spécial avec vous.",
         About2:
-          "L'événement aura lieu les 2 et 3 juillet 2022 sur la French Riviera.",
+          "L'événement aura lieu les 2 et 3 Juillet 2022 sur la French Riviera.",
         Date: "2 Juillet 2022",
         text_schedule: "Deux jours, trois lieux !",
         text_schedule0:
@@ -216,11 +216,11 @@ i18n.use(initReactI18next).init({
           "3 Bd Maréchal Joffre – 06310 Beaulieu-sur-Mer – France",
 
         text_information_hotel_0_deal_ibis:
-          "Du 1er juillet au 3 juillet, 2 nuits pour 2 personnes au prix de 219€ ",
+          "Du 1er juillet au 3 juillet, 2 nuits pour 2 personnes au prix de 219€",
         text_information_hotel_1_deal_ibis:
-          "Du 1er juillet au 4 juillet, 3 nuits pour 2 personnes au prix de 371€, (336,50€ pour 1 personne)",
+          "Du 1er juillet au 4 juillet, 3 nuits pour 2 personnes au prix de 371€",
         text_information_hotel_2_deal_ibis:
-         "Du 1er juillet au 5 juillet, 4 nuits pour 2 personnes au prix de 498€, (452€ pour 1 personne)",
+         "Du 1er juillet au 5 juillet, 4 nuits pour 2 personnes au prix de 498€",
         text_information_hotel_deal_ibis:
         "Les 3 offres incluent le petit-déjeuner et les taxes de séjour. Si vous souhaitez booker, vous pouvez envoyer un e-mail à h8234@accor.com et mentionner ‘Mariage de Katia et Carol' dans l’objet. Ces tarifs sont valables jusqu’au 1er Mai.",
         text_information_hotel_1_title: "Riviera Marriott Hôtel, Cap d’Ail",
@@ -228,9 +228,9 @@ i18n.use(initReactI18next).init({
         text_information_hotel_1_address_tip:
           "(à 2 min à pied de l'A'trego)",
         text_information_hotel_1_deal:
-          "'Chambre vue montagne', 1er Juillet pour 2 personnes 264€, pour 1 personne: 249€",
+          "'Chambre vue montagne', 1er Juillet pour 2 personnes 264€",
         text_information_hotel_2_deal:
-          "'Chambre vue montagne', 2 Juillet pour 2 personnes : 264€,  pour 1 personne: 249€",
+          "'Chambre vue montagne', 2 Juillet pour 2 personnes : 264€",
         text_information_hotel_3_deal:
         "Le petit-déjeuner est inclus. Si vous souhaitez booker, vous pouvez clicker sur le lien suivant :",
         text_information_hotel_4_deal: " Ces tarifs sont valables jusqu’au 1er Mai.",

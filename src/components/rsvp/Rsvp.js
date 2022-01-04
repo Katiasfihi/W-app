@@ -188,6 +188,7 @@ function Rsvp() {
                         <label>
                           <div className="rsvp__radio-label">
                             <Field
+                              id="car"
                               type="radio"
                               name="car"
                               value="yes"
