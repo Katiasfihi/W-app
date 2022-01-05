@@ -29,7 +29,6 @@ function Rsvp() {
         "user_7Sik7Z8G3mzKbYSyVPBjE"
       )
       .then(() => {
-        console.log("it works");
         history.push("/thankyou");
       });
   };
