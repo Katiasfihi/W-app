@@ -23,7 +23,7 @@ const Navigation = ({ noBurger, isMobile, hideNavList }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', () => changeNavbarColor());  
+    window.addEventListener("scroll", () => changeNavbarColor());
     setLang(localStorage.getItem("language"));
     isOpen && isMobile
       ? (document.querySelector("body").className = "no-scroll")
@@ -34,7 +34,6 @@ const Navigation = ({ noBurger, isMobile, hideNavList }) => {
     setLang(e.target.value);
     localStorage.setItem("language", e.target.value);
     const localLang = localStorage.getItem("language");
-    console.log("localLang ", localLang);
     i18n.changeLanguage(localLang);
   };
 

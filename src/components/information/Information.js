@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Translation } from "react-i18next";
 
-
 import logo1 from "../../photos/miamibr-min.jpg";
 import logo3 from "../../photos/berlin2br-min.jpg";
 
@@ -179,7 +178,7 @@ function Information({ isMobile }) {
 
                   <ul className="info__section-hotel">
                     <a
-                      href="https://www.marriott.com/hotels/travel/mcmcd-riviera-marriott-hotel-la-porte-de-monaco/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MjY5NjEzMy03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D"
+                      href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1639585030844&key=GRP&app=resvlink"
                       target="_blank"
                       rel="noreferrer"
                     >
