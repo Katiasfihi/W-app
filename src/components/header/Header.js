@@ -9,7 +9,6 @@ function Header() {
   const [typeString, setTypeString] = useState("are getting married.");
   const [scrollText, setScrollText] = useState("SCROLL FOR MORE");
   const language = localStorage.getItem("language");
-  console.log(language, typeString);
   useEffect(() => {
     if (language === "ro") {
       setTypeString("se căsătoresc.");
