@@ -291,7 +291,7 @@ i18n.use(initReactI18next).init({
         About1:
           "Ne-am cunoscut în Londra în urmă cu mai bine de 6 ani, iar acum este timpul să organizăm petrecerea vieții noastre în frumoasa Riveira franceză.",
         About2:
-          "Evenimentul va avea loc pe 2 și 3 Iulie 2022 în Coasta de Azur, sudul Franței.",
+          "Evenimentul va avea loc pe 2 și 3 Iulie 2022 pe Coasta de Azur, sudul Franței.",
         Date: "2nd of July 2022",
         text_schedule: "Două zile, în trei locații!",
         text_schedule0:

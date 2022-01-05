@@ -48,6 +48,10 @@
     margin: 0 0 1rem 0;
     font-weight: bold;
   }
+
+  &__address {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -88,6 +92,10 @@
       &--last {
         margin-bottom: 15rem;
       }
+    }
+
+    &__address {
+      margin-bottom: 0;
     }
 
     &__moutain-pic-wrapper {

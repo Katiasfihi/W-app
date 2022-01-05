@@ -1,16 +1,14 @@
+.colorchange {
+  background: linear-gradient(180deg, #f5e2df, #eed8d500);
+  transition: 0.8s all ease;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .colorchange {
-    color: rgba(0, 0, 0, 0.488);
-    background: linear-gradient(180deg, #e7ded0, #eed8d500);
-    transition: 0.8s all ease;
-    top: 0;
-    position: sticky;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .navigation {
+.navigation {
   display: flex;
   justify-content: space-between;
 
@@ -76,7 +74,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin: 2rem 2rem 0;
+      margin: 2.5rem 2rem 0;
     }
 
     &__list-item {
