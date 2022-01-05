@@ -4,8 +4,8 @@
   flex-direction: column;
 
   &__section-hotel {
-    margin-top: 6rem;
-    text-align: center;
+    margin-top: 4rem;
+    text-align: left;
     a {
       text-decoration: none;
     }
@@ -20,6 +20,9 @@
   }
   &__section-hotel-deal {
     text-align: left;
+    list-style: none;
+    padding-top: 7px;
+    margin-left: -23px;
   }
 
   &__title {
@@ -37,7 +40,12 @@
     object-fit: cover;
     height: 500px;
   }
-
+  &__conclusion {
+    font-weight: bold;
+    margin-top: 3rem;
+    text-align: left;
+    margin-left: -20px;
+  }
   &__section-text-wrapper {
     padding: 2rem 2rem 5rem 2rem;
 
