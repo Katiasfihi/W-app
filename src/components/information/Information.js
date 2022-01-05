@@ -208,9 +208,12 @@ function Information({ isMobile }) {
                     >
                       {t("link_marriott")}
                     </a>
-                    <p className="info__section-hotel-deal">
+                    { language === "fr" && <p className="info__section-hotel-deal">
                       {t("text_information_hotel_4_deal")}
-                    </p>
+                    </p>}
+                    { language !== "fr" && <p className="info__conclusion">
+                      {t("text_information_hotel_5_deal")}
+                    </p>}
                   </ul>
                 </>
               )}

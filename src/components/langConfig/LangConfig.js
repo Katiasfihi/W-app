@@ -75,11 +75,11 @@ i18n.use(initReactI18next).init({
           "3 Bd Maréchal Joffre – 06310 Beaulieu-sur-Mer – France",
 
         text_information_hotel_0_deal_ibis:
-          "From the 1st of July until the 3rd, 2 nights for 2 people for the price of 219€",
+          "From the 1st of July until the 3rd, 2 nights for 2 people for the total price of 219€",
         text_information_hotel_1_deal_ibis:
-          "From the 1st of July until the 4th, 3 nights for 2 people for the price of 371€",
+          "From the 1st of July until the 4th, 3 nights for 2 people for the total price of 371€",
         text_information_hotel_2_deal_ibis:
-          "From the 1st of July until the 5th, 4 nights for 2 people for the price of 498€",
+          "From the 1st of July until the 5th, 4 nights for 2 people for the total price of 498€",
         text_information_hotel_deal_ibis:
           "If you would like to book, you can send an email to h8234@accor.com and mention Mariage de Katia et Carol in the subject.",
         text_information_hotel_1_title: "Riviera Marriott Hôtel Cap d’Ail",
@@ -92,8 +92,8 @@ i18n.use(initReactI18next).init({
           "'Chambre vue montagne', 2nd of July for 2 people: 264€",
         text_information_hotel_3_deal:
           "If you would like to book, you can click on the following link: ",
-        text_information_hotel_4_deal:
-          "All the deals include breakfast. These rates are available until the 1st of May.",
+        text_information_hotel_5_deal:
+          "The deals at Ibis and Marriott include breakfast. These rates are available until the 1st of May.",
         link_marriott: "Book your group rate for Mariage Katia & Carol",
         gettingThere: "Getting there",
         gettingThere0:
@@ -213,18 +213,18 @@ i18n.use(initReactI18next).init({
           "3 Bd Maréchal Joffre – 06310 Beaulieu-sur-Mer – France",
 
         text_information_hotel_0_deal_ibis:
-          "Du 1er juillet au 3 juillet, 2 nuits pour 2 personnes au prix de 219€",
+          "Du 1er juillet au 3 juillet, 2 nuits pour 2 personnes au prix total de 219€",
         text_information_hotel_1_deal_ibis:
-          "Du 1er juillet au 4 juillet, 3 nuits pour 2 personnes au prix de 371€",
+          "Du 1er juillet au 4 juillet, 3 nuits pour 2 personnes au prix total de 371€",
         text_information_hotel_2_deal_ibis:
-          "Du 1er juillet au 5 juillet, 4 nuits pour 2 personnes au prix de 498€",
+          "Du 1er juillet au 5 juillet, 4 nuits pour 2 personnes au prix total de 498€",
         text_information_hotel_deal_ibis:
           "Les 3 offres incluent le petit-déjeuner et les taxes de séjour. Si vous souhaitez booker, vous pouvez envoyer un e-mail à h8234@accor.com et mentionner ‘Mariage de Katia et Carol' dans l’objet. Ces tarifs sont valables jusqu’au 1er Mai.",
         text_information_hotel_1_title: "Riviera Marriott Hôtel, Cap d’Ail",
         text_information_hotel_1_address: "Le Port - 06 320 Cap d’Ail",
         text_information_hotel_1_address_tip: "(à 2 min à pied de l'A'trego)",
         text_information_hotel_1_deal:
-          "'Chambre vue montagne', 1er Juillet pour 2 personnes 264€",
+          "'Chambre vue montagne', 1er Juillet pour 2 personnes: 264€",
         text_information_hotel_2_deal:
           "'Chambre vue montagne', 2 Juillet pour 2 personnes: 264€",
         text_information_hotel_3_deal:
@@ -359,7 +359,7 @@ i18n.use(initReactI18next).init({
           "'Chambre vue montagne', 2 Iulie pentru 2 persoane: 264€",
         text_information_hotel_3_deal:
           "Dacă doriți să rezervați, puteți da clic pe următorul link:",
-        text_information_hotel_4_deal:
+        text_information_hotel_5_deal:
           "Ofertele includ micul dejun iar tarifele sunt disponibile până la 1 Mai.",
         link_marriott: "Rezervă-ți tariful de grup pentru nunta Katia & Carol",
         gettingThere: "Cum ajungem",
