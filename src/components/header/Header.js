@@ -22,7 +22,7 @@ function Header() {
   return (
     <Translation>
       {(t) => (
-        <div>
+        <div className="landing-page">
           <div className="menu-wrapper"></div>
           <h1 className="katia">Katia &#38; Carol</h1>
           <div className="married">

@@ -2,28 +2,15 @@
   font-weight: 500;
   text-align: center;
   font-size: 5rem;
-  margin: 3rem 0 0px 5px;
+  // margin: 3rem 0 0px 5px;
   font-family: Hopipolla;
-  padding: 2rem;
+  // padding: 2rem;
   z-index: 999;
 }
 
-// .colorchange {
-//   color: rgba(0, 0, 0, 0.288);
-//   background: linear-gradient(180deg, #f7efee, #f7efee00);
-//   transition: 0.8s all ease;
-//   top: -1%;
-//   margin: 1rem 0 60px 5px;
-//   padding: 2rem;
-
-//   font-weight: 500;
-//   text-align: center;
-//   font-size: 5rem;
-
-// font-family: Hopipolla;
-
-//   z-index: 999;
-// }
+.landing-page {
+  height: 100vh;
+}
 
 .color {
   color: black;
@@ -55,7 +42,7 @@
   font-family: "TravelingTypewriter";
   padding: 2rem;
   // font-style: italic;
-  margin-bottom: 16rem;
+  margin-bottom: 8rem;
 }
 
 .menu-wrapper {
@@ -87,136 +74,3 @@
 .arrow {
   margin-bottom: 7rem;
 }
-// // .nav-item  a:hover {
-// //   font-size: 2.1rem;
-// // }
-
-// .nav-item {
-//   margin-right: 4rem;
-//   display: inline-block;
-// }
-
-// .kc-header{
-//     font-weight: 500;
-//     position: relative;
-//     font-family: Hopipolla;
-//     font-size: 10rem;
-//     // -webkit-transform: rotate(-4deg);
-//     margin: 4rem 0 0 1rem;
-
-//     }
-
-//     .nav-wrapper {
-//       margin: 0;
-//       padding: 0;
-//       list-style-type: none;
-//       text-align: right;
-//       position: absolute;
-//       top: 3rem;
-//       right: 3rem;
-//       cursor: pointer;
-//     }
-
-//     a {
-//       color: inherit;
-//       text-decoration: none;
-//     }
-
-//     // .nav-item  a:hover {
-//     //   font-size: 2.1rem;
-//     // }
-
-//     .nav-item {
-//       margin-right: 4rem;
-//       display: inline-block;
-//     }
-
-//     /* Portrait and Landscape */
-// @media only screen and (max-width: 600px)  {
-
-//   .kc-login {
-//     text-align: center;
-//     font-family: Hopipolla;
-//     font-size: 5rem;
-//     // -webkit-transform: rotate(0deg);
-//     // border: 2px solid red;
-//     margin: 4rem 0 0 0;
-
-//   }
-
-// .katia {
-//   font-weight: 500;
-//   text-align: center;
-//   font-size: 5rem;
-//   margin: 3rem 0 0 5px;
-//   font-family: Hopipolla;
-//   padding: 2rem;
-//   border: 2px solid red;
-//   // position: fixed;
-//   z-index: 999;
-
-// }
-
-// // margin: -7rem -1rem 0 1rem;
-// // position: sticky;
-// // z-index: 9999;
-// // position: fixed;
-
-// // z-index: 999;
-// // width: 94%;
-// // font-weight: 500;
-// // border: 2px solid red;
-// // /* font-size: 1.9rem; */
-// // /* font-weight: bold; */
-// // text-align: center;
-// // font-family: Hopipolla;
-// // font-size: 5rem;
-// // // margin: -15rem 0 0 0px;
-// // // padding: 2rem 1rem 1rem 0rem;
-
-// // }
-
-// .colorchange {
-//   color: rgba(0, 0, 0, 0.288);
-//   background: linear-gradient(180deg, #f7efee, #f7efee00);
-//   transition: 0.8s all ease;
-//   // position: fixed;
-//   top: -1%;
-//   margin: 1rem 0 60px 5px;
-//   padding: 2rem;
-
-//   font-weight: 500;
-//   text-align: center;
-//   font-size: 5rem;
-
-//   font-family: Hopipolla;
-
-//   z-index: 999;
-// }
-
-// .color {
-//   color: black;
-//   // background: #efecee;
-
-// }
-// .nav-wrapper {
-//   padding: 0rem 0rem 0 3rem;
-//   text-align: center;
-//   font-size: 1.3rem;
-//   cursor: pointer;
-//   line-height: 3rem;
-//   font-style: italic;
-//   margin: 11rem 1rem 2rem 1rem;
-//   display: grid;
-// }
-
-// // .nav-item {
-// // margin: -0.2rem;
-// // }
-
-// // a {
-// //   color: inherit;
-// //   text-decoration: none;
-// // }
-
-// }
