@@ -73,6 +73,14 @@ function Information({ isMobile }) {
                       >
                         {t(`text_information_${city}2`)}
                       </a>
+                      <br></br>
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://www.booking.com/city/fr/villefranche-sur-mer.html?aid=1610684;label=villefranche-sur-mer-aXiuyQNXG_tM*95fT0nODwS379572385584:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-320254320177:lp9045945:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0;ws=&gclid=Cj0KCQiAuP-OBhDqARIsAD4XHpfFxP_j_RT87wjFY5mXcRZR9PtNjDdNIgEKwjR92-2S_hSlmRVoEp8aAsn5EALw_wcB"
+                      >
+                        {t(`text_information_${city}3_1`)}
+                      </a>
                       <p>
                         {t(`text_information_${city}3`)} <br />
                         <a
@@ -110,6 +118,14 @@ function Information({ isMobile }) {
                           target="_blank"
                           href="https://www.bit.ly/nice_airbnb"
                         >
+                          <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://www.booking.com/city/fr/nice.html?aid=1610684;label=nice-qny80Vm7ZibAwqtV*47xuAS379683536108:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-547910313:lp9045945:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0;ws=&gclid=Cj0KCQiAuP-OBhDqARIsAD4XHpeTLYxIMHmJg_TUhoVWkFCeMrNof7ARuJUNVel9zHTx0Fodyy5qL4QaAoX7EALw_wcB"
+                          >
+                            {t(`text_information_${city}3_1`)}
+                          </a>
+                          <br></br>
                           {t(`text_information_${city}3`)}
                           <br />
                         </a>
@@ -208,12 +224,16 @@ function Information({ isMobile }) {
                     >
                       {t("link_marriott")}
                     </a>
-                    { language === "fr" && <p className="info__section-hotel-deal">
-                      {t("text_information_hotel_4_deal")}
-                    </p>}
-                    { language !== "fr" && <p className="info__conclusion">
-                      {t("text_information_hotel_5_deal")}
-                    </p>}
+                    {language === "fr" && (
+                      <p className="info__section-hotel-deal">
+                        {t("text_information_hotel_4_deal")}
+                      </p>
+                    )}
+                    {language !== "fr" && (
+                      <p className="info__conclusion">
+                        {t("text_information_hotel_5_deal")}
+                      </p>
+                    )}
                   </ul>
                 </>
               )}

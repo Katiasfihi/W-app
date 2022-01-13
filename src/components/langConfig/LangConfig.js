@@ -49,8 +49,9 @@ i18n.use(initReactI18next).init({
         text_information_nice0: "If you want to know more about Nice",
         text_information_nice1:
           "The nicest areas in Nice are: Le Quartier Mont Boron, le Quartier Libération, le Quartier Cimiez, le Quartier de Valrose, le quartier du Port, le Vieux-Nice, le Quartier Gairaut, le quartier Jean-Médecin.",
-        text_information_nice2: "You can check accommodation on Airbnb:",
+        text_information_nice2: "You can check accommodation on Airbnb and Booking:",
         text_information_nice3: "Accomodation with Airbnb at Nice",
+        text_information_nice3_1: "Accomodation with Booking at Nice",
         text_information_nice4: "Places to have fun that we recommend:",
         text_information_nice5: "La Plage de l’Hôtel Amour",
         text_information_nice6: "Le Plongeoir",
@@ -60,9 +61,10 @@ i18n.use(initReactI18next).init({
         text_information_villefranche0:
           "If you want to know more about Villefranche-sur-mer",
         text_information_villefranche1:
-          "You can check accommodation on Airbnb:",
+          "You can check accommodation on Airbnb and Booking:",
         text_information_villefranche2:
           "Accomodation with Airbnb at Villefranche",
+        text_information_villefranche3_1: "Accomodation with Booking at Villefranche",
         text_information_villefranche3: "Places to have fun that we recommend:",
         text_information_villefranche4: "Achill's",
         text_information_villefranche5: "Baia Bella (Beaulieu-sur-mer)",
@@ -184,8 +186,9 @@ i18n.use(initReactI18next).init({
         text_information_nice1:
           "Les plus beaux quartiers de Nice sont: Le Quartier Mont Boron, le Quartier Libération, le Quartier Cimiez, le Quartier de Valrose, le quartier du Port, le Vieux-Nice, le Quartier Gairaut et le quartier Jean-Médecin.",
         text_information_nice2:
-          "Vous pouvez consulter les logements sur Airbnb: ",
+          "Vous pouvez consulter les logements sur Airbnb et Booking: ",
         text_information_nice3: "Logement sur Airbnb à Nice",
+        text_information_nice3_1: "Logement sur Booking à Nice",
         text_information_nice4:
           "Les lieux pour s'amuser et se relaxer que nous recommendons:",
         text_information_nice5: "La Plage de l’Hôtel Amour",
@@ -197,8 +200,9 @@ i18n.use(initReactI18next).init({
         text_information_villefranche0:
           "En savoir plus sur Villefranche-sur-mer",
         text_information_villefranche1:
-          "Vous pouvez consulter les logements sur Airbnb:",
+          "Vous pouvez consulter les logements sur Airbnb et Booking:",
         text_information_villefranche2: "Logement sur Airbnb à Villefranche",
+        text_information_villefranche3_1: "Logement sur Booking à Villefranche",
         text_information_villefranche3:
           "Les lieux pour s'amuser et se relaxer que nous recommendons:",
         text_information_villefranche4: "Achill's",
@@ -319,8 +323,9 @@ i18n.use(initReactI18next).init({
         text_information_nice0: "Dacă vrei să afli mai multe despre Nisa",
         text_information_nice1:
           "Cele mai frumoase zone din Nisa sunt: ​​Le Quartier Mont Boron, le Quartier Libération, le Quartier Cimiez, le Quartier de Valrose, le quartier du Port, le Vieux-Nice, le Quartier Gairaut, le quartier Jean-Médecin.",
-        text_information_nice2: "Puteți găsii cazare pe Airbnb:",
+        text_information_nice2: "Puteți găsii cazare pe Airbnb și Booking:",
         text_information_nice3: "Cazare prin Airbnb la Nisa",
+        text_information_nice3_1: "Cazare prin Booking la Nisa",
         text_information_nice4: "Places to have fun that we recommend",
         text_information_nice5: "La Plage de l’Hôtel Amour",
         text_information_nice6: "Le Plongeoir",
@@ -329,8 +334,9 @@ i18n.use(initReactI18next).init({
           "Villefranche-sur-mer este un sat uimitor cu vedere la peninsula St Jean Cap Ferrat. Am stat acolo 5 săptămâni anul trecut și ne-a plăcut:",
         text_information_villefranche0:
           "Dacă doriți să aflați mai multe despre Villefranche-sur-mer",
-        text_information_villefranche1: "Puteți găsii cazare pe Airbnb:",
+        text_information_villefranche1: "Puteți găsii cazare pe Airbnb și Booking:",
         text_information_villefranche2: "Cazare prin Airbnb in Villefranche",
+        text_information_villefranche3_1: "Cazare prin Booking in Villefranche",
         text_information_villefranche3: "Places to have fun that we recommend",
         text_information_villefranche4: "Achill's",
         text_information_villefranche5: "Baia Bella (à Beaulieu-sur-mer)",
